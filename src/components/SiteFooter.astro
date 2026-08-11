@@ -16,8 +16,9 @@ const explore = [
 	{ label: ui.nav.hacks ?? 'Hacks', href: getLocalizedPath('hacks', locale) },
 	{ label: ui.nav.esp, href: getLocalizedPath('tarkov-esp', locale) },
 	{ label: ui.nav.aimbot, href: getLocalizedPath('tarkov-aimbot', locale) },
-	{ label: ui.nav.features, href: getLocalizedPath('features', locale) },
-	{ label: ui.nav.pricing, href: getLocalizedPath('pricing', locale) },
+	/** Distinct from nav "Features" / "Store" — avoids Seobility duplicate-anchor warning */
+	{ label: locale === 'en' ? 'Feature list' : ui.nav.features, href: getLocalizedPath('features', locale) },
+	{ label: locale === 'en' ? 'Pricing plans' : ui.nav.pricing, href: getLocalizedPath('pricing', locale) },
 	{ label: ui.nav.faq, href: getLocalizedPath('faq', locale) },
 	{ label: 'Blog', href: getBlogBasePath(locale) },
 ];
@@ -25,24 +26,47 @@ const explore = [
 const help = [
 	{ label: ui.nav.setup, href: getLocalizedPath('setup', locale) },
 	{ label: ui.nav.updates, href: getLocalizedPath('updates', locale) },
-	{ label: 'Reviews', href: '/reviews/' },
+	{ label: locale === 'en' ? 'Buyer reviews' : 'Reviews', href: '/reviews/' },
 	{ label: 'Support', href: getLocalizedPath('support', locale) },
 	{ label: 'Privacy', href: getLocalizedPath('privacy', locale) },
 	{ label: 'Terms', href: getLocalizedPath('terms', locale) },
 ];
+
+const shareUrl = encodeURIComponent(`${siteConfig.url}/`);
+const shareText = encodeURIComponent(siteConfig.name);
+const shareLinks = [
+	{
+		label: 'Share on X',
+		href: `https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`,
+	},
+	{
+		label: 'Share on Reddit',
+		href: `https://reddit.com/submit?url=${shareUrl}&title=${shareText}`,
+	},
+	{
+		label: 'Share on Facebook',
+		href: `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`,
+	},
+] as const;
 ---
 
 <footer class="site-footer">
 	<div class="shell site-footer__grid">
 		<div>
-			<a
-				href={getLocalizedPath('home', locale)}
-				class="site-footer__brand"
-				aria-label={`${siteConfig.name} home`}
-			>
-				{siteConfig.name}
-			</a>
+			<p class="site-footer__brand">{siteConfig.name}</p>
 			<p>{ui.footer.tagline.split('\n')[0]}</p>
+			<p class="site-footer__share-label">Share</p>
+			<ul class="site-footer__share">
+				{
+					shareLinks.map((link) => (
+						<li>
+							<a href={link.href} rel="noopener noreferrer" target="_blank">
+								{link.label}
+							</a>
+						</li>
+					))
+				}
+			</ul>
 		</div>
 		<div>
 			<p class="site-footer__label">{ui.footer.explore}</p>
@@ -78,8 +102,8 @@ const help = [
 	}
 
 	.site-footer__brand {
-		display: inline-block;
-		margin-bottom: 0.65rem;
+		display: block;
+		margin: 0 0 0.65rem;
 		font-family: var(--font-display);
 		font-size: 1.2rem;
 		font-weight: 700;
@@ -87,7 +111,32 @@ const help = [
 		color: var(--ink);
 	}
 
-	.site-footer__brand:hover {
+	.site-footer__share-label {
+		margin: 1.1rem 0 0.45rem !important;
+		font-size: 0.75rem !important;
+		font-weight: 600;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: var(--ink-faint) !important;
+	}
+
+	.site-footer__share {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.65rem 1rem;
+	}
+
+	.site-footer__share a {
+		font-size: 0.85rem;
+		color: var(--ink-muted);
+		text-decoration: underline;
+		text-underline-offset: 0.15em;
+	}
+
+	.site-footer__share a:hover {
 		color: var(--magenta-soft);
 	}
 

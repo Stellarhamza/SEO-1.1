@@ -133,24 +133,8 @@ const isActive = (href: string) => {
 
 	<div class="site-panel" id="site-nav-panel" data-nav-panel hidden>
 		<div class="shell site-panel__inner">
-			<nav class="site-panel__nav" aria-label="Mobile">
-				{
-					links.map((item) => (
-						<a href={item.href} class:list={[{ 'is-active': isActive(item.href) }]}>
-							<svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-								<path
-									d={icons[item.id]}
-									stroke="currentColor"
-									stroke-width="1.6"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-							</svg>
-							<span data-edit={item.edit}>{item.label}</span>
-						</a>
-					))
-				}
-			</nav>
+			{/* Populated from desktop nav via JS — avoids duplicate anchor text in the HTML for crawlers */}
+			<nav class="site-panel__nav" aria-label="Mobile" data-nav-clone></nav>
 			<div class="site-panel__foot">
 				<div class="site-panel__lang">
 					<LanguageSwitcher pageId={pageId} currentLocale={locale} />
@@ -168,6 +152,11 @@ const isActive = (href: string) => {
 	if (header instanceof HTMLElement) {
 		const toggle = header.querySelector('[data-nav-toggle]');
 		const panel = header.querySelector('[data-nav-panel]');
+		const desktopNav = header.querySelector('.site-nav');
+		const mobileNav = header.querySelector('[data-nav-clone]');
+		if (desktopNav instanceof HTMLElement && mobileNav instanceof HTMLElement) {
+			mobileNav.innerHTML = desktopNav.innerHTML;
+		}
 
 		const setOpen = (open: boolean) => {
 			toggle?.setAttribute('aria-expanded', String(open));

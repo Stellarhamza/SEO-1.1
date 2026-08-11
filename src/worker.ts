@@ -1,6 +1,10 @@
 /**
  * Cloudflare Worker — host canonicalization before static assets.
  * Canonical site: https://besttarkovcheats.com (matches brand.url)
+ *
+ * Requires DNS: CNAME `www` → `besttarkovcheats.com` (proxied) AND
+ * Workers custom domain `www.besttarkovcheats.com` attached — otherwise
+ * www is NXDOMAIN and Seobility fails the www/non-www check.
  */
 export interface Env {
 	ASSETS: Fetcher;
@@ -8,23 +12,29 @@ export interface Env {
 
 const CANONICAL_HOST = 'besttarkovcheats.com';
 
+function canonicalUrl(request: Request): URL | null {
+	const url = new URL(request.url);
+	const host = (request.headers.get('host') || url.hostname).split(':')[0].toLowerCase();
+	let changed = false;
+
+	if (url.protocol === 'http:') {
+		url.protocol = 'https:';
+		changed = true;
+	}
+
+	if (host === `www.${CANONICAL_HOST}` || url.hostname === `www.${CANONICAL_HOST}`) {
+		url.hostname = CANONICAL_HOST;
+		changed = true;
+	}
+
+	return changed ? url : null;
+}
+
 export default {
 	async fetch(request: Request, env: Env): Promise<Response> {
-		const url = new URL(request.url);
-		let redirect = false;
-
-		if (url.protocol === 'http:') {
-			url.protocol = 'https:';
-			redirect = true;
-		}
-
-		if (url.hostname === `www.${CANONICAL_HOST}`) {
-			url.hostname = CANONICAL_HOST;
-			redirect = true;
-		}
-
-		if (redirect) {
-			return Response.redirect(url.toString(), 301);
+		const target = canonicalUrl(request);
+		if (target) {
+			return Response.redirect(target.toString(), 301);
 		}
 
 		return env.ASSETS.fetch(request);
