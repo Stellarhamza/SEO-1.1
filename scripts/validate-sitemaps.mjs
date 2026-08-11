@@ -27,7 +27,8 @@ function countBrandSitemapImages() {
 	const src = readBrandSource();
 	const block = src.match(/sitemap:\s*\{([\s\S]*?)\n\t\},/);
 	if (!block) return 6;
-	return [...block[1].matchAll(/src:\s*'/g)].length || 6;
+	const srcs = [...block[1].matchAll(/src:\s*'((?:\\'|[^'])*)'/g)].map((m) => m[1]);
+	return new Set(srcs).size || 6;
 }
 
 /** dist/ for static builds; dist/client/ when a Cloudflare adapter rearranges assets. */
@@ -256,6 +257,34 @@ async function main() {
 		fail(`sitemap-images.xml: expected ${IMAGE_SITEMAP_ENTRIES} image host URLs, got ${imageLocs.length}`);
 		bump();
 	} else ok(`sitemap-images.xml has ${IMAGE_SITEMAP_ENTRIES} image entries`);
+
+	const uniqueImageHosts = new Set(imageLocs);
+	if (uniqueImageHosts.size !== imageLocs.length) {
+		fail(
+			`sitemap-images.xml has duplicate <loc> hosts (${imageLocs.length} locs, ${uniqueImageHosts.size} unique) — causes crawl warnings`,
+		);
+		bump();
+	} else ok('sitemap-images.xml has unique page <loc> hosts (no duplicates)');
+
+	for (const required of [`${SITE}/features/`, `${SITE}/pricing/`, `${SITE}/updates/`]) {
+		if (!enLocs.includes(required)) {
+			fail(`Missing core page in sitemap-en.xml: ${required}`);
+			bump();
+		}
+	}
+	if (errors === 0) {
+		ok('Core pages present in sitemap-en.xml: /features/ /pricing/ (Store) /updates/ (Status)');
+	}
+
+	for (const required of [`${SITE}/features/`, `${SITE}/pricing/`, `${SITE}/updates/`]) {
+		if (!imageLocs.includes(required)) {
+			fail(`Missing core host in sitemap-images.xml: ${required}`);
+			bump();
+		}
+	}
+	if (errors === 0) {
+		ok('Image sitemap hosts Features, Store (/pricing/), and Status (/updates/)');
+	}
 
 	// English path coverage
 	for (const p of ENGLISH_PATHS) {

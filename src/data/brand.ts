@@ -72,8 +72,7 @@ export const brand = {
 	 */
 	seo: {
 		homeTitle: 'Tarkov Cheats | Undetected EFT ESP & Aimbot',
-		homeDescription:
-			'Buy undetected Escape from Tarkov cheats for Windows PC. ESP, soft aim, and BattlEye updates in one license.',
+		homeDescription: 'Buy undetected Escape from Tarkov cheats for Windows PC. ESP, soft aim, and BattlEye updates in one license.',
 		featuresTitle: '{game} Features | {brand}',
 		featuresDescription: 'Everything in one {game} license for Windows PC — ESP, aimbot, Cheats, and patch updates.',
 		storeTitle: '{game} Store | {brand}',
@@ -111,7 +110,7 @@ export const brand = {
 		faqIntro: 'Short answers about delivery, setup, updates, and refunds.',
 		reviewsIntro: 'Real feedback from {brand} buyers — ESP, soft aim, radar, and support.',
 		chipEsp: 'ESP / wallhack',
-		chipAim: 'Soft aimbot',
+		chipAim: 'Soft aim',
 		chipRadar: '2D ESP',
 		chipUpdates: 'Patch updates',
 		navPreview: 'Preview',
@@ -137,32 +136,32 @@ export const brand = {
 			{
 				src: '/images/tarkov-cheats-esp.webp',
 				title: 'tarkov cheats esp',
-				caption: 'tarkov cheats esp',
+				caption: 'tarkov cheats esp wallhack overlay',
 			},
 			{
 				src: '/images/tarkov-cheats-wallhack.webp',
 				title: 'tarkov cheats wallhack',
-				caption: 'tarkov cheats wallhack',
+				caption: 'tarkov cheats wallhack for raids',
 			},
 			{
 				src: '/images/tarkov-cheats-aimbot.webp',
 				title: 'tarkov cheats aimbot',
-				caption: 'tarkov cheats aimbot',
+				caption: 'tarkov cheats aimbot soft aim',
 			},
 			{
-				src: '/images/tarkov-cheats-esp.webp',
-				title: 'tarkov cheats',
-				caption: 'tarkov cheats esp',
+				src: '/images/tarkov-cheats-aimbot-view.webp',
+				title: 'tarkov cheats features',
+				caption: 'tarkov cheats features aimbot view',
 			},
 			{
-				src: '/images/tarkov-cheats-wallhack.webp',
-				title: 'tarkov cheats',
-				caption: 'tarkov cheats wallhack',
+				src: '/images/tarkov-cheats-radar.webp',
+				title: 'tarkov cheats status',
+				caption: 'tarkov cheats radar after patch updates',
 			},
 			{
-				src: '/images/tarkov-cheats-aimbot.webp',
-				title: 'tarkov cheats',
-				caption: 'tarkov cheats aimbot',
+				src: '/images/tarkov-cheats-raid.webp',
+				title: 'tarkov cheats store',
+				caption: 'tarkov cheats plans for Windows PC',
 			},
 		],
 	},

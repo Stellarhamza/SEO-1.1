@@ -96,6 +96,7 @@ const raw = brand as typeof brand & { sitemap?: Partial<SitemapShape> };
 function normalizeImages(input: unknown): BrandSitemapImage[] {
 	if (!Array.isArray(input) || input.length < 1) return defaultImages.map((i) => ({ ...i }));
 	const out: BrandSitemapImage[] = [];
+	const seen = new Set<string>();
 	for (const item of input) {
 		if (!item || typeof item !== 'object') continue;
 		const row = item as Record<string, unknown>;
@@ -103,6 +104,8 @@ function normalizeImages(input: unknown): BrandSitemapImage[] {
 		const title = typeof row.title === 'string' ? row.title.trim() : '';
 		const caption = typeof row.caption === 'string' ? row.caption.trim() : '';
 		if (!src.startsWith('/images/') || !title || !caption) continue;
+		if (seen.has(src)) continue;
+		seen.add(src);
 		out.push({ src, title, caption });
 	}
 	return out.length ? out : defaultImages.map((i) => ({ ...i }));
