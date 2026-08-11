@@ -106,7 +106,16 @@ const chips = [
 
 	<div class="shell hero__content">
 		<div class="hero__copy">
-			<h1 class="hero__brand" data-edit={isEnglish ? 'name' : undefined}>{heroTitle}</h1>
+			<h1 class="hero__brand">
+				{isEnglish ? (
+					<>
+						<span class="hero__brand-prefix">Undetected </span>
+						<span data-edit="name">{heroTitle}</span>
+					</>
+				) : (
+					heroTitle
+				)}
+			</h1>
 			<p class="hero__lede" data-edit={isEnglish ? 'heroLede' : undefined}>{heroSubtitle}</p>
 			<div class="hero__actions">
 				<a class="hero__buy" href={siteConfig.checkoutUrl} rel="noopener noreferrer">
@@ -273,6 +282,10 @@ const chips = [
 		overflow-wrap: anywhere;
 		color: #fff;
 		width: 100%;
+	}
+
+	.hero__brand-prefix {
+		color: inherit;
 	}
 
 	.hero__lede {

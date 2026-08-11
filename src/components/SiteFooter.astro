@@ -35,7 +35,13 @@ const help = [
 <footer class="site-footer">
 	<div class="shell site-footer__grid">
 		<div>
-			<a href={getLocalizedPath('home', locale)} class="site-footer__brand">{siteConfig.name}</a>
+			<a
+				href={getLocalizedPath('home', locale)}
+				class="site-footer__brand"
+				aria-label={`${siteConfig.name} home`}
+			>
+				{siteConfig.name}
+			</a>
 			<p>{ui.footer.tagline.split('\n')[0]}</p>
 		</div>
 		<div>

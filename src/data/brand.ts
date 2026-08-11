@@ -71,8 +71,9 @@ export const brand = {
 	 * Aim ~50–60 chars titles, ~140–160 chars descriptions.
 	 */
 	seo: {
-		homeTitle: 'Tarkov Cheats | EFT CHEATS & HACKS',
-		homeDescription: 'Escape from Tarkov Cheats | EFT ESP Wallhack Aimbot Undetected',
+		homeTitle: 'Tarkov Cheats | Undetected EFT ESP & Aimbot',
+		homeDescription:
+			'Buy undetected Escape from Tarkov cheats for Windows PC. ESP, soft aim, and BattlEye updates in one license.',
 		featuresTitle: '{game} Features | {brand}',
 		featuresDescription: 'Everything in one {game} license for Windows PC — ESP, aimbot, Cheats, and patch updates.',
 		storeTitle: '{game} Store | {brand}',
@@ -97,7 +98,7 @@ export const brand = {
 	copy: {
 		tagline: 'Undetected {primaryKeyword} — ESP, aimbot, and Hacks or PC',
 		summary: '{brand} is an undetected {game} cheat package for Windows PC. Includes ESP, soft aim, and extraction tracking, with {antiCheat} maintenance after patches.',
-		heroLede: 'Cheats available — ESP, Aimbot & Radar for Escape from Tarkov.',
+		heroLede: 'Cheats available — ESP, Aimbot & ESP for Escape from Tarkov.',
 		blogLabel: 'Tarkov Intel',
 		ctaBuy: 'Get Access',
 		ctaBuyShort: 'Buy',
