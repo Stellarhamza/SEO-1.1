@@ -18,7 +18,7 @@
 		"preview": "astro preview",
 		"validate:sitemaps": "node scripts/validate-sitemaps.mjs",
 		"generate:i18n": "node scripts/generate-i18n-content.mjs",
-		"deploy": "npm run build && wrangler pages deploy dist --project-name=besttarkovcheats",
+		"deploy": "npm run build && wrangler deploy",
 		"pages:deploy": "wrangler pages deploy dist --project-name=besttarkovcheats",
 		"astro": "astro"
 	},

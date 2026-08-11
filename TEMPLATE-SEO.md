@@ -33,7 +33,7 @@ Optional lock: set env `BRAND_STUDIO_TOKEN=your-secret` before `npm run dev`, th
 
 **Still edit by hand after a rebrand:** keyword landing bodies (`content.generated.ts`), FAQ/review item answers (`site.ts`). Hub page SEO/copy/theme/hero/domain are permanent via Studio.
 
-**Security:** write API only exists in `astro dev`; localhost IP + Host + header checks; rate-limited; stripped from `dist` on build; Cloudflare `_redirects` returns 404; robots disallow `/brand-studio/`.
+**Security:** write API only exists in `astro dev`; localhost IP + Host + header checks; rate-limited; stripped from `dist` on build; Cloudflare `_redirects` rewrites Brand Studio to `/404.html` (Workers disallow status 404 in `_redirects`); robots disallow `/brand-studio/`.
 
 Then continue with FAQs / images if the game changed (steps below).
 
