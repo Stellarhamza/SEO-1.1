@@ -147,10 +147,12 @@ if (extraGraph.length > 0) {
 }
 
 const softwareNode = extraGraph.find((node) => node['@type'] === 'SoftwareApplication');
-if (softwareNode) {
+const productNode = extraGraph.find((node) => node['@type'] === 'Product');
+const aboutNode = softwareNode ?? productNode;
+if (aboutNode) {
 	const webpage = graph.find((node) => node['@type'] === 'WebPage') as Record<string, unknown> | undefined;
 	if (webpage) {
-		webpage.about = { '@id': softwareNode['@id'] };
+		webpage.about = { '@id': aboutNode['@id'] };
 	}
 }
 ---

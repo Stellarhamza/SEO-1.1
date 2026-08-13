@@ -62,7 +62,6 @@ export default function LocaleSuggest({
 		if (sessionStorage.getItem('fc_locale_dismissed')) return;
 
 		const run = () => {
-			const cookie = document.cookie.match(/(?:^|;\s*)fc_locale=([^;]+)/)?.[1];
 			const preferred = detectPreferredLocale(locales, defaultLocale);
 			if (preferred === defaultLocale || preferred === currentLocale) return;
 
@@ -71,12 +70,7 @@ export default function LocaleSuggest({
 
 			const nextHref = pathForLocale(preferred, pageSlugs);
 
-			// Auto-switch when LanguageDetector/cookie already selected a locale.
-			if (cookie === preferred) {
-				window.location.replace(nextHref);
-				return;
-			}
-
+			// Banner only — never auto-redirect (protects crawl equity on EN).
 			setTarget(meta);
 			setHref(nextHref);
 			setVisible(true);

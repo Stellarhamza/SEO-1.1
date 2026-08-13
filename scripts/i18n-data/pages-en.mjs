@@ -5,7 +5,7 @@ export const enPages = {
 	home: {
 		title: 'Tarkov Cheats 2026 | Undetected ESP, Aimbot & Wallhack',
 		description:
-			'Tarkov cheats & tarkov cheats for PC — undetected tarkov esp, wallhack, radar and tarkov aimbot. Compare plans and 2026 BattlEye updates.',
+			'Tarkov cheats for Windows PC — ESP, soft aim, radar, and BattlEye updates. Compare plans and buy.',
 		h1: 'Tarkov Cheats — Undetected ESP, Wallhack & Aimbot',
 		intro:
 			'Tarkov Cheats is the undetected tarkov cheats package for Windows PC — built for Escape from Tarkov on Windows PC. Tarkov esp wallhack, 2D radar, and tarkov aimbot with BattlEye maintenance after every major patch.',
@@ -20,12 +20,12 @@ export const enPages = {
 				'Tarkov rewards map awareness. Tarkov Cheats combines ESP wallhack for enemy players and loot, radar-style threat cues, and configurable Aimbot so you can read fights before committing — on raid, scav-run, and competitive lobbies.',
 				`Official seasons, patches, and anti-cheat updates come from ${EXT.tarkov} and ${EXT.battleye}. We rebuild ESP, radar, and Aimbot modules when those patches require maintenance — then post status on the <a href="/updates/">Updates page</a>.`,
 				'Licenses ship digitally after payment confirmation. Monthly ($35) and lifetime ($150) plans include BattlEye maintenance rebuilds when anti-cheat or game patches require updates.',
-				'Start with the <a href="/tarkov-cheats/">Tarkov cheats pillar</a>, <a href="/tarkov-esp/">ESP guide</a>, <a href="/tarkov-aimbot/">Aimbot controls</a>, and <a href="/undetected-tarkov-cheats/">undetected status</a> pages if you are comparing tools before checkout.',
+				'Start with the <a href="/tarkov-cheats/">Tarkov cheats pillar</a>, <a href="/tarkov-esp/">ESP guide</a>, <a href="/tarkov-aimbot/">Aimbot controls</a>, and <a href="/tarkov-cheats/">undetected status</a> pages if you are comparing tools before checkout.',
 			),
 			section(
 				'ESP wallhack, radar hack, and Aimbot in one license',
 				'Instead of stacking separate tools, Tarkov Cheats bundles player ESP wallhack, loot markers, 2D radar overlays, and Aimbot profiles in one undetected package built for PMC raids and scav-runs — covering both “tarkov cheats” and “escape from tarkov cheats” search intent.',
-				'Browse the <a href="/tarkov-esp/">ESP</a>, <a href="/tarkov-aimbot/">Aimbot</a>, <a href="/tarkov-wallhack/">wallhack</a>, and <a href="/tarkov-radar-hack/">radar</a> pages for control details — or jump to <a href="/pricing/">Pricing</a> for monthly and lifetime options.',
+				'Browse the <a href="/tarkov-esp/">ESP</a>, <a href="/tarkov-aimbot/">Aimbot</a>, <a href="/tarkov-esp/">wallhack</a>, and <a href="/tarkov-radar-hack/">radar</a> pages for control details — or jump to <a href="/pricing/">Pricing</a> for monthly and lifetime options.',
 				`Before patch days, check ${EXT.status} for Battlestate Games service health, then confirm our maintenance notes so you are not queueing on an outdated build.`,
 				'Ready to buy? Open <a href="/pricing/">Pricing</a>, follow <a href="/setup/">Setup</a> after delivery, and keep <a href="/faq/">FAQ</a> / <a href="/support/">Support</a> bookmarked for license questions.',
 			),
@@ -42,7 +42,7 @@ export const enPages = {
 		galleryTitle: 'Tarkov ESP overlay visuals',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'Tarkov wallhack guide',
-		ctaSecondaryHref: '/tarkov-wallhack/',
+		ctaSecondaryHref: '/tarkov-esp/',
 		sections: [
 			section(
 				'What Tarkov ESP solves in raids',
@@ -54,7 +54,7 @@ export const enPages = {
 				'Player, boss, and loot ESP wallhack categories',
 				'Toggle enemy player outlines, boss markers, extract cues, and loot pins so only raid-critical ESP wallhack overlays stay active during rotations.',
 				'Distance readouts and snapline options help you control engagement range. Team and enemy colour coding supports PMC raids and scav-runs lobbies alike.',
-				'Compare category detail on the <a href="/tarkov-wallhack/">wallhack page</a> and pair visibility with the <a href="/tarkov-radar-hack/">radar hack</a> for flanks outside your FOV.',
+				'Compare category detail on the <a href="/tarkov-esp/">wallhack page</a> and pair visibility with the <a href="/tarkov-radar-hack/">radar hack</a> for flanks outside your FOV.',
 				[
 					'Enemy player ESP outlines with distance',
 					'Loot and container markers for faster rotations',
@@ -65,14 +65,14 @@ export const enPages = {
 			section(
 				'Undetected ESP with BattlEye maintenance',
 				'Tarkov Cheats ESP wallhack is maintained for Tarkov with rebuilds after BattlEye anti-cheat patches. Check the <a href="/updates/">Updates page</a> before you queue — no cheat guarantees permanent undetected status.',
-				`Read ${EXT.battleye} for how anti-cheat updates ship, then cross-check our <a href="/battleye-bypass/">BattlEye bypass maintenance guide</a> after major patches.`,
+				`Read ${EXT.battleye} for how anti-cheat updates ship, then cross-check our <a href="/updates/">BattlEye bypass maintenance guide</a> after major patches.`,
 				'Checkout includes instant digital delivery for Windows 10 and 11. After purchase, follow the <a href="/setup/">Setup guide</a> and tune overlays before your first raid.',
 			),
 			section(
 				'ESP next steps — Aimbot, pricing, and support',
 				'ESP alone wins information wars; Aimbot covers the firefight. Review <a href="/tarkov-aimbot/">Aimbot controls</a> if you want one license for visibility and assist.',
 				'Compare monthly ($35) and lifetime ($150) on <a href="/pricing/">Pricing</a>, then keep <a href="/support/">Support</a> ready if activation needs a human reply.',
-				'Still researching? The <a href="/tarkov-cheats/">Tarkov cheats pillar</a> and <a href="/tarkov-cheats-2026/">2026 buyer guide</a> summarize the full stack.',
+				'Still researching? The <a href="/tarkov-cheats/">Tarkov cheats pillar</a> and <a href="/tarkov-cheats/">2026 buyer guide</a> summarize the full stack.',
 			),
 		],
 	},
@@ -98,7 +98,7 @@ export const enPages = {
 			section(
 				'Per-weapon Aimbot profiles',
 				'Save separate Aimbot profiles for ARs, SMGs, and bolt-actions. Switch between long-range DMR fights and dorms clears without reopening menus every raid.',
-				'Prefer softer tracking? Read the <a href="/tarkov-soft-aim/">soft aim guide</a>.',
+				'Prefer softer tracking? Read the <a href="/tarkov-aimbot/">soft aim guide</a>.',
 				'Aimbot ships alongside <a href="/tarkov-esp/">ESP wallhack</a> and <a href="/tarkov-radar-hack/">2D radar</a> in the same Tarkov Cheats license.',
 				[
 					'Smoothness, FOV, and sensitivity sliders',
@@ -110,7 +110,7 @@ export const enPages = {
 			section(
 				'BattlEye maintenance for undetected Aimbot',
 				'Tarkov Cheats rebuilds Aimbot behavior when BattlEye anti-cheat or major Tarkov patches land. Maintenance notes appear on the <a href="/updates/">Updates page</a> so you know when a new build is live.',
-				`Cross-check service health on ${EXT.status} and anti-cheat context on ${EXT.battleye}, then follow our <a href="/battleye-bypass/">BattlEye maintenance guide</a> before queueing on patch day.`,
+				`Cross-check service health on ${EXT.status} and anti-cheat context on ${EXT.battleye}, then follow our <a href="/updates/">BattlEye maintenance guide</a> before queueing on patch day.`,
 				'Responsible settings matter — undetected status requires ongoing maintenance, not set-and-forget configs. Start with conservative smoothness, then tune.',
 			),
 			section(
@@ -122,7 +122,7 @@ export const enPages = {
 		],
 	},
 	features: {
-		title: 'Tarkov Cheats Features | ESP, Soft Aim & RadarRadar',
+		title: 'Tarkov Cheats Features | ESP, Soft Aim & Radar',
 		description:
 			'Full tarkov cheats feature list: ESP boxes, soft aim, radar, and toggles for Windows PC. Review controls before checkout.',
 		h1: 'Tarkov Cheats Features — Full Control List',
@@ -137,20 +137,20 @@ export const enPages = {
 			section(
 				'ESP wallhack and visibility features',
 				'Enemy player ESP wallhack, boss and extract awareness cues, loot and container markers, distance readouts, snaplines, and toggleable ESP categories for raid-critical overlays only.',
-				'Team and enemy colour coding supports PMC raids and scav-runs. Deep-dive the <a href="/tarkov-esp/">ESP page</a> and <a href="/tarkov-wallhack/">wallhack guide</a> for category-level detail.',
+				'Team and enemy colour coding supports PMC raids and scav-runs. Deep-dive the <a href="/tarkov-esp/">ESP page</a> and <a href="/tarkov-esp/">wallhack guide</a> for category-level detail.',
 				`Map and loot systems evolve with ${EXT.tarkov} wipe and map updates — toggleable ESP categories keep overlays useful when POIs rotate.`,
 			),
 			section(
 				'Radar hack and Aimbot controls',
 				'2D radar overlay with directional threat cues, configurable range for rotations and late-raid extracts, plus Aimbot smoothness, FOV, bone priority, hotkeys, and per-weapon profiles.',
 				'All tools share in-client toggles so you can adjust ESP, radar, and Aimbot during live Tarkov sessions. See <a href="/tarkov-radar-hack/">radar</a> and <a href="/tarkov-aimbot/">Aimbot</a> for settings walkthroughs.',
-				'Prefer a menu-first workflow? The <a href="/tarkov-mod-menu/">mod menu page</a> explains mid-match toggles without alt-tabbing.',
+				'Prefer a menu-first workflow? The <a href="/tarkov-cheats/">mod menu page</a> explains mid-match toggles without alt-tabbing.',
 			),
 			section(
 				'Licensing, delivery, and BattlEye maintenance',
 				'Monthly ($35) and lifetime ($150) licenses with instant digital delivery. BattlEye maintenance rebuilds publish on the <a href="/updates/">Updates page</a> after anti-cheat or game patches.',
 				`Monitor ${EXT.status} on patch days, then confirm rebuild notes before you queue. Setup and billing help lives on <a href="/support/">Support</a> and support@tarkovcheats.org.`,
-				'Next step: compare plans on <a href="/pricing/">Pricing</a> or read <a href="/undetected-tarkov-cheats/">how undetected maintenance works</a>.',
+				'Next step: compare plans on <a href="/pricing/">Pricing</a> or read <a href="/tarkov-cheats/">how undetected maintenance works</a>.',
 			),
 		],
 	},
@@ -183,7 +183,7 @@ export const enPages = {
 				'Refund, billing, and buying checklist',
 				'Review the <a href="/refund-policy/">Refund Policy</a> before purchase. For billing or delivery issues, contact Support with your order details.',
 				'Prices are listed in USD. Availability is worldwide for Windows 10 and 11 PCs.',
-				'Still comparing tools? Read <a href="/tarkov-cheats/">Tarkov cheats</a>, <a href="/undetected-tarkov-cheats/">undetected status</a>, and <a href="/faq/">FAQ</a> before you checkout.',
+				'Still comparing tools? Read <a href="/tarkov-cheats/">Tarkov cheats</a>, <a href="/tarkov-cheats/">undetected status</a>, and <a href="/faq/">FAQ</a> before you checkout.',
 			),
 		],
 	},
@@ -209,13 +209,13 @@ export const enPages = {
 			section(
 				'Activate ESP wallhack and Aimbot profiles',
 				'Follow the delivery instructions in your license email. Load default ESP wallhack categories for PMCs, Scavs, and loot — then tune radar range and Aimbot smoothness to your playstyle.',
-				'Use in-client hotkeys to toggle ESP, radar, and Aimbot mid-match. Details for BattlEye module live on <a href="/tarkov-esp/">ESP</a>, <a href="/tarkov-aimbot/">Aimbot</a>, and <a href="/tarkov-mod-menu/">mod menu</a>.',
-				'Prefer a soft tracking feel? Start with the <a href="/tarkov-soft-aim/">soft aim</a> recommendations before raising aggressiveness.',
+				'Use in-client hotkeys to toggle ESP, radar, and Aimbot mid-match. Details for BattlEye module live on <a href="/tarkov-esp/">ESP</a>, <a href="/tarkov-aimbot/">Aimbot</a>, and <a href="/tarkov-cheats/">mod menu</a>.',
+				'Prefer a soft tracking feel? Start with the <a href="/tarkov-aimbot/">soft aim</a> recommendations before raising aggressiveness.',
 			),
 			section(
 				'After Tarkov or BattlEye anti-cheat patches',
 				'When Battlestate Games ships a major Tarkov update or BattlEye anti-cheat patch, revisit Updates before queueing. Download maintenance rebuilds when posted.',
-				`Official anti-cheat background: ${EXT.battleye}. Our practical workflow is documented on the <a href="/battleye-bypass/">BattlEye bypass page</a> and <a href="/undetected-tarkov-cheats/">undetected guide</a>.`,
+				`Official anti-cheat background: ${EXT.battleye}. Our practical workflow is documented on the <a href="/updates/">BattlEye bypass page</a> and <a href="/tarkov-cheats/">undetected guide</a>.`,
 				'Contact <a href="/support/">Support</a> with your order ID if activation fails after a patch — include Windows version and error details for faster replies.',
 			),
 		],
@@ -231,7 +231,7 @@ export const enPages = {
 		galleryTitle: 'Tarkov patch and maintenance visuals',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'Undetected status guide',
-		ctaSecondaryHref: '/undetected-tarkov-cheats/',
+		ctaSecondaryHref: '/tarkov-cheats/',
 		sections: [
 			section(
 				'Why the Updates page matters',
@@ -243,7 +243,7 @@ export const enPages = {
 				'What maintenance entries cover',
 				'Entries note BattlEye anti-cheat compatibility status, rebuilt ESP wallhack overlays, radar range fixes, Aimbot tuning after weapon balance changes, and digital delivery of new builds to active licenses.',
 				'Lifetime and monthly subscribers receive rebuild access during active license terms. See <a href="/pricing/">Pricing</a> if you need to renew.',
-				'For context on why rebuilds happen, read the <a href="/battleye-bypass/">BattlEye bypass guide</a> and <a href="/undetected-tarkov-cheats/">undetected Tarkov cheats</a> explainer.',
+				'For context on why rebuilds happen, read the <a href="/updates/">BattlEye bypass guide</a> and <a href="/tarkov-cheats/">undetected Tarkov cheats</a> explainer.',
 			),
 			section(
 				'Staying undetected after patches',
@@ -254,7 +254,7 @@ export const enPages = {
 		],
 	},
 	faq: {
-		title: 'Tarkov Cheats FAQ | ESP, Soft Aim & RadarBattlEye Answers',
+		title: 'Tarkov Cheats FAQ | ESP, Soft Aim & Radar Answers',
 		description:
 			'Tarkov cheats FAQ: ESP boxes, soft aim, BattlEye maintenance, and pricing for PC. Clear answers before you buy.',
 		h1: 'Tarkov Cheats FAQ — Common Questions',
@@ -275,7 +275,7 @@ export const enPages = {
 			section(
 				'Are Tarkov Cheats undetected in 2026?',
 				'Tarkov Cheats is maintained with rebuilds after BattlEye anti-cheat and game patches. Check the <a href="/updates/">Updates page</a> for current status — no cheat can guarantee permanent undetected operation.',
-				'Read <a href="/undetected-tarkov-cheats/">undetected Tarkov cheats</a> and the <a href="/battleye-bypass/">BattlEye guide</a> for the maintenance workflow.',
+				'Read <a href="/tarkov-cheats/">undetected Tarkov cheats</a> and the <a href="/updates/">BattlEye guide</a> for the maintenance workflow.',
 				'Responsible settings and reading maintenance notes before queueing are essential.',
 			),
 			section(
@@ -313,7 +313,7 @@ export const enPages = {
 			),
 			section(
 				'Self-service resources',
-				'Setup guide, Features list, Updates log, Refund Policy, and Terms of Use are linked from the footer. BattlEye bypass notes live on the dedicated <a href="/battleye-bypass/">BattlEye anti-cheat page</a>.',
+				'Setup guide, Features list, Updates log, Refund Policy, and Terms of Use are linked from the footer. BattlEye bypass notes live on the dedicated <a href="/updates/">BattlEye anti-cheat page</a>.',
 				'Email: support@tarkovcheats.org',
 				'Ready to purchase or renew? Open <a href="/pricing/">Pricing</a>. Need feature detail first? See <a href="/features/">Features</a>.',
 			),
@@ -330,7 +330,7 @@ export const enPages = {
 		galleryTitle: 'Undetected Tarkov Cheats visuals',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'BattlEye bypass guide',
-		ctaSecondaryHref: '/battleye-bypass/',
+		ctaSecondaryHref: '/updates/',
 		sections: [
 			section(
 				'What undetected means for Tarkov Cheats',
@@ -342,13 +342,13 @@ export const enPages = {
 				'BattlEye maintenance workflow',
 				'When BattlEye anti-cheat or Tarkov updates ship, the team assesses ESP, radar, and Aimbot modules, publishes status on the <a href="/updates/">Updates page</a>, and delivers rebuilt builds to active licenses.',
 				`On patch mornings, also check ${EXT.status} for launcher outages that can look like product failures.`,
-				'Deep technical workflow: <a href="/battleye-bypass/">BattlEye bypass Tarkov guide</a>. Feature stack: <a href="/features/">Features</a>.',
+				'Deep technical workflow: <a href="/updates/">BattlEye bypass Tarkov guide</a>. Feature stack: <a href="/features/">Features</a>.',
 			),
 			section(
 				'Responsible use and next steps',
 				'Combine maintenance with conservative in-game settings. Read the <a href="/faq/">FAQ</a> and Updates log regularly — undetected status is not a one-time promise.',
 				'Lifetime and monthly plans include rebuild access during active terms — see <a href="/pricing/">Pricing</a>.',
-				'New buyers should also read <a href="/tarkov-cheats-2026/">Tarkov cheats 2026</a> and complete <a href="/setup/">Setup</a> after delivery.',
+				'New buyers should also read <a href="/tarkov-cheats/">Tarkov cheats 2026</a> and complete <a href="/setup/">Setup</a> after delivery.',
 			),
 		],
 	},
@@ -380,7 +380,7 @@ export const enPages = {
 			section(
 				'Undetected wallhack maintenance',
 				'ESP wallhack modules rebuild after BattlEye anti-cheat patches. Follow the <a href="/updates/">Updates page</a> and complete checkout for instant license delivery on Windows PC.',
-				'Learn the full maintenance story on <a href="/undetected-tarkov-cheats/">undetected Tarkov cheats</a> and <a href="/battleye-bypass/">BattlEye bypass</a>.',
+				'Learn the full maintenance story on <a href="/tarkov-cheats/">undetected Tarkov cheats</a> and <a href="/updates/">BattlEye bypass</a>.',
 				'Ready to buy? Compare <a href="/pricing/">Pricing</a> or continue to the <a href="/tarkov-esp/">ESP hack</a> landing for alternate search wording.',
 			),
 		],
@@ -407,14 +407,14 @@ export const enPages = {
 			section(
 				'Configurable radar range',
 				'Adjust radar range for early rotations versus tight extract holds. Directional cues highlight flanks during building clears and flank pushes across raid and scav-run.',
-				'Toggle radar alongside ESP and Aimbot with in-client hotkeys during live matches — see the <a href="/tarkov-mod-menu/">mod menu</a> page.',
+				'Toggle radar alongside ESP and Aimbot with in-client hotkeys during live matches — see the <a href="/tarkov-cheats/">mod menu</a> page.',
 				'Combat follow-up lives on <a href="/tarkov-aimbot/">Aimbot</a> when you convert radar info into a fight.',
 			),
 			section(
 				'Maintenance and licensing',
 				'Radar hack modules receive BattlEye maintenance rebuilds with the full Tarkov Cheats package. Monthly and lifetime licenses include digital delivery — see <a href="/pricing/">Pricing</a>.',
 				'Check <a href="/updates/">Updates</a> after major Tarkov patches before relying on previous radar configs.',
-				'New to the stack? Start at <a href="/features/">Features</a> or <a href="/undetected-tarkov-cheats/">undetected status</a>.',
+				'New to the stack? Start at <a href="/features/">Features</a> or <a href="/tarkov-cheats/">undetected status</a>.',
 			),
 		],
 	},
@@ -441,7 +441,7 @@ export const enPages = {
 				'What happens after a BattlEye patch',
 				'The team tests ESP overlays, radar signatures, and Aimbot profiles against the new build, publishes status on <a href="/updates/">Updates</a>, and ships rebuilt packages to active licenses.',
 				`Confirm Battlestate Games service health on ${EXT.status} if the launcher or matchmaking fails during the same window.`,
-				'Avoid queueing on old builds after major patch days until maintenance notes confirm a new release. Related reading: <a href="/undetected-tarkov-cheats/">undetected Tarkov cheats</a>.',
+				'Avoid queueing on old builds after major patch days until maintenance notes confirm a new release. Related reading: <a href="/tarkov-cheats/">undetected Tarkov cheats</a>.',
 			),
 			section(
 				'No permanent bypass guarantee',
@@ -473,7 +473,7 @@ export const enPages = {
 			section(
 				'Full feature stack for 2026 buyers',
 				'Player ESP wallhack, loot markers, 2D radar overlays, Aimbot profiles, in-client toggles, and post-patch rebuilds — one license instead of stacking separate tools.',
-				'Deep links: <a href="/tarkov-cheats/">Tarkov cheats pillar</a>, <a href="/tarkov-esp/">ESP</a>, <a href="/tarkov-aimbot/">Aimbot</a>, <a href="/tarkov-wallhack/">wallhack</a>, <a href="/tarkov-radar-hack/">radar</a>, <a href="/undetected-tarkov-cheats/">undetected</a>.',
+				'Deep links: <a href="/tarkov-cheats/">Tarkov cheats pillar</a>, <a href="/tarkov-esp/">ESP</a>, <a href="/tarkov-aimbot/">Aimbot</a>, <a href="/tarkov-esp/">wallhack</a>, <a href="/tarkov-radar-hack/">radar</a>, <a href="/tarkov-cheats/">undetected</a>.',
 				'Instant digital delivery after checkout confirmation worldwide.',
 			),
 			section(
@@ -495,7 +495,7 @@ export const enPages = {
 		galleryTitle: 'Tarkov cheats gallery — ESP, Aimbot, wallhack',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'See undetected guide',
-		ctaSecondaryHref: '/undetected-tarkov-cheats/',
+		ctaSecondaryHref: '/tarkov-cheats/',
 		sections: [
 			section(
 				'What Tarkov cheats include in 2026',
@@ -505,20 +505,20 @@ export const enPages = {
 			),
 			section(
 				'How this Tarkov cheats pillar fits nearby pages',
-				'Use this pillar for the core product overview. For year-specific buying notes, see the <a href="/tarkov-cheats-2026/">tarkov cheats 2026</a> and <a href="/tarkov-cheats/">Tarkov cheats</a> pages cover buyer comparisons in cheats wording.',
-				'Deep-dive modules: <a href="/tarkov-esp/">Tarkov ESP</a>, <a href="/tarkov-aimbot/">Tarkov Aimbot</a>, <a href="/tarkov-wallhack/">wallhack</a>, <a href="/tarkov-radar-hack/">radar hack</a>, and <a href="/tarkov-soft-aim/">soft aim</a>.',
+				'Use this pillar for the core product overview. For year-specific buying notes, see the <a href="/tarkov-cheats/">tarkov cheats 2026</a> and <a href="/tarkov-cheats/">Tarkov cheats</a> pages cover buyer comparisons in cheats wording.',
+				'Deep-dive modules: <a href="/tarkov-esp/">Tarkov ESP</a>, <a href="/tarkov-aimbot/">Tarkov Aimbot</a>, <a href="/tarkov-esp/">wallhack</a>, <a href="/tarkov-radar-hack/">radar hack</a>, and <a href="/tarkov-aimbot/">soft aim</a>.',
 				'Blog guides expand BattlEye keyword: <a href="/blog/tarkov-cheats-complete-guide-2026/">hacks complete guide</a>, <a href="/blog/escape-from-tarkov-cheats-buyers-guide/">cheats buyers guide</a>, and <a href="/blog/undetected-tarkov-cheats-battleye/">undetected BattlEye notes</a>.',
 			),
 			section(
 				'Tarkov cheats vs single-feature tools',
 				'Standalone hacks often cover only wallhack or only aim assist. Tarkov Cheats maps the full raid loop: read enemy squads, track bosses and containers, spot flanks on radar, and tune Aimbot per weapon class.',
 				'Compare the <a href="/tarkov-esp/">ESP</a>, <a href="/tarkov-aimbot/">Aimbot</a>, and <a href="/features/">Features</a> pages — or review <a href="/pricing/">Pricing</a> for monthly and lifetime licenses.',
-				'Related landings: <a href="/tarkov-cheat-download/">cheat download</a>, <a href="/tarkov-mod-menu/">mod menu</a>, <a href="/tarkov-aimbot/">aimbot</a>, <a href="/tarkov-esp/">ESP</a>.',
+				'Related landings: <a href="/setup/">cheat download</a>, <a href="/tarkov-cheats/">mod menu</a>, <a href="/tarkov-aimbot/">aimbot</a>, <a href="/tarkov-esp/">ESP</a>.',
 			),
 			section(
 				'Undetected Tarkov cheats with BattlEye maintenance',
 				'Undetected Tarkov cheats require rebuilds after BattlEye anti-cheat and major Tarkov patches. Check Updates before queueing — maintenance notes confirm when a new build is live. No package can promise permanent undetected status.',
-				`See ${EXT.battleye} for anti-cheat background and our <a href="/battleye-bypass/">BattlEye bypass guide</a> for the practical workflow. Pair with <a href="/undetected-tarkov-cheats/">undetected Tarkov cheats</a> for status language buyers expect.`,
+				`See ${EXT.battleye} for anti-cheat background and our <a href="/updates/">BattlEye bypass guide</a> for the practical workflow. Pair with <a href="/tarkov-cheats/">undetected Tarkov cheats</a> for status language buyers expect.`,
 				'Digital delivery runs after checkout for Windows 10 and 11 PCs worldwide. After purchase, follow <a href="/setup/">Setup</a> and keep <a href="/support/">Support</a> ready with your order ID.',
 			),
 		],
@@ -552,7 +552,7 @@ export const enPages = {
 				'After purchase — setup and updates',
 				'Follow Setup to activate ESP wallhack and Aimbot on Windows 10 or 11. When Tarkov or BattlEye anti-cheat patches ship, check the <a href="/updates/">Updates page</a> for maintenance rebuilds.',
 				'Contact <a href="/support/">Support</a> with your order ID if delivery or activation fails within 24 hours of purchase.',
-				'Also read <a href="/undetected-tarkov-cheats/">undetected status</a> so you know what “download ready” means after a patch.',
+				'Also read <a href="/tarkov-cheats/">undetected status</a> so you know what “download ready” means after a patch.',
 			),
 		],
 	},
@@ -579,11 +579,11 @@ export const enPages = {
 				'Mod menu categories for PMC raids and scav-runs',
 				'Separate ESP wallhack categories for players, loot, containers, and bosses let you reduce overlay noise during rotations and extract holds.',
 				'Radar hack range and Aimbot smoothness adjust from the same mod menu — useful when ${EXT.tarkov} seasons change fight distances and mobility.',
-				'Soft tracking players should start with <a href="/tarkov-soft-aim/">soft aim</a> profiles before aggressive FOV.',
+				'Soft tracking players should start with <a href="/tarkov-aimbot/">soft aim</a> profiles before aggressive FOV.',
 			),
 			section(
 				'Maintained mod menu after BattlEye patches',
-				'Tarkov mod menu behavior is rebuilt when BattlEye anti-cheat or major Tarkov updates land. Follow the <a href="/updates/">Updates page</a> and <a href="/battleye-bypass/">BattlEye bypass guide</a> before queueing on patch days.',
+				'Tarkov mod menu behavior is rebuilt when BattlEye anti-cheat or major Tarkov updates land. Follow the <a href="/updates/">Updates page</a> and <a href="/updates/">BattlEye bypass guide</a> before queueing on patch days.',
 				'Checkout with instant digital delivery for monthly and lifetime licenses — see <a href="/pricing/">Pricing</a>.',
 				'Need install steps? Open <a href="/setup/">Setup</a> after your license email arrives.',
 			),
@@ -644,7 +644,7 @@ export const enPages = {
 			section(
 				'Best Tarkov cheats feature checklist',
 				'Look for player ESP wallhack, loot markers, 2D radar overlays, Aimbot profiles, hotkey toggles, and documented maintenance after Tarkov patches.',
-				'Review <a href="/features/">Features</a>, <a href="/undetected-tarkov-cheats/">undetected status</a>, and <a href="/tarkov-cheats-2026/">Tarkov cheats 2026</a> before checkout — monthly ($35) and lifetime ($150) plans available.',
+				'Review <a href="/features/">Features</a>, <a href="/tarkov-cheats/">undetected status</a>, and <a href="/tarkov-cheats/">Tarkov cheats 2026</a> before checkout — monthly ($35) and lifetime ($150) plans available.',
 				'Module pages worth opening: <a href="/tarkov-esp/">ESP</a>, <a href="/tarkov-aimbot/">Aimbot</a>, <a href="/tarkov-cheats/">hacks</a>.',
 			),
 			section(
@@ -672,7 +672,7 @@ export const enPages = {
 				'Tarkov aimbot hack vs visibility tools',
 				'A Tarkov aimbot hack focuses on assisted targeting during firefights — while ESP wallhack and radar handle map awareness. Tarkov Cheats bundles aimbot hack modules with visibility overlays in one license.',
 				'Smoothness, FOV, and sensitivity controls tune assist for Tarkov combat pace across PMC raids and scav-runs.',
-				'Prefer softer tracking language? See <a href="/tarkov-soft-aim/">soft aim</a>. Full settings: <a href="/tarkov-aimbot/">Aimbot page</a>.',
+				'Prefer softer tracking language? See <a href="/tarkov-aimbot/">soft aim</a>. Full settings: <a href="/tarkov-aimbot/">Aimbot page</a>.',
 			),
 			section(
 				'Aimbot hack controls and hotkeys',
@@ -682,7 +682,7 @@ export const enPages = {
 			),
 			section(
 				'Undetected aimbot hack maintenance',
-				'Aimbot hack signatures rebuild after BattlEye anti-cheat updates. Follow the <a href="/updates/">Updates page</a> and <a href="/battleye-bypass/">BattlEye bypass guide</a> before queueing after patch days.',
+				'Aimbot hack signatures rebuild after BattlEye anti-cheat updates. Follow the <a href="/updates/">Updates page</a> and <a href="/updates/">BattlEye bypass guide</a> before queueing after patch days.',
 				'Checkout with instant digital delivery for Windows 10 and 11 — <a href="/pricing/">Pricing</a>.',
 				'Pair with <a href="/tarkov-esp/">ESP</a> for the full information + assist loop.',
 			),
@@ -705,7 +705,7 @@ export const enPages = {
 				'What a Tarkov ESP hack shows',
 				'A Tarkov ESP hack renders enemy player outlines, vehicle positions, and loot pins through walls and terrain — closing the information gap before you commit to a fight.',
 				'Distance readouts and snapline options help control engagement range during squad pushes and third-party scenarios.',
-				'Canonical visibility guide: <a href="/tarkov-esp/">Tarkov ESP</a>. Wallhack wording: <a href="/tarkov-wallhack/">wallhack</a>.',
+				'Canonical visibility guide: <a href="/tarkov-esp/">Tarkov ESP</a>. Wallhack wording: <a href="/tarkov-esp/">wallhack</a>.',
 			),
 			section(
 				'ESP hack categories for raids',
@@ -717,7 +717,7 @@ export const enPages = {
 				'Undetected ESP hack with BattlEye maintenance',
 				'ESP hack modules rebuild after BattlEye anti-cheat and Tarkov patches. Check the <a href="/updates/">Updates page</a> before queueing — pair ESP hack awareness with <a href="/tarkov-radar-hack/">radar hack</a> for flank reads.',
 				'Licenses deliver digitally after checkout on Windows PC — see <a href="/pricing/">Pricing</a>.',
-				'Install steps: <a href="/setup/">Setup</a>. Status questions: <a href="/undetected-tarkov-cheats/">undetected guide</a>.',
+				'Install steps: <a href="/setup/">Setup</a>. Status questions: <a href="/tarkov-cheats/">undetected guide</a>.',
 			),
 		],
 	},
@@ -834,7 +834,7 @@ export const enPages = {
 			section(
 				'Risk and anti-cheat disclaimer',
 				`Using cheats in Tarkov may violate Battlestate Games terms and result in account penalties. Tarkov Cheats provides maintenance but does not guarantee undetected status or account safety.`,
-				'You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href="/undetected-tarkov-cheats/">undetected status</a>.',
+				'You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href="/tarkov-cheats/">undetected status</a>.',
 			),
 			section(
 				'Changes and governing law',

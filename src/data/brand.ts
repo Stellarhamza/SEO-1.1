@@ -72,9 +72,10 @@ export const brand = {
 	 */
 	seo: {
 		/** Titles ≤60 chars; descriptions ~140–160 (Google SERP display). */
-		homeTitle: 'Tarkov Cheats | Undetected ESP & Aimbot',
+		/** Home = brand hub. Money URL /tarkov-cheats/ owns the head term. */
+		homeTitle: 'Tarkov Cheats | Official Windows PC Site',
 		homeDescription:
-			'Buy undetected Escape from Tarkov cheats for Windows PC. ESP, soft aim, radar, and BattlEye patch updates in one license with instant delivery.',
+			'Official Tarkov Cheats site for Windows PC. Compare features, store plans, and live status — then buy ESP, soft aim, and radar in one license.',
 		featuresTitle: '{game} Features | {brand}',
 		featuresDescription:
 			'Everything in one {game} license for Windows PC — ESP, soft aim, radar, loot tools, and patch updates after {antiCheat}. See what is included.',
@@ -84,9 +85,10 @@ export const brand = {
 		statusTitle: '{game} Status | {brand}',
 		statusDescription:
 			'Live undetected status for {brand} after {game} or {antiCheat} patches. Check here before you queue a raid on Windows PC today.',
-		previewTitle: 'Tarkov Cheats | ESP, Aimbot & Radar Guide',
+		/** Money page meta — primary target for "tarkov cheats". */
+		previewTitle: 'Tarkov Cheats | Undetected ESP & Aimbot',
 		previewDescription:
-			'Preview undetected tarkov cheats for Escape from Tarkov — ESP, soft aim, radar, and BattlEye updates on Windows PC. See what the license includes.',
+			'Buy undetected tarkov cheats for Escape from Tarkov on Windows PC. ESP, soft aim, radar, and BattlEye patch updates in one license with instant delivery.',
 		setupTitle: '{game} Setup | {brand}',
 		setupDescription:
 			'Install and launch {brand} on Windows PC after checkout. Short setup steps so you can raid faster. Follow each step in order before your first match.',

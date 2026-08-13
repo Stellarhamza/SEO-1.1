@@ -55,19 +55,22 @@ const IMAGE_SITEMAP_ENTRIES = countBrandSitemapImages();
 const BLOG_PAGES = 18; // /blog/ index + 17 posts
 const REVIEW_PAGES = 11; // /reviews/ index + 10 review detail pages
 const FAQ_PAGES = 11; // FAQ answer pages (index is in the product pages)
-/** Product pages in sitemap — excludes 3 EN URLs that 301 to stronger pillars */
-const ENGLISH_PRODUCT_PAGES = 22;
+/** Product pages in sitemap — excludes cannibal EN URLs that 301 to stronger pillars */
+const ENGLISH_PRODUCT_PAGES = 14;
 const ENGLISH_PAGES = ENGLISH_PRODUCT_PAGES + BLOG_PAGES + REVIEW_PAGES + FAQ_PAGES;
 const I18N_LOCALES = 21;
-/** Locale product pages also exclude the same 3 cannibal pageIds */
-const PRODUCT_PAGES_PER_LOCALE = 22;
-const BLOG_PAGES_PER_LOCALE = 18;
+/** Locale product pages also exclude the same cannibal pageIds */
+const PRODUCT_PAGES_PER_LOCALE = 14;
+const BLOG_PAGES_PER_LOCALE = 0; // Locale blog URLs 301 to EN; not in sitemaps
 const PAGES_PER_LOCALE = PRODUCT_PAGES_PER_LOCALE + BLOG_PAGES_PER_LOCALE;
 const I18N_URLS = I18N_LOCALES * PAGES_PER_LOCALE;
 const TOTAL_PAGES = ENGLISH_PAGES + I18N_URLS;
 /** Full EN HTML may still emit redirect stubs for cannibal URLs; sitemaps omit them */
 const ENGLISH_HTML_PAGES = 25 + BLOG_PAGES + REVIEW_PAGES + FAQ_PAGES;
-const TOTAL_HTML_PAGES = ENGLISH_HTML_PAGES + I18N_LOCALES * PAGES_PER_LOCALE;
+/** Locale HTML = product pages + blog redirect stubs (index + 17 posts) that are omitted from sitemaps */
+const LOCALE_BLOG_REDIRECT_PAGES = 18;
+const TOTAL_HTML_PAGES =
+	ENGLISH_HTML_PAGES + I18N_LOCALES * (PRODUCT_PAGES_PER_LOCALE + LOCALE_BLOG_REDIRECT_PAGES);
 const HREFLANG_PER_URL = 23;
 const SITEMAP_INDEX_ENTRIES = 1 + I18N_LOCALES + 1; // EN + locales + images
 
@@ -76,6 +79,14 @@ const REDIRECT_ONLY_PATHS = new Set([
 	'/best-tarkov-cheats/',
 	'/tarkov-aimbot-hack/',
 	'/tarkov-esp-hack/',
+	'/tarkov-cheats-2026/',
+	'/undetected-tarkov-cheats/',
+	'/tarkov-mod-menu/',
+	'/tarkov-unlock-all/',
+	'/tarkov-soft-aim/',
+	'/tarkov-wallhack/',
+	'/tarkov-cheat-download/',
+	'/battleye-bypass/',
 ]);
 
 const ENGLISH_PATHS = [
@@ -296,8 +307,9 @@ async function main() {
 		ok('Image sitemap hosts Features, Store (/pricing/), and Status (/updates/)');
 	}
 
-	// English path coverage
+	// English path coverage (skip intentional 301 stubs)
 	for (const p of ENGLISH_PATHS) {
+		if (REDIRECT_ONLY_PATHS.has(p)) continue;
 		const full = `${SITE}${p === '/' ? '/' : p}`;
 		if (!enLocs.includes(full)) {
 			fail(`Missing English URL in sitemap-en.xml: ${full}`);
@@ -432,9 +444,12 @@ async function main() {
 	]);
 
 	const htmlSet = new Set(htmlPaths);
-	const missingFromSitemap = [...htmlSet].filter(
-		(p) => !sitemapPaths.has(p) && !REDIRECT_ONLY_PATHS.has(p),
-	);
+	const missingFromSitemap = [...htmlSet].filter((p) => {
+		if (sitemapPaths.has(p) || REDIRECT_ONLY_PATHS.has(p)) return false;
+		// Locale blog stubs 301 to EN — intentionally omitted from sitemaps
+		if (/^\/[a-z]{2}\/blog(\/|$)/.test(p)) return false;
+		return true;
+	});
 	const extraInSitemap = [...sitemapPaths].filter((p) => !htmlSet.has(p));
 
 	if (htmlSet.size !== TOTAL_HTML_PAGES) {

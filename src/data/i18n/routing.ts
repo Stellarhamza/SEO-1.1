@@ -7,6 +7,7 @@ import {
 	type LocaleCode,
 	locales,
 } from './locales';
+import { getCannibalTargetId, isCannibalPageId } from '../seo-cannibal-map';
 
 /** Canonical page identifiers shared across all locales. */
 export type PageId =
@@ -692,7 +693,8 @@ export function localizeInternalHref(href: string, locale: LocaleCode): string {
 	for (const pageId of pageIds) {
 		const english = englishPaths[pageId];
 		if (english === withSlash || english.replace(/\/+$/, '') === trimmed) {
-			return getLocalizedPath(pageId, locale);
+			const targetId = getCannibalTargetId(pageId) as PageId;
+			return getLocalizedPath(targetId, locale);
 		}
 	}
 	return href;
@@ -728,16 +730,17 @@ export function getSelfHreflangAlternates(
 }
 
 export function getHreflangAlternates(pageId: PageId, currentLocale: LocaleCode = defaultLocale) {
+	const resolvedId = (isCannibalPageId(pageId) ? getCannibalTargetId(pageId) : pageId) as PageId;
 	const byLocale = localeCodes.map((code) => ({
 		hreflang: localeMap[code].hreflang,
-		href: absoluteLocalizedUrl(pageId, code),
+		href: absoluteLocalizedUrl(resolvedId, code),
 		code,
 	}));
 	const self = byLocale.find((alt) => alt.code === currentLocale)!;
 	const others = byLocale.filter((alt) => alt.code !== currentLocale);
 	const xDefault = {
 		hreflang: 'x-default' as const,
-		href: absoluteLocalizedUrl(pageId, defaultLocale),
+		href: absoluteLocalizedUrl(resolvedId, defaultLocale),
 	};
 	// Self-referential hreflang first — required by Google/Seobility for the active locale.
 	return [

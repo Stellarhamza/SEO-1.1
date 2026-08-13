@@ -2,6 +2,7 @@
 /**
  * Syncs locale 301s for cannibal pageIds → pillar pageIds into public/_redirects
  * and functions/cannibal-redirects.json (used by Workers middleware).
+ * Targets are read from src/data/seo-canonical.ts (single source of truth).
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
@@ -9,14 +10,22 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ROUTING = path.join(ROOT, 'src/data/i18n/routing.ts');
+const CANONICAL = path.join(ROOT, 'src/data/seo-cannibal-map.ts');
 const REDIRECTS = path.join(ROOT, 'public/_redirects');
 const JSON_OUT = path.join(ROOT, 'functions/cannibal-redirects.json');
 
-const TARGETS = {
-	'best-cheats': 'hacks',
-	'aimbot-hack': 'tarkov-aimbot',
-	'esp-hack': 'tarkov-esp',
-};
+function readCannibalTargets() {
+	const src = readFileSync(CANONICAL, 'utf8');
+	const block = src.match(/cannibalRedirectTargets\s*=\s*\{([\s\S]*?)\}\s*as const/);
+	if (!block) throw new Error('cannibalRedirectTargets missing in seo-cannibal-map.ts');
+	/** @type {Record<string, string>} */
+	const targets = {};
+	for (const row of block[1].matchAll(/['"]?([\w-]+)['"]?\s*:\s*['"]([\w-]+)['"]/g)) {
+		targets[row[1]] = row[2];
+	}
+	if (!Object.keys(targets).length) throw new Error('No cannibal targets parsed');
+	return targets;
+}
 
 function extractSlugBlock(src, pageId) {
 	const re = new RegExp(`\\t'${pageId}':\\s*\\{([\\s\\S]*?)\\n\\t\\},|\\t${pageId}:\\s*\\{([\\s\\S]*?)\\n\\t\\},`);
@@ -30,6 +39,7 @@ function extractSlugBlock(src, pageId) {
 	return slugs;
 }
 
+const TARGETS = readCannibalTargets();
 const routing = readFileSync(ROUTING, 'utf8');
 const map = {};
 const lines = [
@@ -65,4 +75,6 @@ if (start >= 0) {
 redirects = `${redirects.trimEnd()}\n${lines.join('\n')}\n`;
 writeFileSync(REDIRECTS, redirects);
 writeFileSync(JSON_OUT, `${JSON.stringify(map, null, 2)}\n`);
-console.log(`Synced ${Object.keys(map).length / 2} cannibal locale redirect pairs`);
+console.log(
+	`Synced ${Object.keys(map).length / 2} cannibal locale redirect pairs (${Object.keys(TARGETS).length} pageIds)`,
+);

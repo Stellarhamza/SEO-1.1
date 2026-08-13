@@ -93,16 +93,16 @@ export const blogUi: Record<
 	}
 > = {
 	en: {
-		blogTitle: 'Tarkov Cheats Blog | ESP, Cheats & Meta Tips',
+		blogTitle: 'Tarkov Cheats Blog | Raid Guides',
 		blogDescription:
-			'Tarkov cheats and tarkov cheats guides — ESP, aimbot, ranked meta, loot routes, and BattlEye updates. Global English blog at tarkovcheats.org/blog/.',
+			'Escape from Tarkov guides — raid tips, ESP, aimbot notes, loot routes, and BattlEye update coverage. English blog at tarkovcheats.org/blog/.',
 		blogH1: 'Tarkov Cheats Intel',
 		blogIntro:
-			'Actionable Escape from Tarkov guides for raid and scav-run — meta breakdowns, loot routes, weapon tiers, and pro warmup routines. Pair these tips with our tarkov cheats pages for ESP boxes, soft aim, and cloud DMA when you need in-match tools.',
+			'Short Escape from Tarkov guides for PMC raids and Scav runs. Pair these tips with the Tarkov Cheats product pages when you need ESP, soft aim, or radar.',
 		readMore: 'Read guide',
 		published: 'Published',
 		updated: 'Updated',
-		relatedPosts: 'Related Escape from Tarkov guides',
+		relatedPosts: 'Related guides',
 		allPosts: 'All blog posts',
 		home: 'Tarkov Cheats home',
 		language: 'Language',

@@ -1,26 +1,25 @@
 import type { PageId } from './i18n/routing';
+import {
+	cannibalPageIds,
+	cannibalRedirectTargets,
+	getCannibalTargetId,
+	isCannibalPageId,
+	type CannibalPageId,
+} from './seo-cannibal-map';
 
-/**
- * EN URLs that 301 to a stronger pillar.
- * Locale URLs for these pageIds must also redirect to the matching pillar
- * so hreflang never points at a 301.
- */
-export const cannibalRedirectTargets = {
-	'best-cheats': 'hacks',
-	'aimbot-hack': 'tarkov-aimbot',
-	'esp-hack': 'tarkov-esp',
-} as const satisfies Partial<Record<PageId, PageId>>;
+export {
+	cannibalPageIds,
+	cannibalRedirectTargets,
+	isCannibalPageId,
+	type CannibalPageId,
+};
 
-export type CannibalPageId = keyof typeof cannibalRedirectTargets;
+export const sitemapExcludedPageIds = new Set<PageId>(cannibalPageIds as PageId[]);
 
-export const cannibalPageIds = Object.keys(cannibalRedirectTargets) as CannibalPageId[];
-
-export const sitemapExcludedPageIds = new Set<PageId>(cannibalPageIds);
-
-export function isCannibalPageId(pageId: string): pageId is CannibalPageId {
-	return pageId in cannibalRedirectTargets;
-}
+/** Primary commercial landing for the head term "tarkov cheats". */
+export const MONEY_PAGE_ID = 'hacks' as const satisfies PageId;
+export const MONEY_PATH = '/tarkov-cheats/' as const;
 
 export function getCannibalTarget(pageId: PageId): PageId {
-	return (cannibalRedirectTargets as Partial<Record<PageId, PageId>>)[pageId] ?? pageId;
+	return getCannibalTargetId(pageId) as PageId;
 }

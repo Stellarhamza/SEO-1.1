@@ -72,7 +72,7 @@ const faqSchema =
 		: null;
 
 const storeSchema =
-	pageId === 'pricing'
+	pageId === 'pricing' || pageId === 'hacks'
 		? {
 				'@type': 'Product',
 				'@id': `${pageUrl}#product`,
@@ -80,7 +80,7 @@ const storeSchema =
 				description: productInfo.summary,
 				image: crawl.url,
 				brand: { '@type': 'Brand', name: productInfo.brand },
-				url: pageUrl,
+				url: new URL('/tarkov-cheats/', siteConfig.url).href,
 				aggregateRating: {
 					'@type': 'AggregateRating',
 					ratingValue: customerReviewStats.averageRating.toFixed(1),
@@ -129,6 +129,7 @@ const eyebrowByPage: Partial<Record<PageId, string>> = {
 	hacks: locale === 'en' ? t('nav.preview') : ui.nav.hacks,
 	'tarkov-esp': ui.nav.esp,
 	'tarkov-aimbot': ui.nav.aimbot,
+	radar: 'Radar',
 	setup: ui.nav.setup,
 	faq: ui.nav.faq,
 };

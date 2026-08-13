@@ -37,6 +37,7 @@ const aggregateRating = {
 	worstRating: '1',
 };
 
+/** One commerce type only — Product. Reviews live on /reviews/. */
 const extraGraph: Record<string, unknown>[] = [
 	{
 		'@type': 'Product',
@@ -45,7 +46,7 @@ const extraGraph: Record<string, unknown>[] = [
 		description: productInfo.summary,
 		image: heroImage,
 		brand: { '@type': 'Brand', name: productInfo.brand },
-		url: canonicalURL,
+		url: new URL('/tarkov-cheats/', siteConfig.url).href,
 		aggregateRating,
 		offers: {
 			'@type': 'AggregateOffer',
@@ -55,25 +56,6 @@ const extraGraph: Record<string, unknown>[] = [
 			offerCount: productInfo.plans.length,
 			availability: 'https://schema.org/InStock',
 			url: siteConfig.checkoutUrl,
-		},
-	},
-	{
-		'@type': 'SoftwareApplication',
-		'@id': `${canonicalURL}#software`,
-		name: productInfo.name,
-		applicationCategory: 'UtilitiesApplication',
-		operatingSystem: 'Windows',
-		description: productInfo.summary,
-		url: canonicalURL,
-		image: heroImage,
-		brand: { '@type': 'Brand', name: productInfo.brand },
-		aggregateRating,
-		offers: {
-			'@type': 'AggregateOffer',
-			lowPrice: Math.min(...productInfo.plans.map((p) => p.price)).toFixed(2),
-			highPrice: Math.max(...productInfo.plans.map((p) => p.price)).toFixed(2),
-			priceCurrency: productInfo.currency,
-			offerCount: productInfo.plans.length,
 			offers: productInfo.plans.map((plan) => ({
 				'@type': 'Offer',
 				name: `${productInfo.name} ${plan.label}`,

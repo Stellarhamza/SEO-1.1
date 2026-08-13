@@ -21,7 +21,7 @@ export type LocaleSitemapEntry = {
 /** Non-English locale codes included in regional sitemaps. */
 export const i18nLocaleCodes = localeCodes.filter((code) => code !== defaultLocale);
 
-const BLOG_PAGES_PER_LOCALE = 18; // /blog/ index + 17 posts
+const BLOG_PAGES_PER_LOCALE = 0; // Locale blogs 301 to EN — not indexed
 
 /** Build sitemap entries for one non-English locale (product pages + blog URLs). */
 export function buildLocaleSitemapEntries(locale: LocaleCode): LocaleSitemapEntry[] {

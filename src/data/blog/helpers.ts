@@ -69,18 +69,18 @@ export function findPostBySlug(slug: string, locale?: LocaleCode): BlogPostDefin
 	});
 }
 
-/** Target URL for the same blog index or post in another locale. */
-export function getBlogLocaleSwitchHref(pathname: string, targetLocale: LocaleCode): string {
+/** Target URL for the same blog index or post — always English until translations exist. */
+export function getBlogLocaleSwitchHref(pathname: string, _targetLocale: LocaleCode): string {
 	const context = resolvePageContextFromPath(pathname);
 
 	if (context.blogSlug) {
-		const post = findPostBySlug(context.blogSlug, context.locale);
+		const post = findPostBySlug(context.blogSlug, context.locale) ?? findPostBySlug(context.blogSlug);
 		if (post) {
-			return getBlogPostPath(targetLocale, post.translations[targetLocale].slug);
+			return getBlogPostPath(defaultLocale, post.translations[defaultLocale].slug);
 		}
 	}
 
-	return getBlogBasePath(targetLocale);
+	return getBlogBasePath(defaultLocale);
 }
 
 export function getBlogPostPath(locale: LocaleCode, slug: string): string {
@@ -121,68 +121,42 @@ export function getPostBySlug(locale: LocaleCode, slug: string): ResolvedBlogPos
 	return post ? resolvePost(post, locale) : undefined;
 }
 
-/** Hreflang alternates for a blog post — current locale first, then x-default. */
+/** Hreflang alternates for a blog post — English-only until real translations exist. */
 export function getBlogPostHreflangAlternates(
 	post: BlogPostDefinition,
-	currentLocale: LocaleCode = defaultLocale,
+	_currentLocale: LocaleCode = defaultLocale,
 ) {
-	const byLocale = localeCodes.map((code) => ({
-		hreflang: locales.find((l) => l.code === code)!.hreflang,
-		href: absoluteBlogUrl(code, post.translations[code].slug),
-		code,
-	}));
-	const self = byLocale.find((alt) => alt.code === currentLocale)!;
-	const others = byLocale.filter((alt) => alt.code !== currentLocale);
+	const href = absoluteBlogUrl(defaultLocale, post.translations[defaultLocale].slug);
 	return [
-		{ hreflang: self.hreflang, href: self.href },
-		...others.map(({ hreflang, href }) => ({ hreflang, href })),
-		{
-			hreflang: 'x-default' as const,
-			href: absoluteBlogUrl(defaultLocale, post.translations[defaultLocale].slug),
-		},
+		{ hreflang: locales.find((l) => l.code === defaultLocale)!.hreflang, href },
+		{ hreflang: 'x-default' as const, href },
 	];
 }
 
-/** Hreflang alternates for a blog index — current locale first, then x-default. */
-export function getBlogIndexHreflangAlternates(currentLocale: LocaleCode = defaultLocale) {
-	const byLocale = localeCodes.map((code) => ({
-		hreflang: locales.find((l) => l.code === code)!.hreflang,
-		href: absoluteBlogUrl(code),
-		code,
-	}));
-	const self = byLocale.find((alt) => alt.code === currentLocale)!;
-	const others = byLocale.filter((alt) => alt.code !== currentLocale);
+/** Hreflang alternates for a blog index — English-only until real translations exist. */
+export function getBlogIndexHreflangAlternates(_currentLocale: LocaleCode = defaultLocale) {
+	const href = absoluteBlogUrl(defaultLocale);
 	return [
-		{ hreflang: self.hreflang, href: self.href },
-		...others.map(({ hreflang, href }) => ({ hreflang, href })),
-		{ hreflang: 'x-default' as const, href: absoluteBlogUrl(defaultLocale) },
+		{ hreflang: locales.find((l) => l.code === defaultLocale)!.hreflang, href },
+		{ hreflang: 'x-default' as const, href },
 	];
 }
 
 /**
- * ⚠️ QUARANTINED — DO NOT USE YET.
- * Generates static paths for localized blog routes (`/{lang}/blog/{slug}/`)
- * that are not implemented — no `src/pages/[lang]/blog/` route exists.
- * Do not wire into getStaticPaths (or sitemaps) until localized blog routes exist,
- * otherwise sitemaps/links would reference pages that are never built.
+ * Localized blog routes are not translated — do not build/index them.
+ * Use EN `/blog/` only. Locale paths 301 to EN via [lang]/blog pages.
  */
 export function getAllBlogStaticPaths(): { params: { lang?: string; slug: string }; props: { locale: LocaleCode } }[] {
-	const paths: { params: { lang?: string; slug: string }; props: { locale: LocaleCode } }[] = [];
-	for (const post of blogPosts) {
-		for (const locale of localeCodes) {
-			const slug = post.translations[locale].slug;
-			if (locale === defaultLocale) {
-				paths.push({ params: { slug }, props: { locale } });
-			} else {
-				paths.push({ params: { lang: locale, slug }, props: { locale } });
-			}
-		}
-	}
-	return paths;
+	return blogPosts.map((post) => ({
+		params: { slug: post.translations[defaultLocale].slug },
+		props: { locale: defaultLocale },
+	}));
 }
 
-/** Blog sitemap entries for one locale (index + all posts). */
+/** Blog sitemap entries for one locale (index + all posts). Non-EN returns empty. */
 export function getBlogSitemapEntriesForLocale(locale: LocaleCode) {
+	if (locale !== defaultLocale) return [];
+
 	const indexLastmod = blogPosts.reduce(
 		(max, post) => (post.updated > max ? post.updated : max),
 		blogPosts[0]?.updated ?? new Date().toISOString().slice(0, 10),
@@ -198,7 +172,7 @@ export function getBlogSitemapEntriesForLocale(locale: LocaleCode) {
 		{
 			path: getBlogBasePath(locale),
 			lastmod: indexLastmod,
-			priority: locale === defaultLocale ? 0.92 : 0.9,
+			priority: 0.92,
 			changefreq: 'daily',
 			images: [
 				{
@@ -212,13 +186,11 @@ export function getBlogSitemapEntriesForLocale(locale: LocaleCode) {
 	for (const post of blogPosts) {
 		const t = post.translations[locale];
 		const imageSrc = getBlogImageSrc(post.imageKey);
-		const isProductPost = /Tarkov Cheats|Tarkov Cheats|Aimbot|ESP|Undetected|Comparisons/i.test(
-			post.category,
-		);
+		const isProductPost = /Tarkov Cheats|Aimbot|ESP|Undetected|Comparisons/i.test(post.category);
 		entries.push({
 			path: getBlogPostPath(locale, t.slug),
 			lastmod: post.updated,
-			priority: isProductPost ? (locale === defaultLocale ? 0.95 : 0.93) : locale === defaultLocale ? 0.88 : 0.86,
+			priority: isProductPost ? 0.95 : 0.88,
 			changefreq: 'weekly',
 			images: [
 				{

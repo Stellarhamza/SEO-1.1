@@ -27,9 +27,9 @@ function HomeSeoInner({ faqs }: Props) {
 			hintKey: 'homeSeo.catStatusHint',
 			links: [
 				{ href: '/updates/', labelKey: 'homeSeo.linkLiveStatus' },
-				{ href: '/undetected-tarkov-cheats/', labelKey: 'homeSeo.linkUndetected' },
-				{ href: '/battleye-bypass/', labelKey: 'homeSeo.linkBattlEye' },
+				{ href: '/tarkov-cheats/', labelKey: 'homeSeo.linkUndetected' },
 				{ href: '/setup/', labelKey: 'homeSeo.linkSetup' },
+				{ href: '/faq/', labelKey: 'homeSeo.linkFaq' },
 			],
 		},
 		{
@@ -39,7 +39,7 @@ function HomeSeoInner({ faqs }: Props) {
 				{ href: '/pricing/', labelKey: 'homeSeo.linkPlans' },
 				{ href: '/reviews/', labelKey: 'homeSeo.linkReviews' },
 				{ href: '/tarkov-cheats/', labelKey: 'homeSeo.linkTarkovCheats' },
-				{ href: '/faq/', labelKey: 'homeSeo.linkFaq' },
+				{ href: '/features/', labelKey: 'homeSeo.linkAllFeatures' },
 			],
 		},
 		{

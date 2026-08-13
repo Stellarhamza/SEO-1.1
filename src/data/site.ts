@@ -41,12 +41,12 @@ export const trustSignals = {
 
 export const seoLandingPages = [
 	{ label: fillBrandTokens('{game} hacks'), href: '/tarkov-cheats/' },
-	{ label: fillBrandTokens('{game} cheats'), href: '/tarkov-cheats-2026/' },
+	{ label: fillBrandTokens('{primaryKeyword}'), href: '/tarkov-cheats/' },
 	{ label: fillBrandTokens('{game} esp'), href: '/tarkov-esp/' },
 	{ label: fillBrandTokens('{game} aimbot'), href: '/tarkov-aimbot/' },
-	{ label: fillBrandTokens('{game} hack download'), href: '/tarkov-cheat-download/' },
-	{ label: fillBrandTokens('Undetected {primaryKeyword}'), href: '/undetected-tarkov-cheats/' },
-	{ label: fillBrandTokens('{game} wallhack'), href: '/tarkov-wallhack/' },
+	{ label: fillBrandTokens('{game} setup'), href: '/setup/' },
+	{ label: fillBrandTokens('Undetected {primaryKeyword}'), href: '/tarkov-cheats/' },
+	{ label: fillBrandTokens('{game} wallhack'), href: '/tarkov-esp/' },
 	{ label: fillBrandTokens('{game} radar hack'), href: '/tarkov-radar-hack/' },
 ] as const;
 
@@ -73,17 +73,17 @@ export const footerNav = [
 export const footerExplore = [
 	{ label: fillBrandTokens('{brand} home'), href: '/' },
 	{ label: fillBrandTokens('{game} hacks pillar'), href: '/tarkov-cheats/' },
-	{ label: fillBrandTokens('Undetected {game} hacks'), href: '/undetected-tarkov-cheats/' },
-	{ label: fillBrandTokens('{game} wallhack ESP'), href: '/tarkov-wallhack/' },
-	{ label: fillBrandTokens('{game} radar hack'), href: '/tarkov-radar-hack/' },
-	{ label: fillBrandTokens('{antiCheat} bypass guide'), href: '/battleye-bypass/' },
-	{ label: fillBrandTokens('{game} cheats 2026'), href: '/tarkov-cheats-2026/' },
-	{ label: fillBrandTokens('{game} Aimbot controls'), href: '/tarkov-aimbot/' },
+	{ label: fillBrandTokens('Live {game} status'), href: '/updates/' },
 	{ label: fillBrandTokens('{game} ESP overlays'), href: '/tarkov-esp/' },
+	{ label: fillBrandTokens('{game} Aimbot controls'), href: '/tarkov-aimbot/' },
+	{ label: fillBrandTokens('{game} radar hack'), href: '/tarkov-radar-hack/' },
 	{ label: fillBrandTokens('Full {game} hack feature list'), href: '/features/' },
 	{ label: 'Monthly & lifetime pricing', href: '/pricing/' },
 	{ label: fillBrandTokens('{game} hack setup guide'), href: '/setup/' },
 	{ label: fillBrandTokens('{game} hacks FAQ'), href: '/faq/' },
+	{ label: fillBrandTokens('{brand} reviews'), href: '/reviews/' },
+	{ label: fillBrandTokens('{game} Intel blog'), href: '/blog/' },
+	{ label: fillBrandTokens('Contact {brand} support'), href: '/support/' },
 ] as const;
 
 export type FaqItem = {

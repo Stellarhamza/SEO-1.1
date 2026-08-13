@@ -219,32 +219,24 @@ function productPage(locale, pageKey, topicName, cta2href) {
 	const home = PAGE_META_HOME[locale];
 	const meta = PAGE_META_TAILS[pageKey] ?? { suffix: 'Tarkov Cheats', focus: 'ESP wallhack, radar, and Aimbot', altKeyword: 'ESP aimbot wallhack' };
 	const suffix = SUFFIX_I18N[locale]?.[pageKey] ?? meta.suffix;
-	let titleBase = topicName.includes('2026')
-		? `${topicName} | ${suffix}`
-		: `${topicName} 2026 | ${suffix}`;
-	// Short topic labels (FAQ, Support, etc.) need brand context for usable SERP titles.
-	if (titleBase.length < 35) {
-		titleBase = `${topicName} 2026 | Tarkov Cheats ${suffix}`;
-	}
+	const titleBase = `${topicName} | ${suffix}`;
 	return {
 		title: clampTitle(stripZadeyoFromMeta(titleBase)),
 		description: clampDesc(
-			stripZadeyoFromMeta(
-				`${topicName}: ${meta.focus} for Escape from Tarkov. ${p.delivery}. BattlEye maintenance included.`,
-			),
+			stripZadeyoFromMeta(`${topicName}: ${meta.focus}. ${p.delivery}. ${p.undetected} — ${p.win}.`),
 		),
-		h1: `${topicName} — ${suffix}`,
-		intro: p.s1(`${topicName} for ${p.maps}: ${meta.focus}.`),
-		imageAlt: 'tarkov cheats',
-		galleryTitle: 'tarkov cheats',
+		h1: topicName,
+		intro: p.s1(`${topicName}.`),
+		imageAlt: topicName,
+		galleryTitle: topicName,
 		heroImage: HERO_IMAGES[pageKey],
 		ctaPrimary: p.buy,
 		ctaSecondary: home.cta2,
 		ctaSecondaryHref: cta2href,
 		sections: [
-			section(`${topicName} — ${p.maps}`, p.s1(`Read enemy squads with ESP wallhack.`), p.s2()),
-			section(`ESP wallhack & ${p.undetected}`, p.s1('Toggle overlays for PMC raids and scav-runs.'), p.s3()),
-			section(`${p.delivery}`, p.s2(), p.s3()),
+			section(topicName, p.s1(`${meta.focus}.`), p.s2()),
+			section(`${p.undetected}`, p.s3(), p.s2()),
+			section(p.delivery, p.s2(), p.legal()),
 		],
 	};
 }
@@ -274,20 +266,20 @@ const TOPIC_NAMES = {
 };
 
 const CTA2_HREF = {
-	'tarkov-esp': '/tarkov-wallhack/',
+	'tarkov-esp': '/tarkov-cheats/',
 	'tarkov-aimbot': '/tarkov-esp/',
 	features: '/pricing/',
 	pricing: '/setup/',
 	setup: '/support/',
-	updates: '/undetected-tarkov-cheats/',
+	updates: '/tarkov-cheats/',
 	faq: '/support/',
 	support: '/setup/',
-	undetected: '/battleye-bypass/',
+	undetected: '/tarkov-cheats/',
 	wallhack: '/tarkov-esp/',
 	radar: '/tarkov-esp/',
-	'battleye': '/updates/',
-	'cheats-2026': '/features/',
-	hacks: '/undetected-tarkov-cheats/',
+	battleye: '/updates/',
+	'cheats-2026': '/tarkov-cheats/',
+	hacks: '/features/',
 	'cheat-download': '/setup/',
 	'mod-menu': '/features/',
 	'soft-aim': '/tarkov-aimbot/',

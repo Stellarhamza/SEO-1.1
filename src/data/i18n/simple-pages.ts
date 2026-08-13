@@ -124,14 +124,14 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		h1: 'Status',
 		intro: brandCopy.statusIntro,
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'Undetected guide',
-		ctaSecondaryHref: '/undetected-tarkov-cheats/',
+		ctaSecondary: 'Tarkov Cheats overview',
+		ctaSecondaryHref: '/tarkov-cheats/',
 		galleryTitle: 'In-game look',
 		sections: [
 			{
 				h2: 'Current status',
 				paragraphs: [
-					'As of 11 Aug 2026 the package is online for Escape from Tarkov on Windows PC. We post a new note here when a game or BattlEye patch needs a rebuild.',
+					'As of 13 Aug 2026 the package is online for Escape from Tarkov on Windows PC. We post a new note here when a game or BattlEye patch needs a rebuild.',
 					'If Status is green, you can raid. If we are rebuilding, wait for the next note.',
 				],
 				list: [
@@ -167,7 +167,7 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 			{
 				h2: 'What you get',
 				paragraphs: [
-					'One undetected package for Escape from Tarkov on Windows PC — built for PMC raids and Scav runs.',
+					'One license for Escape from Tarkov on Windows PC — built for PMC raids and Scav runs.',
 				],
 				list: [
 					'ESP / wallhack with distance',
@@ -185,7 +185,7 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 					'<a href="/tarkov-esp/">ESP guide</a>',
 					'<a href="/tarkov-aimbot/">Aimbot controls</a>',
 					'<a href="/tarkov-radar-hack/">Radar overlay</a>',
-					'<a href="/undetected-tarkov-cheats/">Undetected status</a>',
+					'<a href="/updates/">Live status</a>',
 				],
 			},
 			{
@@ -195,6 +195,97 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 					'<a href="/pricing/">Open store</a>',
 					'<a href="/setup/">Setup guide</a>',
 					'<a href="/updates/">Check status</a>',
+				],
+			},
+		],
+	}),
+	'tarkov-esp': page({
+		title: 'Tarkov ESP | {brand}',
+		description:
+			'Tarkov ESP and wallhack for Escape from Tarkov on Windows PC — player boxes, distance, loot filters, and clear overlays in raids.',
+		h1: 'ESP',
+		intro: 'See players and loot through walls during Tarkov raids. Part of the same {brand} license.',
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'Tarkov Cheats overview',
+		ctaSecondaryHref: '/tarkov-cheats/',
+		galleryTitle: 'ESP in raid',
+		sections: [
+			{
+				h2: 'What ESP shows',
+				paragraphs: ['Boxes, distance, and filters for PMCs, Scavs, bosses, and loot.'],
+				list: ['Player ESP', 'Loot markers', 'Boss and Scav filters'],
+			},
+			{
+				h2: 'When to use it',
+				paragraphs: ['Clear dorms, Factory, and scav runs without flooding the screen.'],
+				list: ['Tune opacity', 'Filter noise', 'Pair with radar'],
+			},
+			{
+				h2: 'Next steps',
+				paragraphs: ['ESP is included with aimbot and radar in one plan.'],
+				list: [
+					'<a href="/tarkov-cheats/">Full product</a>',
+					'<a href="/features/">All features</a>',
+					'<a href="/pricing/">Store</a>',
+				],
+			},
+		],
+	}),
+	'tarkov-aimbot': page({
+		title: 'Tarkov Aimbot | {brand}',
+		description:
+			'Tarkov aimbot and soft aim for Escape from Tarkov on Windows PC — FOV, smoothness, and bone priority you can tune per weapon.',
+		h1: 'Aimbot',
+		intro: 'Soft aim and aim assist you can tune for Tarkov. Included in the same {brand} license.',
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'Tarkov Cheats overview',
+		ctaSecondaryHref: '/tarkov-cheats/',
+		galleryTitle: 'Aimbot view',
+		sections: [
+			{
+				h2: 'Controls',
+				paragraphs: ['Set FOV, smoothness, and bone priority before you raid.'],
+				list: ['Soft aim strength', 'Bone priority', 'Hotkeys mid-match'],
+			},
+			{
+				h2: 'Play styles',
+				paragraphs: ['Keep settings subtle for longer sessions. Raise strength only when you accept more risk.'],
+				list: ['Legit soft aim', 'Per-weapon profiles', 'Works with ESP'],
+			},
+			{
+				h2: 'Next steps',
+				paragraphs: ['Aimbot ships with ESP and radar in one license.'],
+				list: [
+					'<a href="/tarkov-cheats/">Full product</a>',
+					'<a href="/features/">All features</a>',
+					'<a href="/pricing/">Store</a>',
+				],
+			},
+		],
+	}),
+	radar: page({
+		title: 'Tarkov Radar | {brand}',
+		description:
+			'Tarkov 2D radar for Escape from Tarkov on Windows PC — flank cues near extracts without filling the whole screen.',
+		h1: 'Radar',
+		intro: 'A simple 2D radar for threats outside your view. Included in the same {brand} license.',
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'Tarkov Cheats overview',
+		ctaSecondaryHref: '/tarkov-cheats/',
+		galleryTitle: 'Radar overlay',
+		sections: [
+			{
+				h2: 'What it shows',
+				paragraphs: ['Nearby enemy cues with adjustable range for PMC and Scav runs.'],
+				list: ['Flank awareness', 'Extract approaches', 'Adjustable range'],
+			},
+			{
+				h2: 'With ESP',
+				paragraphs: ['Use radar for threats you cannot see yet. Use ESP when you push.'],
+				list: [
+					'<a href="/tarkov-esp/">ESP guide</a>',
+					'<a href="/tarkov-cheats/">Full product</a>',
+					'<a href="/pricing/">Store</a>',
 				],
 			},
 		],

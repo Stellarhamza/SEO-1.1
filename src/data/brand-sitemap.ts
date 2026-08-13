@@ -120,10 +120,12 @@ export const brandSitemap: SitemapShape = {
 	images: normalizeImages(raw.sitemap?.images),
 };
 
-/** Prefer the later of page lastmod vs brand contentLastmod (Brand Studio bump). */
+/**
+ * Use the real page lastmod only.
+ * Do not inflate every URL with brand.sitemap.contentLastmod (looks like fake freshness).
+ */
 export function sitemapLastmod(pageLastmod: string): string {
-	const bump = brandSitemap.contentLastmod;
-	return bump && bump > pageLastmod ? bump : pageLastmod;
+	return pageLastmod;
 }
 
 export function resolvedSitemapImages(): BrandSitemapImage[] {

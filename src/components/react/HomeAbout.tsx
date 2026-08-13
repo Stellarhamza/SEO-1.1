@@ -20,7 +20,7 @@ function HomeAboutInner() {
 				{t('home.aboutP2Mid')}
 				<a href="/tarkov-aimbot/">{t('home.aboutAimbot')}</a>
 				{t('home.aboutP2Or')}
-				<a href="/undetected-tarkov-cheats/">{t('home.aboutUndetected')}</a>
+				<a href="/updates/">{t('home.aboutUndetected')}</a>
 				{t('home.aboutP2After')}
 			</p>
 		</section>
