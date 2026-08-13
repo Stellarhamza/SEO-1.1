@@ -7,6 +7,8 @@ import { brandCopy, brandSeo, seoPageTitle } from '../../data/site-core';
 import { seoDescription } from '../../data/brand';
 import { getSelfHreflangAlternates } from '../../data/i18n/routing';
 import { getReviewPath, reviewsBasePath } from '../../data/reviews';
+import { defaultCrawlImageSrc } from '../../data/page-images';
+import { contentSrcSet, productMainSizes } from '../../lib/responsive-images';
 
 const title = seoPageTitle(brandSeo.reviewsTitle);
 const description = seoDescription(brandSeo.reviewsDescription);
@@ -34,42 +36,15 @@ const hreflangAlternates = getSelfHreflangAlternates(reviewsBasePath);
 
 const extraGraph: Record<string, unknown>[] = [
 	{
-		'@type': 'Product',
-		'@id': `${siteConfig.url}/#product`,
-		name: productInfo.name,
-		description: productInfo.summary,
-		image: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
-		brand: { '@type': 'Brand', name: productInfo.brand },
-		url: `${siteConfig.url}/`,
-		aggregateRating: {
-			'@type': 'AggregateRating',
-			ratingValue: customerReviewStats.averageRating.toFixed(1),
-			reviewCount: customerReviewStats.totalCount,
-			bestRating: '5',
-			worstRating: '1',
-		},
-		review: customerReviews.map((review) => ({
-			'@type': 'Review',
-			'@id': `${new URL(getReviewPath(review.slug), siteConfig.url).href}#review`,
-			url: new URL(getReviewPath(review.slug), siteConfig.url).href,
-			author: { '@type': 'Person', name: review.handle },
-			datePublished: review.date,
-			reviewRating: {
-				'@type': 'Rating',
-				ratingValue: String(review.rating),
-				bestRating: '5',
-				worstRating: '1',
-			},
-			reviewBody: review.text,
-		})),
-	},
-	{
 		'@type': 'ItemList',
 		'@id': `${canonicalURL}#list`,
+		name: title,
+		description,
 		itemListElement: sortedReviews.map((review, index) => ({
 			'@type': 'ListItem',
 			position: index + 1,
 			url: new URL(getReviewPath(review.slug), siteConfig.url).href,
+			name: review.seoTitle,
 		})),
 	},
 ];
@@ -80,7 +55,7 @@ const extraGraph: Record<string, unknown>[] = [
 	description={description}
 	canonicalPath={reviewsBasePath}
 	hreflangAlternates={hreflangAlternates}
-	ogImage={siteConfig.defaultOgImage}
+	ogImage={defaultCrawlImageSrc}
 	ogImageAlt={fillBrandTokens('{brand} customer reviews')}
 	locale="en"
 	breadcrumbs={[
@@ -97,6 +72,20 @@ const extraGraph: Record<string, unknown>[] = [
 				<span aria-hidden="true">/</span>
 				<span aria-current="page">Reviews</span>
 			</nav>
+
+			<figure class="reviews-index__media">
+				<img
+					src={defaultCrawlImageSrc}
+					srcset={contentSrcSet(defaultCrawlImageSrc)}
+					sizes={productMainSizes}
+					alt={fillBrandTokens('{brand} customer reviews')}
+					width="1280"
+					height="720"
+					loading="eager"
+					decoding="async"
+					fetchpriority="high"
+				/>
+			</figure>
 
 			<header class="reviews-index__head">
 				<div>
@@ -166,6 +155,22 @@ const extraGraph: Record<string, unknown>[] = [
 	.reviews-index__wrap {
 		display: grid;
 		gap: 1.5rem;
+	}
+
+	.reviews-index__media {
+		margin: 0;
+		border-radius: var(--radius-md, 0.75rem);
+		overflow: hidden;
+		border: 1px solid var(--line-soft);
+		background: var(--bg-elevated);
+	}
+
+	.reviews-index__media img {
+		display: block;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 16 / 9;
+		object-fit: cover;
 	}
 
 	.reviews-index__crumbs {

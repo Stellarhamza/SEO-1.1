@@ -1,3 +1,5 @@
+import CANNIBAL_REDIRECTS from './cannibal-redirects.json';
+
 const CANONICAL_ORIGIN = 'https://besttarkovcheats.com';
 const APEX_HOST = 'besttarkovcheats.com';
 const WWW_HOST = 'www.besttarkovcheats.com';
@@ -30,11 +32,19 @@ const PATH_REDIRECTS = {
 	'/sitemap-en.xml/': '/sitemap-en.xml',
 	'/sitemap-i18n.xml/': '/sitemap-i18n.xml',
 	'/sitemap-images.xml/': '/sitemap-images.xml',
-	'/escape-from-tarkov-cheats': '/',
-	'/escape-from-tarkov-cheats/': '/',
+	// Exact-match keyword → pillar (not homepage)
+	'/escape-from-tarkov-cheats': '/tarkov-cheats/',
+	'/escape-from-tarkov-cheats/': '/tarkov-cheats/',
+	// Cannibalization → canonical landings
+	'/tarkov-esp-hack': '/tarkov-esp/',
+	'/tarkov-esp-hack/': '/tarkov-esp/',
+	'/tarkov-aimbot-hack': '/tarkov-aimbot/',
+	'/tarkov-aimbot-hack/': '/tarkov-aimbot/',
+	'/best-tarkov-cheats': '/tarkov-cheats/',
+	'/best-tarkov-cheats/': '/tarkov-cheats/',
 	'/tarkov-cheats-2026': '/tarkov-cheats-2026/',
-	'/warzone-cheats': '/tarkov-cheats-2026/',
-	'/warzone-cheats/': '/tarkov-cheats-2026/',
+	'/warzone-cheats': '/tarkov-cheats/',
+	'/warzone-cheats/': '/tarkov-cheats/',
 	'/warzone-hacks': '/tarkov-cheats/',
 	'/warzone-hacks/': '/tarkov-cheats/',
 	'/warzone-esp': '/tarkov-esp/',
@@ -71,8 +81,12 @@ const PATH_REDIRECTS = {
 	'/blog/creative-warmup-maps-pros-use/': '/blog/tarkov-warmup-maps-ranked/',
 	'/reviews/tarkov-esp-zero-build-review-buildsr4k': '/reviews/tarkov-esp-scav-run-review-buildsr4k/',
 	'/reviews/tarkov-esp-zero-build-review-buildsr4k/': '/reviews/tarkov-esp-scav-run-review-buildsr4k/',
-	'/reviews/tarkov-radar-hack-review-vanlifefn': '/reviews/tarkov-radar-hack-review-vanlifewz/',
-	'/reviews/tarkov-radar-hack-review-vanlifefn/': '/reviews/tarkov-radar-hack-review-vanlifewz/',
+	'/reviews/tarkov-radar-hack-review-vanlifefn': '/reviews/tarkov-radar-hack-review-vanlifeeft/',
+	'/reviews/tarkov-radar-hack-review-vanlifefn/': '/reviews/tarkov-radar-hack-review-vanlifeeft/',
+	'/reviews/tarkov-radar-hack-review-vanlifewz': '/reviews/tarkov-radar-hack-review-vanlifeeft/',
+	'/reviews/tarkov-radar-hack-review-vanlifewz/': '/reviews/tarkov-radar-hack-review-vanlifeeft/',
+	'/reviews/tarkov-controller-soft-aim-review-ctrl-player99': '/reviews/tarkov-soft-aim-review-ctrl-player99/',
+	'/reviews/tarkov-controller-soft-aim-review-ctrl-player99/': '/reviews/tarkov-soft-aim-review-ctrl-player99/',
 };
 
 const SECURITY_HEADERS = {
@@ -132,9 +146,10 @@ function applySecurityHeaders(headers, { html = false } = {}) {
 		if (!/charset=/i.test(contentType)) {
 			headers.set('Content-Type', 'text/html; charset=utf-8');
 		}
+		// Browser always revalidates; Cloudflare edge caches briefly for TTFB.
 		headers.set('Cache-Control', 'public, max-age=0, must-revalidate');
-		headers.set('CDN-Cache-Control', 'no-store');
-		headers.set('Cloudflare-CDN-Cache-Control', 'no-store');
+		headers.set('CDN-Cache-Control', 'public, s-maxage=600, stale-while-revalidate=86400');
+		headers.set('Cloudflare-CDN-Cache-Control', 'public, s-maxage=600, stale-while-revalidate=86400');
 	}
 }
 
@@ -177,6 +192,7 @@ export async function onRequest(context) {
 
 	const pathRedirect =
 		PATH_REDIRECTS[url.pathname] ??
+		CANNIBAL_REDIRECTS[url.pathname] ??
 		xmlTrailingSlashRedirect(url.pathname) ??
 		trailingSlashRedirect(url.pathname);
 	if (pathRedirect) {

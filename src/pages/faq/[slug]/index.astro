@@ -3,8 +3,9 @@ import Layout from '../../../layouts/Layout.astro';
 import Navbar from '../../../components/Navbar.astro';
 import SiteFooter from '../../../components/SiteFooter.astro';
 import { productInfo, seoFaqs, siteConfig, type FaqItem } from '../../../data/site';
-import { absoluteFaqUrl, faqBasePath, getFaqPath, getRelatedFaqs } from '../../../data/faq';
+import { absoluteFaqUrl, faqBasePath, getFaqCrawlImage, getFaqPath, getRelatedFaqs } from '../../../data/faq';
 import { getSelfHreflangAlternates } from '../../../data/i18n/routing';
+import { contentSrcSet, productMainSizes } from '../../../lib/responsive-images';
 
 export function getStaticPaths() {
 	return seoFaqs.map((faq) => ({
@@ -19,12 +20,18 @@ const canonicalPath = getFaqPath(faq.slug);
 const canonicalURL = absoluteFaqUrl(faq.slug);
 const hreflangAlternates = getSelfHreflangAlternates(canonicalPath);
 const related = getRelatedFaqs(faq.slug, 4);
+const photo = getFaqCrawlImage(faq);
 
 const extraGraph: Record<string, unknown>[] = [
 	{
 		'@type': 'FAQPage',
 		'@id': `${canonicalURL}#faq`,
 		url: canonicalURL,
+		image: photo.url,
+		primaryImageOfPage: {
+			'@type': 'ImageObject',
+			url: photo.url,
+		},
 		mainEntity: [
 			{
 				'@type': 'Question',
@@ -46,7 +53,7 @@ const extraGraph: Record<string, unknown>[] = [
 	description={faq.seoDescription}
 	canonicalPath={canonicalPath}
 	hreflangAlternates={hreflangAlternates}
-	ogImage={siteConfig.defaultOgImage}
+	ogImage={photo.src}
 	ogImageAlt={faq.question}
 	type="article"
 	locale="en"
@@ -70,6 +77,19 @@ const extraGraph: Record<string, unknown>[] = [
 			</nav>
 
 			<article class="faq-detail">
+				<figure class="faq-detail__media">
+					<img
+						src={photo.src}
+						srcset={contentSrcSet(photo.src)}
+						sizes={productMainSizes}
+						alt={faq.question}
+						width="1280"
+						height="720"
+						loading="eager"
+						decoding="async"
+						fetchpriority="high"
+					/>
+				</figure>
 				<p class="faq-detail__eyebrow">Before you buy</p>
 				<h1 class="faq-detail__title">{faq.question}</h1>
 				<div class="faq-detail__answer">
@@ -148,6 +168,22 @@ const extraGraph: Record<string, unknown>[] = [
 		background:
 			radial-gradient(ellipse 80% 60% at 0% 0%, color-mix(in srgb, var(--magenta) 12%, transparent), transparent 55%),
 			var(--bg-panel);
+	}
+
+	.faq-detail__media {
+		margin: 0 0 1.25rem;
+		border-radius: var(--radius-md, 0.75rem);
+		overflow: hidden;
+		border: 1px solid var(--line-soft);
+		background: var(--bg-elevated);
+	}
+
+	.faq-detail__media img {
+		display: block;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 16 / 9;
+		object-fit: cover;
 	}
 
 	.faq-detail__eyebrow {

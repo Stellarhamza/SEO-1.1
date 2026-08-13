@@ -1,5 +1,6 @@
 import { customerReviews, siteConfig } from './site';
 import { reviewsSitemapImageMeta } from './brand-sitemap';
+import { absoluteImageUrl, crawlPhotoMeta, defaultCrawlImageSrc } from './page-images';
 
 export const reviewsBasePath = '/reviews/';
 
@@ -11,10 +12,9 @@ export function absoluteReviewUrl(slug?: string): string {
 	return new URL(slug ? getReviewPath(slug) : reviewsBasePath, siteConfig.url).href;
 }
 
-const reviewOgImage = {
-	url: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
-	...reviewsSitemapImageMeta(),
-};
+export function getReviewCrawlImage(slug: string, handle: string, caption: string) {
+	return crawlPhotoMeta(slug, `Tarkov Cheats review by @${handle}`, caption);
+}
 
 /** English review routes for sitemap-en.xml — /reviews/ index + one URL per review. */
 export function getReviewSitemapEntries() {
@@ -22,6 +22,13 @@ export function getReviewSitemapEntries() {
 		(max, review) => (review.date > max ? review.date : max),
 		customerReviews[0]?.date ?? new Date().toISOString().slice(0, 10),
 	);
+
+	const indexMeta = reviewsSitemapImageMeta();
+	const indexImage = {
+		url: absoluteImageUrl(defaultCrawlImageSrc),
+		title: indexMeta.title,
+		caption: indexMeta.caption,
+	};
 
 	const entries: {
 		path: string;
@@ -35,11 +42,12 @@ export function getReviewSitemapEntries() {
 			lastmod: indexLastmod,
 			priority: 0.85,
 			changefreq: 'weekly',
-			images: [reviewOgImage],
+			images: [indexImage],
 		},
 	];
 
 	for (const review of customerReviews) {
+		const photo = getReviewCrawlImage(review.slug, review.handle, review.seoDescription);
 		entries.push({
 			path: getReviewPath(review.slug),
 			lastmod: review.date,
@@ -47,9 +55,9 @@ export function getReviewSitemapEntries() {
 			changefreq: 'monthly',
 			images: [
 				{
-					url: reviewOgImage.url,
-					title: `Tarkov Cheats review by @${review.handle}`,
-					caption: review.seoDescription,
+					url: photo.url,
+					title: photo.title,
+					caption: photo.caption,
 				},
 			],
 		});

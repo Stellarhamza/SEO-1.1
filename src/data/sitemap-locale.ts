@@ -6,6 +6,8 @@ import { siteConfig } from './site';
 import { pageSitemapMeta } from './sitemap-meta';
 import { escapeXml } from './sitemap-xml';
 import { sitemapLastmod } from './brand-sitemap';
+import { getPageCrawlImage } from './page-images';
+import { sitemapExcludedPageIds } from './seo-canonical';
 
 export type LocaleSitemapEntry = {
 	path: string;
@@ -21,15 +23,18 @@ export const i18nLocaleCodes = localeCodes.filter((code) => code !== defaultLoca
 
 const BLOG_PAGES_PER_LOCALE = 18; // /blog/ index + 17 posts
 
-/** Build sitemap entries for one non-English locale (25 product pages + 18 blog URLs). */
+/** Build sitemap entries for one non-English locale (product pages + blog URLs). */
 export function buildLocaleSitemapEntries(locale: LocaleCode): LocaleSitemapEntry[] {
 	if (locale === defaultLocale) {
 		throw new Error(`English pages belong in sitemap-en.xml, not sitemap-${locale}.xml`);
 	}
 
-	const productEntries: LocaleSitemapEntry[] = pageIds.map((pageId) => {
+	const productEntries: LocaleSitemapEntry[] = pageIds
+		.filter((pageId) => !sitemapExcludedPageIds.has(pageId))
+		.map((pageId) => {
 		const meta = pageSitemapMeta[pageId];
 		const page = pageId === 'home' ? null : getPageContent(locale, pageId);
+		const crawl = getPageCrawlImage(pageId);
 
 		return {
 			path: getLocalizedPath(pageId, locale),
@@ -37,14 +42,11 @@ export function buildLocaleSitemapEntries(locale: LocaleCode): LocaleSitemapEntr
 			lastmod: sitemapLastmod(meta.lastmod),
 			priority: meta.i18nPriority,
 			changefreq: meta.changefreq,
-			image:
-				pageId === 'home'
-					? undefined
-					: {
-							url: new URL(page!.heroImage, siteConfig.url).href,
-							title: page!.title,
-							caption: page!.imageAlt,
-						},
+			image: {
+				url: pageId === 'home' ? crawl.url : new URL(page!.heroImage, siteConfig.url).href,
+				title: pageId === 'home' ? crawl.title : page!.title,
+				caption: pageId === 'home' ? crawl.caption : page!.imageAlt,
+			},
 		};
 	});
 
@@ -58,6 +60,7 @@ export function buildLocaleSitemapEntries(locale: LocaleCode): LocaleSitemapEntr
 
 	return [...productEntries, ...blogEntries];
 }
+
 
 export { BLOG_PAGES_PER_LOCALE };
 

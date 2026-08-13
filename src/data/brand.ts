@@ -24,9 +24,9 @@ export const brand = {
 	logoRaster: '/images/tarkov-cheats-logo.png',
 	logoRasterWidth: 512,
 	logoRasterHeight: 512,
-	logoAlt: 'tarkov cheats logo',
-	defaultOgImage: '/images/tarkov-cheats-hero-full.png',
-	heroImage: '/images/tarkov-cheats-hero-full.png',
+	logoAlt: 'Tarkov Cheats logo',
+	defaultOgImage: '/images/tarkov-cheats-hero-1024w.webp',
+	heroImage: '/images/tarkov-cheats-hero-1024w.webp',
 
 	plans: [
 		{ id: 'monthly', label: 'Monthly', price: 35, duration: 'P30D' },
@@ -72,15 +72,18 @@ export const brand = {
 	 */
 	seo: {
 		homeTitle: 'Tarkov Cheats | Undetected EFT ESP & Aimbot',
-		homeDescription: 'Buy undetected Escape from Tarkov cheats for Windows PC. ESP, soft aim, and BattlEye updates in one license.',
+		homeDescription:
+			'Buy undetected Escape from Tarkov cheats for Windows PC. ESP, soft aim, radar, and BattlEye updates in one license.',
 		featuresTitle: '{game} Features | {brand}',
-		featuresDescription: 'Everything in one {game} license for Windows PC — ESP, aimbot, Cheats, and patch updates.',
+		featuresDescription:
+			'Everything in one {game} license for Windows PC — ESP, aimbot, radar, and patch updates.',
 		storeTitle: '{game} Store | {brand}',
 		storeDescription: 'Monthly and lifetime {game} plans. Same features. Instant delivery after payment.',
 		statusTitle: '{game} Status | {brand}',
 		statusDescription: 'Live status for {brand} after {game} or {antiCheat} patches. Check before you raid.',
-		previewTitle: '{game} Preview | {brand}',
-		previewDescription: 'Quick preview of {brand} — ESP, aimbot, extraction tracking, and updates after {game} patches.',
+		previewTitle: 'Tarkov Cheats | ESP, Aimbot & Radar Guide',
+		previewDescription:
+			'Undetected tarkov cheats for Escape from Tarkov — ESP, soft aim, radar, and BattlEye updates on Windows PC.',
 		setupTitle: '{game} Setup | {brand}',
 		setupDescription: 'Install and launch {brand} on Windows PC. Short setup steps after you buy.',
 		supportTitle: '{game} Support | {brand}',
@@ -88,32 +91,35 @@ export const brand = {
 		faqTitle: '{game} FAQ | {brand}',
 		faqDescription: 'Short answers about {brand} — delivery, setup, updates, and refunds.',
 		reviewsTitle: '{brand} Reviews | Buyer Feedback',
-		reviewsDescription: 'Real buyer reviews for {brand} — ESP, soft aim, extraction tracking, and patch updates on Windows PC.',
+		reviewsDescription:
+			'Buyer reviews for {brand} — ESP, soft aim, radar, and patch updates on Windows PC.',
 		blogTitle: '{game} Intel | {brand}',
 		blogDescription: 'Guides and notes for {game} — raid tips, ESP, aimbot, and {antiCheat} updates.',
 	},
 
 	/** On-page marketing copy (tokens allowed) */
 	copy: {
-		tagline: 'Undetected {primaryKeyword} — ESP, aimbot, and Hacks or PC',
-		summary: '{brand} is an undetected {game} cheat package for Windows PC. Includes ESP, soft aim, and extraction tracking, with {antiCheat} maintenance after patches.',
-		heroLede: 'Cheats available — ESP, Aimbot & ESP for Escape from Tarkov.',
+		tagline: 'Undetected {primaryKeyword} — ESP, aimbot, and radar for PC',
+		summary:
+			'{brand} is an undetected {game} cheat package for Windows PC. Includes ESP, soft aim, and radar, with {antiCheat} maintenance after patches.',
+		heroLede: 'Undetected ESP, soft aim, and radar for Escape from Tarkov on Windows PC.',
 		blogLabel: 'Tarkov Intel',
 		ctaBuy: 'Get Access',
 		ctaBuyShort: 'Buy',
 		featuresIntro: 'Everything included in one license for {game} on Windows PC.',
 		storeIntro: 'Pick a plan. Same features on both. Instant delivery after payment.',
 		statusIntro: 'Check here after a {game} or {antiCheat} patch before you raid.',
-		previewIntro: 'A quick look at {brand} — ESP, aimbot, radar, and updates after patches.',
+		previewIntro:
+			'{brand} for Escape from Tarkov — ESP wallhack, soft aim, 2D radar, and BattlEye rebuilds after patches.',
 		setupIntro: 'Install {brand} on Windows PC after you buy. Follow these short steps.',
 		supportIntro: 'Need help with {brand}? Email {email} with your order ID.',
 		faqIntro: 'Short answers about delivery, setup, updates, and refunds.',
-		reviewsIntro: 'Real feedback from {brand} buyers — ESP, soft aim, radar, and support.',
+		reviewsIntro: 'Feedback from {brand} buyers — ESP, soft aim, radar, and support.',
 		chipEsp: 'ESP / wallhack',
 		chipAim: 'Soft aim',
-		chipRadar: '2D ESP',
+		chipRadar: '2D radar',
 		chipUpdates: 'Patch updates',
-		navPreview: 'Preview',
+		navPreview: 'Cheats',
 		navFeatures: 'Features',
 		navStore: 'Store',
 		navStatus: 'Status',
@@ -127,7 +133,7 @@ export const brand = {
 	 */
 	sitemap: {
 		/** YYYY-MM-DD — Brand Studio can bump this on save to refresh crawl dates */
-		contentLastmod: '2026-08-11',
+		contentLastmod: '2026-08-13',
 		blogImageTitle: '{brand} blog',
 		blogImageCaption: 'Tips and updates for {primaryKeyword}',
 		reviewsImageTitle: '{brand} reviews',
@@ -135,33 +141,33 @@ export const brand = {
 		images: [
 			{
 				src: '/images/tarkov-cheats-esp.webp',
-				title: 'tarkov cheats esp',
-				caption: 'tarkov cheats esp wallhack overlay',
+				title: 'ESP overlay in Escape from Tarkov',
+				caption: 'Player ESP boxes and distance readouts during a raid',
 			},
 			{
 				src: '/images/tarkov-cheats-wallhack.webp',
-				title: 'tarkov cheats wallhack',
-				caption: 'tarkov cheats wallhack for raids',
+				title: 'Wallhack visibility for Tarkov raids',
+				caption: 'PMC and Scav outlines through walls and terrain',
 			},
 			{
 				src: '/images/tarkov-cheats-aimbot.webp',
-				title: 'tarkov cheats aimbot',
-				caption: 'tarkov cheats aimbot soft aim',
+				title: 'Soft aim assist for Tarkov',
+				caption: 'Configurable soft aim FOV and bone priority',
 			},
 			{
 				src: '/images/tarkov-cheats-aimbot-view.webp',
-				title: 'tarkov cheats features',
-				caption: 'tarkov cheats features aimbot view',
+				title: 'Aimbot view in Tarkov Cheats',
+				caption: 'In-menu aimbot controls for Windows PC',
 			},
 			{
 				src: '/images/tarkov-cheats-radar.webp',
-				title: 'tarkov cheats status',
-				caption: 'tarkov cheats radar after patch updates',
+				title: '2D radar threat overlay',
+				caption: 'Radar cues for flanks near extracts',
 			},
 			{
 				src: '/images/tarkov-cheats-raid.webp',
-				title: 'tarkov cheats store',
-				caption: 'tarkov cheats plans for Windows PC',
+				title: 'Tarkov Cheats license plans',
+				caption: 'Monthly and lifetime plans for Windows PC',
 			},
 		],
 	},

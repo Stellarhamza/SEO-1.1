@@ -98,7 +98,7 @@ export const homeFaqs: readonly FaqItem[] = [
 	faq({
 		question: 'What is {brand}?',
 		answer:
-			'{brand} is an undetected {primaryKeyword} package for Windows PC — also searched as {game} cheats and {game} hack. It includes ESP wallhack, 2D radar, and aimbot controls, with {antiCheat} maintenance and setup support.',
+			'{brand} is an undetected {primaryKeyword} package for Escape from Tarkov on Windows PC. It includes ESP wallhack, 2D radar, and aimbot controls, with {antiCheat} maintenance and setup support.',
 		slug: 'what-are-tarkov-cheats',
 		seoTitle: 'What is {brand}? | FAQ',
 		seoDescription:
@@ -141,9 +141,9 @@ export const homeFaqs: readonly FaqItem[] = [
 			'{brand} licenses are delivered digitally after payment confirmation. Timing varies by payment method and order review.',
 	}),
 	faq({
-		question: 'Where do I check updates after a {game} or {antiCheat} patch?',
+		question: 'Where do I check updates after an Escape from Tarkov or {antiCheat} patch?',
 		answer:
-			'Maintenance notes are posted on the Status page when a {game} or {antiCheat} update affects the package. That is the fastest place to confirm whether a new {brand} build is live.',
+			'Maintenance notes are posted on the Status page when an Escape from Tarkov or {antiCheat} update affects the package. That is the fastest place to confirm whether a new {brand} build is live.',
 		slug: 'where-to-check-updates',
 		seoTitle: 'Where to Check {game} / {antiCheat} Updates | FAQ',
 		seoDescription:
@@ -251,7 +251,7 @@ export const customerReviews = [
 		rating: 4,
 		text: 'Soft aim in Tarkov Cheats is easy to tune on PC. I changed FOV a little and it felt natural. Menu is clear enough.',
 		short: 'Soft aim in Tarkov Cheats is easy to tune on PC.',
-		slug: 'tarkov-controller-soft-aim-review-ctrl-player99',
+		slug: 'tarkov-soft-aim-review-ctrl-player99',
 		seoTitle: 'Soft Aim Review by @ctrl_player99 — 4/5 | {brand}',
 		seoDescription: '@ctrl_player99 rates {brand} soft aim 4/5 on Windows PC.',
 		date: '2026-07-11',

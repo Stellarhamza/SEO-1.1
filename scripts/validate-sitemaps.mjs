@@ -54,16 +54,29 @@ const IMAGE_SITEMAP_ENTRIES = countBrandSitemapImages();
 
 const BLOG_PAGES = 18; // /blog/ index + 17 posts
 const REVIEW_PAGES = 11; // /reviews/ index + 10 review detail pages
-const FAQ_PAGES = 11; // FAQ answer pages (index is in the 25 product pages)
-const ENGLISH_PAGES = 25 + BLOG_PAGES + REVIEW_PAGES + FAQ_PAGES;
+const FAQ_PAGES = 11; // FAQ answer pages (index is in the product pages)
+/** Product pages in sitemap — excludes 3 EN URLs that 301 to stronger pillars */
+const ENGLISH_PRODUCT_PAGES = 22;
+const ENGLISH_PAGES = ENGLISH_PRODUCT_PAGES + BLOG_PAGES + REVIEW_PAGES + FAQ_PAGES;
 const I18N_LOCALES = 21;
-const PRODUCT_PAGES_PER_LOCALE = 25;
+/** Locale product pages also exclude the same 3 cannibal pageIds */
+const PRODUCT_PAGES_PER_LOCALE = 22;
 const BLOG_PAGES_PER_LOCALE = 18;
 const PAGES_PER_LOCALE = PRODUCT_PAGES_PER_LOCALE + BLOG_PAGES_PER_LOCALE;
 const I18N_URLS = I18N_LOCALES * PAGES_PER_LOCALE;
 const TOTAL_PAGES = ENGLISH_PAGES + I18N_URLS;
+/** Full EN HTML may still emit redirect stubs for cannibal URLs; sitemaps omit them */
+const ENGLISH_HTML_PAGES = 25 + BLOG_PAGES + REVIEW_PAGES + FAQ_PAGES;
+const TOTAL_HTML_PAGES = ENGLISH_HTML_PAGES + I18N_LOCALES * PAGES_PER_LOCALE;
 const HREFLANG_PER_URL = 23;
 const SITEMAP_INDEX_ENTRIES = 1 + I18N_LOCALES + 1; // EN + locales + images
+
+/** Built HTML that intentionally 301s — allowed to be absent from sitemaps */
+const REDIRECT_ONLY_PATHS = new Set([
+	'/best-tarkov-cheats/',
+	'/tarkov-aimbot-hack/',
+	'/tarkov-esp-hack/',
+]);
 
 const ENGLISH_PATHS = [
 	'/',
@@ -84,9 +97,6 @@ const ENGLISH_PATHS = [
 	'/tarkov-cheat-download/',
 	'/tarkov-mod-menu/',
 	'/tarkov-soft-aim/',
-	'/best-tarkov-cheats/',
-	'/tarkov-aimbot-hack/',
-	'/tarkov-esp-hack/',
 	'/tarkov-unlock-all/',
 	'/privacy-policy/',
 	'/refund-policy/',
@@ -113,7 +123,7 @@ const ENGLISH_PATHS = [
 	'/reviews/tarkov-soft-aim-review-xkrypt0/',
 	'/reviews/tarkov-esp-scav-run-review-buildsr4k/',
 	'/reviews/tarkov-cloud-dma-review-dma-wizard/',
-	'/reviews/tarkov-controller-soft-aim-review-ctrl-player99/',
+	'/reviews/tarkov-soft-aim-review-ctrl-player99/',
 	'/reviews/tarkov-cheat-setup-review-stormchaser07/',
 	'/reviews/tarkov-loot-esp-review-lootgoblinx/',
 	'/reviews/tarkov-soft-aim-raid-review-rankedgrind42/',
@@ -296,6 +306,28 @@ async function main() {
 	}
 	if (errors === 0) ok(`All ${ENGLISH_PAGES} English canonical paths present in sitemap-en.xml`);
 
+	// Every page URL must include Google image sitemap annotations (SERP / Images crawl)
+	function countUrlsMissingImages(xml) {
+		const blocks = xml.split(/<url>/i).slice(1);
+		return blocks.filter((block) => !/<image:image[\s>]/i.test(block)).length;
+	}
+
+	const enMissingImages = countUrlsMissingImages(sitemapEn);
+	if (enMissingImages > 0) {
+		fail(`sitemap-en.xml: ${enMissingImages} <url> entries missing <image:image>`);
+		bump();
+	} else ok('Every English sitemap URL has <image:image>');
+
+	let localeMissingImages = 0;
+	for (const locale of I18N_LOCALE_CODES) {
+		const xml = await readFile(path.join(DIST, `sitemap-${locale}.xml`), 'utf8');
+		localeMissingImages += countUrlsMissingImages(xml);
+	}
+	if (localeMissingImages > 0) {
+		fail(`Locale sitemaps: ${localeMissingImages} <url> entries missing <image:image>`);
+		bump();
+	} else ok('Every locale sitemap URL has <image:image>');
+
 	// No overlap between EN and i18n sitemaps
 	const overlap = enLocs.filter((u) => i18nLocs.includes(u));
 	if (overlap.length > 0) {
@@ -395,18 +427,20 @@ async function main() {
 	]);
 
 	const htmlSet = new Set(htmlPaths);
-	const missingFromSitemap = [...htmlSet].filter((p) => !sitemapPaths.has(p));
+	const missingFromSitemap = [...htmlSet].filter(
+		(p) => !sitemapPaths.has(p) && !REDIRECT_ONLY_PATHS.has(p),
+	);
 	const extraInSitemap = [...sitemapPaths].filter((p) => !htmlSet.has(p));
 
-	if (htmlSet.size !== TOTAL_PAGES) {
-		fail(`Built HTML pages: expected ${TOTAL_PAGES}, got ${htmlSet.size}`);
+	if (htmlSet.size !== TOTAL_HTML_PAGES) {
+		fail(`Built HTML pages: expected ${TOTAL_HTML_PAGES}, got ${htmlSet.size}`);
 		bump();
-	} else ok(`${TOTAL_PAGES} indexable HTML pages built`);
+	} else ok(`${TOTAL_HTML_PAGES} HTML pages built (${REDIRECT_ONLY_PATHS.size} EN redirect-only omitted from sitemaps)`);
 
 	if (missingFromSitemap.length > 0) {
 		fail(`HTML pages missing from sitemaps: ${missingFromSitemap.slice(0, 5).join(', ')}${missingFromSitemap.length > 5 ? '…' : ''}`);
 		bump();
-	} else ok('Every built HTML page is listed in a sitemap');
+	} else ok('Every indexable HTML page is listed in a sitemap');
 
 	if (extraInSitemap.length > 0) {
 		fail(`Sitemap URLs without HTML: ${extraInSitemap.slice(0, 5).join(', ')}`);

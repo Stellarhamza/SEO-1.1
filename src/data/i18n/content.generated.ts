@@ -107,7 +107,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Tarkov Cheats 2026 | Undetected ESP, Aimbot & Wallhack",
 					description: "Tarkov cheats & tarkov cheats for PC — undetected tarkov esp, wallhack, radar and tarkov aimbot. Compare plans and 2026 BattlEye updates.",
 					h1: "Tarkov Cheats — Undetected ESP, Wallhack & Aimbot",
-					intro: "Tarkov Cheats is the undetected tarkov cheats package for Windows PC — also searched as tarkov cheats and tarkov cheat. Tarkov esp wallhack, 2D radar, and tarkov aimbot with BattlEye maintenance after every major patch.",
+					intro: "Tarkov Cheats is the undetected tarkov cheats package for Windows PC — built for Escape from Tarkov on Windows PC. Tarkov esp wallhack, 2D radar, and tarkov aimbot with BattlEye maintenance after every major patch.",
 					imageAlt: "tarkov cheats esp",
 					galleryTitle: "Tarkov Cheats gallery — ESP, Aimbot and wallhack visuals",
 					ctaPrimary: "Buy Tarkov Cheats",
@@ -126,7 +126,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "ESP wallhack, radar hack, and Aimbot in one license",
 							paragraphs: [
-								"Instead of stacking separate tools, Tarkov Cheats bundles player ESP wallhack, loot markers, 2D radar overlays, and Aimbot profiles in one undetected package built for PMC raids and scav-runs — covering both tarkov cheats and tarkov cheats search intent.",
+								"Instead of stacking separate tools, Tarkov Cheats bundles player ESP wallhack, loot markers, 2D radar overlays, and Aimbot profiles in one undetected package built for PMC raids and scav-runs — covering both “tarkov cheats” and “escape from tarkov cheats” search intent.",
 								"Browse the <a href=\"/tarkov-esp/\">ESP</a>, <a href=\"/tarkov-aimbot/\">Aimbot</a>, <a href=\"/tarkov-wallhack/\">wallhack</a>, and <a href=\"/tarkov-radar-hack/\">radar</a> pages for control details — or jump to <a href=\"/pricing/\">Pricing</a> for monthly and lifetime options.",
 								"Before patch days, check <a href=\"https://www.escapefromtarkov.com/support\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov Support</a> for Battlestate Games service health, then confirm our maintenance notes so you are not queueing on an outdated build.",
 								"Ready to buy? Open <a href=\"/pricing/\">Pricing</a>, follow <a href=\"/setup/\">Setup</a> after delivery, and keep <a href=\"/faq/\">FAQ</a> / <a href=\"/support/\">Support</a> bookmarked for license questions.",
@@ -139,7 +139,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Tarkov ESP 2026 | Player Boxes & Wallhack",
 					description: "Tarkov ESP for Windows PC — player boxes, loot markers, and distance readouts. Part of our undetected tarkov cheats for Escape from Tarkov.",
 					h1: "Tarkov ESP — Player Boxes & Wallhack",
-					intro: "Tarkov esp visibility tools for raid and scav-run. Read enemy squads, vehicles, loot, and distance before you commit — toggleable tarkov esp wallhack overlays bundled in our tarkov cheats package.",
+					intro: "Tarkov esp visibility tools for raid and scav-run. Read enemy squads, PMCs, Scavs, loot, and distance before you commit — toggleable tarkov esp wallhack overlays bundled in our tarkov cheats package.",
 					imageAlt: "tarkov cheats radar",
 					galleryTitle: "Tarkov ESP overlay visuals",
 					ctaPrimary: "Buy Tarkov Cheats",
@@ -149,22 +149,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "What Tarkov ESP solves in raids",
 							paragraphs: [
-								"Tarkov maps punish incomplete information. Tarkov Cheats ESP wallhack helps you spot enemy squads early, notice vehicles before they push your position, and mark chests worth the detour.",
+								"Tarkov maps punish incomplete information. Tarkov Cheats ESP wallhack helps you spot enemy squads early, spot PMCs and Scavs before they push your angle, and mark high-value loot worth the detour.",
 								"On raid, scav-run, and competitive lobbies, that visibility gap is often the difference between a clean third-party and a wiped squad. ESP ships bundled with radar overlays and Aimbot in one license.",
-								"Tarkov’s live seasons and map updates are published by <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a>. When POIs or loot rules shift, ESP categories stay useful because they track players and containers — not a single static landmark.",
+								"Tarkov’s live seasons and map updates are published by Battlestate Games (<a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a>). When POIs or loot rules shift, ESP categories stay useful because they track players and containers — not a single static landmark.",
 							],
 						},
 						{
-							h2: "Player, vehicle, and loot ESP wallhack categories",
+							h2: "Player, boss, and loot ESP wallhack categories",
 							paragraphs: [
-								"Toggle enemy player outlines, vehicle threat cues, supply-drop awareness markers, and loot or chest pins so only BR-critical ESP wallhack overlays stay active during rotations.",
+								"Toggle enemy player outlines, boss markers, extract cues, and loot pins so only raid-critical ESP wallhack overlays stay active during rotations.",
 								"Distance readouts and snapline options help you control engagement range. Team and enemy colour coding supports PMC raids and scav-runs lobbies alike.",
 								"Compare category detail on the <a href=\"/tarkov-wallhack/\">wallhack page</a> and pair visibility with the <a href=\"/tarkov-radar-hack/\">radar hack</a> for flanks outside your FOV.",
 							],
 							list: [
 								"Enemy player ESP outlines with distance",
-								"Loot and chest markers for faster rotations",
-								"Vehicle and supply-drop threat cues",
+								"Loot and container markers for faster rotations",
+								"Boss and extract awareness cues",
 								"Toggleable categories to reduce overlay noise",
 							],
 						},
@@ -173,7 +173,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Tarkov Cheats ESP wallhack is maintained for Tarkov with rebuilds after BattlEye anti-cheat patches. Check the <a href=\"/updates/\">Updates page</a> before you queue — no cheat guarantees permanent undetected status.",
 								"Read <a href=\"https://www.battleye.com/\" target=\"_blank\" rel=\"noopener noreferrer\">BattlEye Anti-Cheat</a> for how anti-cheat updates ship, then cross-check our <a href=\"/battleye-bypass/\">BattlEye bypass maintenance guide</a> after major patches.",
-								"Checkout includes instant digital delivery for Windows 10 and 11. After purchase, follow the <a href=\"/setup/\">Setup guide</a> and tune overlays before your first ranked block.",
+								"Checkout includes instant digital delivery for Windows 10 and 11. After purchase, follow the <a href=\"/setup/\">Setup guide</a> and tune overlays before your first raid.",
 							],
 						},
 						{
@@ -181,16 +181,16 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ESP alone wins information wars; Aimbot covers the firefight. Review <a href=\"/tarkov-aimbot/\">Aimbot controls</a> if you want one license for visibility and assist.",
 								"Compare monthly ($35) and lifetime ($150) on <a href=\"/pricing/\">Pricing</a>, then keep <a href=\"/support/\">Support</a> ready if activation needs a human reply.",
-								"Still researching? The <a href=\"/best-tarkov-cheats/\">best Tarkov cheats guide</a> and <a href=\"/tarkov-cheats-2026/\">2026 buyer guide</a> summarize the full stack.",
+								"Still researching? The <a href=\"/tarkov-cheats/\">Tarkov cheats pillar</a> and <a href=\"/tarkov-cheats-2026/\">2026 buyer guide</a> summarize the full stack.",
 							],
 						},
 					],
 					heroImage: "/images/tarkov-cheats-radar.webp",
 				},
 				"tarkov-aimbot": {
-					title: "Tarkov Aimbot 2026 | Soft Aim for PC & Controllers",
+					title: "Tarkov Aimbot 2026 | Soft Aim for Windows PC",
 					description: "Tarkov aimbot with soft aim tuning for Windows PC. FOV, bone priority, and hotkeys bundled with ESP boxes in our tarkov cheats package.",
-					h1: "Tarkov Aimbot — Soft Aim for PC & Controllers",
+					h1: "Tarkov Aimbot — Soft Aim for Windows PC",
 					intro: "Configurable Aimbot tools for Tarkov firefights. Smoothness, FOV, bone priority, and per-weapon profiles — bundled with ESP wallhack and radar in one undetected license.",
 					imageAlt: "tarkov cheats aimbot",
 					galleryTitle: "Tarkov Aimbot combat previews",
@@ -202,22 +202,22 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Aimbot tuned for Tarkov combat pace",
 							paragraphs: [
 								"Tarkov mixes long-range AR fights with close-quarters SMG pushes. Tarkov Cheats Aimbot includes smoothness, FOV, and sensitivity controls tuned for that pace — with hotkey toggles mid-match.",
-								"Bone priority and target selection options cover closest player, lowest health, or highest-threat targets during squad fights and reboot rounds.",
+								"Bone priority and target selection options cover closest player, lowest health, or highest-threat targets during squad fights and close-range scav fights.",
 								"Weapon balance and season rules change via <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a>. Revisit Aimbot FOV and smoothness after major combat patches so assist still matches the live TTK windows.",
 							],
 						},
 						{
 							h2: "Per-weapon Aimbot profiles",
 							paragraphs: [
-								"Save separate Aimbot profiles for assault rifles, SMGs, and snipers. Switch between long-range AR beams and close-quarters room clears without reopening menus every spawn.",
-								"Prefer softer tracking? Read the <a href=\"/tarkov-soft-aim/\">soft aim guide</a>. Want the search term most players use? See <a href=\"/tarkov-aimbot-hack/\">aimbot hack</a>.",
+								"Save separate Aimbot profiles for ARs, SMGs, and bolt-actions. Switch between long-range DMR fights and dorms clears without reopening menus every raid.",
+								"Prefer softer tracking? Read the <a href=\"/tarkov-soft-aim/\">soft aim guide</a>.",
 								"Aimbot ships alongside <a href=\"/tarkov-esp/\">ESP wallhack</a> and <a href=\"/tarkov-radar-hack/\">2D radar</a> in the same Tarkov Cheats license.",
 							],
 							list: [
 								"Smoothness, FOV, and sensitivity sliders",
 								"Bone priority and threat-based targeting",
 								"Hotkeys to toggle Aimbot mid-match",
-								"Per-weapon profile slots for AR / SMG / sniper",
+								"Per-weapon profile slots for AR / SMG / bolt-action",
 							],
 						},
 						{
@@ -240,7 +240,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
 				},
 				features: {
-					title: "Tarkov Cheats Features | ESP, Soft Aim,",
+					title: "Tarkov Cheats Features | ESP, Soft Aim & RadarRadar",
 					description: "Full tarkov cheats feature list: ESP boxes, soft aim, radar, and toggles for Windows PC. Review controls before checkout.",
 					h1: "Tarkov Cheats Features — Full Control List",
 					intro: "Every ESP wallhack, radar hack, and Aimbot control included in the Tarkov Cheats package for Tarkov on Windows PC — with BattlEye maintenance after major patches.",
@@ -253,15 +253,15 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "ESP wallhack and visibility features",
 							paragraphs: [
-								"Enemy player ESP wallhack, vehicle and supply-drop threat cues, loot and chest markers, distance readouts, snaplines, and toggleable ESP categories for BR-critical overlays only.",
+								"Enemy player ESP wallhack, boss and extract awareness cues, loot and container markers, distance readouts, snaplines, and toggleable ESP categories for raid-critical overlays only.",
 								"Team and enemy colour coding supports PMC raids and scav-runs. Deep-dive the <a href=\"/tarkov-esp/\">ESP page</a> and <a href=\"/tarkov-wallhack/\">wallhack guide</a> for category-level detail.",
-								"Map and loot systems evolve with <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a> season updates — toggleable ESP categories keep overlays useful when POIs rotate.",
+								"Map and loot systems evolve with <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a> wipe and map updates — toggleable ESP categories keep overlays useful when POIs rotate.",
 							],
 						},
 						{
 							h2: "Radar hack and Aimbot controls",
 							paragraphs: [
-								"2D radar overlay with directional threat cues, configurable range for rotations and final circles, plus Aimbot smoothness, FOV, bone priority, hotkeys, and per-weapon profiles.",
+								"2D radar overlay with directional threat cues, configurable range for rotations and late-raid extracts, plus Aimbot smoothness, FOV, bone priority, hotkeys, and per-weapon profiles.",
 								"All tools share in-client toggles so you can adjust ESP, radar, and Aimbot during live Tarkov sessions. See <a href=\"/tarkov-radar-hack/\">radar</a> and <a href=\"/tarkov-aimbot/\">Aimbot</a> for settings walkthroughs.",
 								"Prefer a menu-first workflow? The <a href=\"/tarkov-mod-menu/\">mod menu page</a> explains mid-match toggles without alt-tabbing.",
 							],
@@ -279,7 +279,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				pricing: {
 					title: "Tarkov Cheats Pricing | $35/mo or $150 Life",
-					description: "Tarkov cheats pricing: $35/month or $150 lifetime for ESP, soft aim, boxes, and on Windows PC. Instant delivery — pick a plan.",
+					description: "Tarkov cheats pricing: $35/month or $150 lifetime for ESP, soft aim, and radar on Windows PC. Instant delivery — pick a plan.",
 					h1: "Tarkov Cheats Pricing — Monthly & Lifetime",
 					intro: "Choose monthly or lifetime access to undetected Tarkov Cheats — ESP wallhack, radar hack, and Aimbot for Tarkov on Windows PC. Instant digital delivery after payment.",
 					imageAlt: "tarkov cheats",
@@ -309,16 +309,16 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Review the <a href=\"/refund-policy/\">Refund Policy</a> before purchase. For billing or delivery issues, contact Support with your order details.",
 								"Prices are listed in USD. Availability is worldwide for Windows 10 and 11 PCs.",
-								"Still comparing tools? Read <a href=\"/best-tarkov-cheats/\">best Tarkov cheats</a>, <a href=\"/undetected-tarkov-cheats/\">undetected status</a>, and <a href=\"/faq/\">FAQ</a> before you checkout.",
+								"Still comparing tools? Read <a href=\"/tarkov-cheats/\">Tarkov cheats</a>, <a href=\"/undetected-tarkov-cheats/\">undetected status</a>, and <a href=\"/faq/\">FAQ</a> before you checkout.",
 							],
 						},
 					],
 					heroImage: "/images/tarkov-cheats-raid.webp",
 				},
 				setup: {
-					title: "Tarkov Cheats Setup | PC & Controller Guide",
+					title: "Tarkov Cheats Setup | Windows PC Guide",
 					description: "Set up tarkov cheats on Windows PC — activate ESP boxes, soft aim profiles, and . Check BattlEye updates before your first queue.",
-					h1: "Tarkov Cheats Setup — PC & Controller Guide",
+					h1: "Tarkov Cheats Setup — Windows PC Guide",
 					intro: "Install and configure Tarkov Cheats for Tarkov on Windows 10 or 11. Activate your license, load ESP wallhack and Aimbot profiles, and verify BattlEye maintenance status before queueing.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "Tarkov Cheats setup visuals",
@@ -337,7 +337,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Activate ESP wallhack and Aimbot profiles",
 							paragraphs: [
-								"Follow the delivery instructions in your license email. Load default ESP wallhack categories for players, loot, and vehicles — then tune radar range and Aimbot smoothness to your playstyle.",
+								"Follow the delivery instructions in your license email. Load default ESP wallhack categories for PMCs, Scavs, and loot — then tune radar range and Aimbot smoothness to your playstyle.",
 								"Use in-client hotkeys to toggle ESP, radar, and Aimbot mid-match. Details for BattlEye module live on <a href=\"/tarkov-esp/\">ESP</a>, <a href=\"/tarkov-aimbot/\">Aimbot</a>, and <a href=\"/tarkov-mod-menu/\">mod menu</a>.",
 								"Prefer a soft tracking feel? Start with the <a href=\"/tarkov-soft-aim/\">soft aim</a> recommendations before raising aggressiveness.",
 							],
@@ -355,7 +355,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				updates: {
 					title: "Tarkov Cheats Updates | BattlEye Maintenance Log",
-					description: "Tarkov cheats update log: BattlEye rebuilds for ESP boxes, soft aim, and on Windows PC. Check status before queueing after patches.",
+					description: "Tarkov cheats update log: BattlEye rebuilds for ESP boxes, soft aim, and radar on Windows PC. Check status before queueing after patches.",
 					h1: "Tarkov Cheats Updates — Maintenance Log",
 					intro: "Track BattlEye maintenance and Tarkov patch rebuilds for the undetected ESP wallhack, radar hack, and Aimbot package. Check here before queueing after major updates.",
 					imageAlt: "tarkov cheats",
@@ -384,15 +384,15 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Staying undetected after patches",
 							paragraphs: [
 								"No cheat guarantees permanent undetected status. Combine maintenance updates with responsible in-game settings and patch awareness.",
-								"Follow season notes from <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a>, then confirm our rebuild is live before ranked.",
-								"For urgent status questions after an BattlEye update, contact <a href=\"/support/\">Support</a> with your license tier and last played build version.",
+								"Follow season notes from <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a>, then confirm our rebuild is live before you queue.",
+								"For urgent status questions after a BattlEye update, contact <a href=\"/support/\">Support</a> with your license tier and last played build version.",
 							],
 						},
 					],
 					heroImage: "/images/tarkov-cheats-esp.webp",
 				},
 				faq: {
-					title: "Tarkov Cheats FAQ | ESP, Soft Aim & BattlEye Answers",
+					title: "Tarkov Cheats FAQ | ESP, Soft Aim & RadarBattlEye Answers",
 					description: "Tarkov cheats FAQ: ESP boxes, soft aim, BattlEye maintenance, and pricing for PC. Clear answers before you buy.",
 					h1: "Tarkov Cheats FAQ — Common Questions",
 					intro: "Answers about undetected Tarkov Cheats — ESP wallhack, radar hack, Aimbot, BattlEye maintenance, checkout, and Tarkov compatibility on Windows PC.",
@@ -407,7 +407,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Tarkov Cheats is an undetected cheat package for Tarkov on Windows PC. It includes ESP wallhack, 2D radar-style awareness, and Aimbot controls with BattlEye maintenance updates.",
 								"Packages cover raid and scav-run. Explore <a href=\"/features/\">Features</a> for the full control list and <a href=\"/tarkov-esp/\">ESP</a> / <a href=\"/tarkov-aimbot/\">Aimbot</a> for module detail.",
-								"Tarkov itself is published by <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a>. Cheats are third-party tools and may violate Battlestate Games' rules — use is at your own risk.",
+								"Tarkov itself is published by Battlestate Games (<a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a>). Cheats are third-party tools and may violate Battlestate Games' rules — use is at your own risk.",
 							],
 						},
 						{
@@ -443,7 +443,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "When to contact support",
 							paragraphs: [
-								"RBattlEye out for order issues, license activation failures, ESP wallhack or Aimbot setup questions, and post-patch problems after BattlEye maintenance rebuilds.",
+								"Reach out for order issues, license activation failures, ESP wallhack or Aimbot setup questions, and post-patch problems after BattlEye maintenance rebuilds.",
 								"Include your order ID, license tier (monthly or lifetime), Windows version, and a clear description of the issue.",
 								"Many answers already live in <a href=\"/faq/\">FAQ</a>, <a href=\"/setup/\">Setup</a>, and <a href=\"/updates/\">Updates</a> — check those first for faster resolution.",
 							],
@@ -452,7 +452,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Response times and scope",
 							paragraphs: [
 								"Support requests are reviewed daily. Tarkov Cheats support covers delivery, billing, setup, and maintenance — not in-game coaching or account recovery for Battlestate Games bans.",
-								"Account and game policy questions belong with <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a>. We can help with license delivery and product configuration only.",
+								"Account and game policy questions belong with Battlestate Games. We can help with license delivery and product configuration only.",
 								"Check the Updates page and FAQ before opening a ticket — many post-patch questions are answered there.",
 							],
 						},
@@ -469,7 +469,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				undetected: {
 					title: "Undetected Tarkov Cheats 2026 | BattlEye Maintenance",
-					description: "Undetected tarkov cheats with BattlEye maintenance for ESP boxes, soft aim, and on Windows PC. Check status before you queue.",
+					description: "Undetected tarkov cheats with BattlEye maintenance for ESP boxes, soft aim, and radar on Windows PC. Check status before you queue.",
 					h1: "Undetected Tarkov Cheats — BattlEye Maintenance",
 					intro: "How Tarkov Cheats stays maintained for Tarkov after BattlEye anti-cheat patches — ESP wallhack, radar hack, and Aimbot rebuilds for Windows PC.",
 					imageAlt: "undetected tarkov cheats",
@@ -507,9 +507,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				wallhack: {
 					title: "Tarkov Wallhack 2026 | ESP Boxes & Visibility",
-					description: "Tarkov wallhack ESP with player boxes and loot markers for Windows PC. Undetected tarkov cheats with — learn overlays and buy.",
+					description: "Tarkov wallhack ESP with player boxes and loot markers for Windows PC. Undetected tarkov cheats — learn overlays and buy.",
 					h1: "Tarkov Wallhack — ESP Boxes & Visibility",
-					intro: "Tarkov wallhack ESP for Tarkov — see players, loot, vehicles, and chests through toggleable wallhack overlays built for PMC raids and scav-runs.",
+					intro: "Tarkov wallhack ESP for Tarkov — see players, loot, bosses, and containers through toggleable wallhack overlays built for PMC raids and scav-runs.",
 					imageAlt: "tarkov cheats wallhack",
 					galleryTitle: "Tarkov wallhack ESP gallery",
 					ctaPrimary: "Buy Tarkov Cheats",
@@ -519,8 +519,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Wallhack ESP vs raw aim tools",
 							paragraphs: [
-								"A Tarkov wallhack focuses on information — player outlines, loot pins, vehicle threat cues — rather than automatic aiming. Tarkov Cheats bundles wallhack ESP with radar and optional Aimbot in one license.",
-								"Toggle categories so only the wallhack overlays you need stay active during rotations and endgame circles.",
+								"A Tarkov wallhack focuses on information — player outlines, loot pins, boss threat cues — rather than automatic aiming. Tarkov Cheats bundles wallhack ESP with radar and optional Aimbot in one license.",
+								"Toggle categories so only the wallhack overlays you need stay active during rotations and extract holds.",
 								"For the broader ESP keyword page see <a href=\"/tarkov-esp/\">Tarkov ESP</a>; for combat assist see <a href=\"/tarkov-aimbot/\">Aimbot</a>.",
 							],
 						},
@@ -537,7 +537,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ESP wallhack modules rebuild after BattlEye anti-cheat patches. Follow the <a href=\"/updates/\">Updates page</a> and complete checkout for instant license delivery on Windows PC.",
 								"Learn the full maintenance story on <a href=\"/undetected-tarkov-cheats/\">undetected Tarkov cheats</a> and <a href=\"/battleye-bypass/\">BattlEye bypass</a>.",
-								"Ready to buy? Compare <a href=\"/pricing/\">Pricing</a> or continue to the <a href=\"/tarkov-esp-hack/\">ESP hack</a> landing for alternate search wording.",
+								"Ready to buy? Compare <a href=\"/pricing/\">Pricing</a> or continue to the <a href=\"/tarkov-esp/\">ESP hack</a> landing for alternate search wording.",
 							],
 						},
 					],
@@ -545,7 +545,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				radar: {
 					title: "Tarkov Radar Hack 2026 | 2D Threat Overlay",
-					description: "Tarkov radar hack for flank awareness on Windows PC. Bundled with ESP boxes, soft aim, and in our tarkov cheats package.",
+					description: "Tarkov radar hack for flank awareness on Windows PC. Bundled with ESP boxes, soft aim, and radar in our tarkov cheats package.",
 					h1: "Tarkov Radar Hack — 2D Threat Awareness",
 					intro: "2D radar-style overlay for Tarkov — directional threat cues for nearby players outside your line of sight, bundled with ESP wallhack and Aimbot.",
 					imageAlt: "tarkov cheats radar",
@@ -558,14 +558,14 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Why radar hack matters in Tarkov",
 							paragraphs: [
 								"raids fights happen in three dimensions — rooftops, windows, and flanks. A 2D radar overlay shows nearby player threats outside direct line of sight so you can reposition before a third party.",
-								"Tarkov Cheats radar complements <a href=\"/tarkov-esp/\">ESP wallhack</a> markers during squad pushes and final-circle scrims.",
+								"Tarkov Cheats radar complements <a href=\"/tarkov-esp/\">ESP wallhack</a> markers during squad pushes and extract camp fights.",
 								"Mode rules and seasonal changes come from <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a>. Radar range remains configurable when map scale or mobility meta shifts.",
 							],
 						},
 						{
 							h2: "Configurable radar range",
 							paragraphs: [
-								"Adjust radar range for early rotations versus tight endgame circles. Directional cues highlight flanks during building clears and vehicle pushes across raid and scav-run.",
+								"Adjust radar range for early rotations versus tight extract holds. Directional cues highlight flanks during building clears and flank pushes across raid and scav-run.",
 								"Toggle radar alongside ESP and Aimbot with in-client hotkeys during live matches — see the <a href=\"/tarkov-mod-menu/\">mod menu</a> page.",
 								"Combat follow-up lives on <a href=\"/tarkov-aimbot/\">Aimbot</a> when you convert radar info into a fight.",
 							],
@@ -583,7 +583,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				battleye: {
 					title: "BattlEye Bypass Tarkov | Tarkov Cheats Maintenance",
-					description: "How tarkov cheats rebuild after BattlEye patches — ESP boxes, soft aim, and maintenance for Windows PC. Read before queueing.",
+					description: "How tarkov cheats rebuild after BattlEye patches — ESP boxes, soft aim, and radar maintenance for Windows PC. Read before queueing.",
 					h1: "BattlEye Bypass — Tarkov Cheats Maintenance",
 					intro: "Understand BattlEye anti-cheat maintenance for Tarkov Cheats — how ESP wallhack, radar hack, and Aimbot rebuild after Tarkov security updates.",
 					imageAlt: "tarkov cheats battleye",
@@ -601,7 +601,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							],
 						},
 						{
-							h2: "What happens after an BattlEye patch",
+							h2: "What happens after a BattlEye patch",
 							paragraphs: [
 								"The team tests ESP overlays, radar signatures, and Aimbot profiles against the new build, publishes status on <a href=\"/updates/\">Updates</a>, and ships rebuilt packages to active licenses.",
 								"Confirm Battlestate Games service health on <a href=\"https://www.escapefromtarkov.com/support\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov Support</a> if the launcher or matchmaking fails during the same window.",
@@ -620,9 +620,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
 				},
 				"cheats-2026": {
-					title: "Tarkov Cheats 2026 | Best Hacks with ESP &",
-					description: "Best tarkov cheats 2026: ESP boxes, soft aim, and for Windows PC. Undetected tarkov cheats with BattlEye maintenance — compare and buy.",
-					h1: "Tarkov Cheats 2026 — ESP, Soft Aim & ",
+					title: "Tarkov Cheats 2026 | ESP Soft Aim & Radar",
+					description: "Best tarkov cheats 2026: ESP boxes, soft aim, and radar for Windows PC. Undetected tarkov cheats with BattlEye maintenance — compare and buy.",
+					h1: "Tarkov Cheats 2026 — ESP, Soft Aim & Radar",
 					intro: "The 2026 Tarkov Cheats package for Tarkov — undetected ESP wallhack, radar hack, and Aimbot with BattlEye maintenance, instant delivery, and Windows PC support.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "Tarkov Cheats 2026 gallery",
@@ -650,7 +650,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Before you buy in 2026",
 							paragraphs: [
 								"Read the <a href=\"/tarkov-cheats/\">Tarkov cheats</a> pillar, Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.",
-								"Also compare the <a href=\"/best-tarkov-cheats/\">best Tarkov cheats</a> checklist, <a href=\"/blog/tarkov-cheats-2026-whats-new/\">2026 blog guide</a>, and <a href=\"/faq/\">FAQ</a>.",
+								"Also compare the <a href=\"/tarkov-cheats/\">Tarkov cheats</a> checklist, <a href=\"/blog/tarkov-cheats-2026-whats-new/\">2026 blog guide</a>, and <a href=\"/faq/\">FAQ</a>.",
 								"Support is available at support@besttarkovcheats.com via the <a href=\"/support/\">Support page</a>.",
 							],
 						},
@@ -677,9 +677,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							],
 						},
 						{
-							h2: "Tarkov cheats vs tarkov cheats — same stack, clear pages",
+							h2: "How this Tarkov cheats pillar fits nearby pages",
 							paragraphs: [
-								"Searchers use tarkov cheats and tarkov cheats interchangeably. This pillar focuses on hacks language; the <a href=\"/tarkov-cheats-2026/\">tarkov cheats 2026</a> and <a href=\"/best-tarkov-cheats/\">best Tarkov cheats</a> pages cover buyer comparisons in cheats wording.",
+								"Use this pillar for the core product overview. For year-specific buying notes, see the <a href=\"/tarkov-cheats-2026/\">tarkov cheats 2026</a> and <a href=\"/tarkov-cheats/\">Tarkov cheats</a> pages cover buyer comparisons in cheats wording.",
 								"Deep-dive modules: <a href=\"/tarkov-esp/\">Tarkov ESP</a>, <a href=\"/tarkov-aimbot/\">Tarkov Aimbot</a>, <a href=\"/tarkov-wallhack/\">wallhack</a>, <a href=\"/tarkov-radar-hack/\">radar hack</a>, and <a href=\"/tarkov-soft-aim/\">soft aim</a>.",
 								"Blog guides expand BattlEye keyword: <a href=\"/blog/tarkov-cheats-complete-guide-2026/\">hacks complete guide</a>, <a href=\"/blog/escape-from-tarkov-cheats-buyers-guide/\">cheats buyers guide</a>, and <a href=\"/blog/undetected-tarkov-cheats-battleye/\">undetected BattlEye notes</a>.",
 							],
@@ -687,9 +687,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Tarkov cheats vs single-feature tools",
 							paragraphs: [
-								"Standalone hacks often cover only wallhack or only aim assist. Tarkov Cheats maps the full BR loop: read enemy squads, track vehicles and chests, spot flanks on radar, and tune Aimbot per weapon class.",
+								"Standalone hacks often cover only wallhack or only aim assist. Tarkov Cheats maps the full raid loop: read enemy squads, track bosses and containers, spot flanks on radar, and tune Aimbot per weapon class.",
 								"Compare the <a href=\"/tarkov-esp/\">ESP</a>, <a href=\"/tarkov-aimbot/\">Aimbot</a>, and <a href=\"/features/\">Features</a> pages — or review <a href=\"/pricing/\">Pricing</a> for monthly and lifetime licenses.",
-								"Related landings: <a href=\"/tarkov-cheat-download/\">cheat download</a>, <a href=\"/tarkov-mod-menu/\">mod menu</a>, <a href=\"/tarkov-aimbot-hack/\">aimbot hack</a>, <a href=\"/tarkov-esp-hack/\">ESP hack</a>.",
+								"Related landings: <a href=\"/tarkov-cheat-download/\">cheat download</a>, <a href=\"/tarkov-mod-menu/\">mod menu</a>, <a href=\"/tarkov-aimbot/\">aimbot</a>, <a href=\"/tarkov-esp/\">ESP</a>.",
 							],
 						},
 						{
@@ -705,7 +705,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				"cheat-download": {
 					title: "Tarkov Hack Download 2026 | Instant Access",
-					description: "Tarkov cheat download with instant license delivery — ESP boxes, soft aim, and for Windows PC. Buy, activate, and play.",
+					description: "Tarkov cheat download with instant license delivery — ESP boxes, soft aim, and radar for Windows PC. Buy, activate, and play.",
 					h1: "Tarkov Hack Download — Instant License Delivery",
 					intro: "How Tarkov cheat download works for Tarkov — digital license delivery after payment confirmation, with ESP wallhack, radar hack, and Aimbot access on Windows PC.",
 					imageAlt: "tarkov cheats download",
@@ -725,7 +725,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "What your download unlocks",
 							paragraphs: [
-								"Every Tarkov cheat download includes player ESP wallhack, loot and chest markers, 2D radar overlays, Aimbot profiles, and in-client toggles for PMC raids and scav-runs.",
+								"Every Tarkov cheat download includes player ESP wallhack, loot and container markers, 2D radar overlays, Aimbot profiles, and in-client toggles for PMC raids and scav-runs.",
 								"Monthly ($35) and lifetime ($150) plans share the same feature stack — compare options on the <a href=\"/pricing/\">Pricing page</a>.",
 								"Feature detail: <a href=\"/features/\">Features</a>. Module pages: <a href=\"/tarkov-esp/\">ESP</a>, <a href=\"/tarkov-aimbot/\">Aimbot</a>.",
 							],
@@ -763,7 +763,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Mod menu categories for PMC raids and scav-runs",
 							paragraphs: [
-								"Separate ESP wallhack categories for players, loot, chests, and vehicles let you reduce overlay noise during rotations and endgame circles.",
+								"Separate ESP wallhack categories for players, loot, containers, and bosses let you reduce overlay noise during rotations and extract holds.",
 								"Radar hack range and Aimbot smoothness adjust from the same mod menu — useful when ${EXT.tarkov} seasons change fight distances and mobility.",
 								"Soft tracking players should start with <a href=\"/tarkov-soft-aim/\">soft aim</a> profiles before aggressive FOV.",
 							],
@@ -795,13 +795,13 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Tarkov soft aim refers to Aimbot behavior tuned for smooth, natural-looking tracking rather than instant snap. Tarkov Cheats exposes smoothness, FOV, and sensitivity sliders so you control how assist feels in BR firefights.",
 								"Bone priority and target selection cover closest player, lowest health, or highest-threat targets during squad fights.",
-								"Full Aimbot documentation: <a href=\"/tarkov-aimbot/\">Tarkov Aimbot</a>. Alternate wording: <a href=\"/tarkov-aimbot-hack/\">aimbot hack</a>.",
+								"Full Aimbot documentation: <a href=\"/tarkov-aimbot/\">Tarkov Aimbot</a>. Alternate wording: <a href=\"/tarkov-aimbot/\">aimbot hack</a>.",
 							],
 						},
 						{
 							h2: "Soft aim profiles per weapon class",
 							paragraphs: [
-								"Save separate soft aim profiles for assault rifles, SMGs, and snipers. Switch between long-range AR beams and close-quarters room clears with hotkeys mid-match.",
+								"Save separate soft aim profiles for ARs, SMGs, and bolt-actions. Switch between long-range AR beams and close-quarters room clears with hotkeys mid-match.",
 								"Weapon TTKs shift with <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a> balance patches — retune smoothness after major combat updates.",
 								"Soft aim ships alongside <a href=\"/tarkov-esp/\">ESP wallhack</a> and <a href=\"/tarkov-radar-hack/\">2D radar</a> overlays.",
 							],
@@ -821,7 +821,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Best Tarkov Cheats 2026 | Buyer Guide",
 					description: "Best tarkov cheats for 2026: ESP boxes, soft aim, and BattlEye maintenance on Windows PC. Use this checklist before checkout.",
 					h1: "Best Tarkov Cheats — 2026 Buyer Guide",
-					intro: "Compare the best Tarkov cheats for Tarkov in 2026 — undetected ESP wallhack, radar hack, and Aimbot in one maintained package with BattlEye anti-cheat rebuilds and instant delivery.",
+					intro: "Compare the Tarkov cheats for Tarkov in 2026 — undetected ESP wallhack, radar hack, and Aimbot in one maintained package with BattlEye anti-cheat rebuilds and instant delivery.",
 					imageAlt: "best tarkov cheats",
 					galleryTitle: "Best Tarkov cheats gallery",
 					ctaPrimary: "Buy Tarkov Cheats",
@@ -829,9 +829,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					ctaSecondaryHref: "/pricing/",
 					sections: [
 						{
-							h2: "What makes the best Tarkov cheats in 2026",
+							h2: "What makes the Tarkov cheats in 2026",
 							paragraphs: [
-								"The best Tarkov cheats combine active BattlEye maintenance, a full ESP wallhack and radar stack, configurable Aimbot, and clear update communication — not a stale build from a prior season.",
+								"The Tarkov cheats combine active BattlEye maintenance, a full ESP wallhack and radar stack, configurable Aimbot, and clear update communication — not a stale build from a prior season.",
 								"Tarkov Cheats covers raid and scav-run with in-client toggles and post-patch rebuilds.",
 								"Verify the live game is healthy via <a href=\"https://www.escapefromtarkov.com/support\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov Support</a>, then confirm our <a href=\"/updates/\">Updates</a> note before you judge any package “best.”",
 							],
@@ -845,11 +845,11 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							],
 						},
 						{
-							h2: "Buying the best Tarkov cheats safely",
+							h2: "Buying the Tarkov cheats safely",
 							paragraphs: [
 								"Purchase through secure checkout for instant digital delivery. Read Setup, FAQ, and Updates pages before your first queue — and contact Support with order details if activation needs help.",
 								"No cheat guarantees permanent undetected status — combine maintenance with responsible in-game settings.",
-								"Remember: using cheats can violate <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a> terms. Proceed only if you accept that risk.",
+								"Remember: using cheats can violate Battlestate Games terms. Proceed only if you accept that risk.",
 							],
 						},
 					],
@@ -877,7 +877,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Aimbot hack controls and hotkeys",
 							paragraphs: [
-								"Bone priority options cover head, chest, or dynamic targets. Hotkeys enable or disable aimbot hack mid-match without opening menus during rotations or final circles.",
+								"Bone priority options cover head, chest, or dynamic targets. Hotkeys enable or disable aimbot hack mid-match without opening menus during rotations or late-raid extracts.",
 								"Per-weapon profile slots separate long-range AR tuning from close-quarters SMG settings.",
 								"Balance patches from <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a> can change ideal FOV — retune after major weapon updates.",
 							],
@@ -897,7 +897,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Tarkov ESP Hack 2026 | Player Boxes & Loot",
 					description: "Tarkov ESP hack with player boxes and loot markers for Windows PC. Undetected tarkov cheats with — see overlays and buy.",
 					h1: "Tarkov ESP Hack — Player Boxes Guide",
-					intro: "Tarkov ESP hack overlays for Tarkov — player outlines, vehicle threat cues, loot and chest markers with distance readouts across raid and scav-run.",
+					intro: "Tarkov ESP hack overlays for Tarkov — player outlines, boss threat cues, loot and container markers with distance readouts across raid and scav-run.",
 					imageAlt: "tarkov cheats esp",
 					galleryTitle: "Tarkov ESP hack gallery",
 					ctaPrimary: "Buy Tarkov Cheats",
@@ -915,7 +915,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "ESP hack categories for raids",
 							paragraphs: [
-								"Toggle player ESP hack, loot markers, chest pins, and vehicle cues independently so only BR-critical overlays stay active during rotations.",
+								"Toggle player ESP hack, loot markers, chest pins, and vehicle cues independently so only raid-critical overlays stay active during rotations.",
 								"Team and enemy colour coding supports PMC raids and scav-runs.",
 								"POI and loot changes publish through <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a> — keep categories toggled to what the current map rewards.",
 							],
@@ -933,7 +933,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				"unlock-all": {
 					title: "Tarkov Unlock All 2026 | What It Really Means",
-					description: "Tarkov unlock all explained vs real tarkov cheats — ESP boxes, soft aim, and for Windows PC. Know what you are buying.",
+					description: "Tarkov unlock all explained vs real tarkov cheats — ESP boxes, soft aim, and radar for Windows PC. Know what you are buying.",
 					h1: "Tarkov Unlock All — What Players Search For",
 					intro: "Tarkov unlock all is a common search term for Tarkov — this page clarifies what unlock-all tools claim versus the ESP wallhack, radar hack, and Aimbot tools Tarkov Cheats actually provides on Windows PC.",
 					imageAlt: "tarkov cheats",
@@ -947,15 +947,15 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Tarkov unlock all searches often refer to instant access to weapons, camos, skins, or battle pass tiers. Those claims differ from visibility and combat-assist tools like ESP wallhack and Aimbot.",
 								"Tarkov Cheats focuses on in-match awareness — player ESP, loot markers, radar overlays, and configurable Aimbot — not account-wide cosmetic unlocks.",
-								"Cosmetics and Battle Pass items are sold through <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a>. Be wary of unlock-all downloads that promise free skins — they are often scams.",
+								"Cosmetics and wipe progression items are sold through <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a>. Be wary of unlock-all downloads that promise free skins — they are often scams.",
 							],
 						},
 						{
 							h2: "Visibility tools vs unlock-all claims",
 							paragraphs: [
 								"ESP wallhack helps you spot enemy squads, vehicles, and high-value loot during live matches. Radar hack adds flank awareness; Aimbot covers combat assist with smoothness and hotkey controls.",
-								"For loadout planning during a match, loot and chest markers speed BR rotations — see the <a href=\"/tarkov-esp/\">ESP</a> and <a href=\"/features/\">Features</a> pages for the full tool list.",
-								"Related: <a href=\"/tarkov-cheats/\">Tarkov cheats</a> and <a href=\"/best-tarkov-cheats/\">best Tarkov cheats</a>.",
+								"For loadout planning during a match, loot and container markers speed map rotations — see the <a href=\"/tarkov-esp/\">ESP</a> and <a href=\"/features/\">Features</a> pages for the full tool list.",
+								"Related: <a href=\"/tarkov-cheats/\">Tarkov cheats</a> and <a href=\"/tarkov-cheats/\">Tarkov cheats</a>.",
 							],
 						},
 						{
@@ -1011,7 +1011,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				refund: {
 					title: "Refund Policy | Tarkov Cheats",
-					description: "Refund policy for Tarkov Cheats. Digital delivery terms and eligibility for tarkov cheats packages with ESP, soft aim, and .",
+					description: "Refund policy for Tarkov Cheats. Digital delivery terms and eligibility for tarkov cheats packages with ESP, soft aim, and radar.",
 					h1: "Refund Policy",
 					intro: "Refund terms for Tarkov Cheats licenses — ESP wallhack, radar hack, and Aimbot packages purchased through checkout for Tarkov.",
 					imageAlt: "tarkov cheats",
@@ -1046,7 +1046,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				terms: {
 					title: "Terms of Use 2026 | Tarkov Cheats Rules",
-					description: "Terms of use for besttarkovcheats.com and Tarkov Cheats licenses. Usage rules, anti-cheat risk, and liability for PC and controller cheats.",
+					description: "Terms of use for besttarkovcheats.com and Tarkov Cheats licenses. Usage rules, anti-cheat risk, and liability for Windows PC cheats.",
 					h1: "Terms of Use",
 					intro: "Terms governing use of besttarkovcheats.com and Tarkov Cheats licenses for Tarkov on Windows PC.",
 					imageAlt: "tarkov cheats",
@@ -1065,7 +1065,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Risk and anti-cheat disclaimer",
 							paragraphs: [
-								"Using cheats in Tarkov may violate <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a> terms and result in account penalties. Tarkov Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"Using cheats in Tarkov may violate Battlestate Games terms and result in account penalties. Tarkov Cheats provides maintenance but does not guarantee undetected status or account safety.",
 								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/undetected-tarkov-cheats/\">undetected status</a>.",
 							],
 						},

@@ -1,12 +1,9 @@
 import { siteConfig } from './site';
-import { tarkovImages } from './tarkov';
 import { englishPaths, pageIds, type PageId } from './i18n/routing';
 import { pageSitemapMeta } from './sitemap-meta';
-import {
-	pageSitemapImageLabels,
-	resolvedSitemapImages,
-	sitemapLastmod,
-} from './brand-sitemap';
+import { resolvedSitemapImages, sitemapLastmod } from './brand-sitemap';
+import { sitemapExcludedPageIds } from './seo-canonical';
+import { getPageCrawlImage } from './page-images';
 
 export type SitemapImage = {
 	url: string;
@@ -31,57 +28,22 @@ const img = (path: string, title: string, caption: string): SitemapImage => ({
 });
 
 /**
- * One screenshot per page — paths stay in tarkovImages; titles/captions from brand tokens.
+ * Canonical English sitemap entries — excludes URLs that 301 to a stronger pillar
+ * (avoids Search Console “Submitted URL has redirect” noise).
  */
-const pageImageSrcById: Record<PageId, string> = {
-	home: tarkovImages.hero,
-	'tarkov-esp': tarkovImages.playerEsp,
-	'tarkov-aimbot': tarkovImages.aimbotCombat,
-	features: tarkovImages.aimbotSkeleton,
-	pricing: tarkovImages.cheatsCombat,
-	setup: tarkovImages.playerEsp,
-	updates: tarkovImages.hero,
-	faq: tarkovImages.aimbotSkeleton,
-	support: tarkovImages.cheatsCombat,
-	undetected: tarkovImages.espWallhack,
-	wallhack: tarkovImages.espWallhack,
-	radar: tarkovImages.playerEsp,
-	battleye: tarkovImages.aimbotCombat,
-	'cheats-2026': tarkovImages.hero,
-	hacks: tarkovImages.cheatsCombat,
-	'cheat-download': tarkovImages.cheatsCombat,
-	'mod-menu': tarkovImages.playerEsp,
-	'soft-aim': tarkovImages.aimbotSkeleton,
-	'best-cheats': tarkovImages.hero,
-	'aimbot-hack': tarkovImages.aimbotSkeleton,
-	'esp-hack': tarkovImages.espWallhack,
-	'unlock-all': tarkovImages.playerEsp,
-	privacy: tarkovImages.aimbotCombat,
-	refund: tarkovImages.cheatsCombat,
-	terms: tarkovImages.aimbotSkeleton,
-};
-
-for (const pageId of pageIds) {
-	if (!pageImageSrcById[pageId]) {
-		throw new Error(`[sitemap] No image path configured for pageId: ${pageId}`);
-	}
-}
-
-/**
- * Canonical English sitemap entries — always includes every pageId from routing.
- * Absolute locs use siteConfig.url (from brand.url).
- */
-export const pageSitemapEntries: PageSitemapEntry[] = pageIds.map((pageId) => {
-	const meta = pageSitemapMeta[pageId];
-	const labels = pageSitemapImageLabels(pageId);
-	return {
-		path: englishPaths[pageId],
-		priority: meta.priority,
-		changefreq: meta.changefreq,
-		lastmod: sitemapLastmod(meta.lastmod),
-		images: [img(pageImageSrcById[pageId], labels.title, labels.caption)],
-	};
-});
+export const pageSitemapEntries: PageSitemapEntry[] = pageIds
+	.filter((pageId) => !sitemapExcludedPageIds.has(pageId))
+	.map((pageId) => {
+		const meta = pageSitemapMeta[pageId];
+		const crawl = getPageCrawlImage(pageId);
+		return {
+			path: englishPaths[pageId],
+			priority: meta.priority,
+			changefreq: meta.changefreq,
+			lastmod: sitemapLastmod(meta.lastmod),
+			images: [{ url: crawl.url, title: crawl.title, caption: crawl.caption }],
+		};
+	});
 
 /** Unique keyword images for the dedicated image sitemap (editable in Brand Studio). */
 export const imageSitemapEntries: SitemapImage[] = resolvedSitemapImages().map((entry) =>

@@ -1,4 +1,5 @@
 import { seoFaqs, siteConfig, type FaqItem } from './site';
+import { crawlPhotoMeta } from './page-images';
 
 export const faqBasePath = '/faq/';
 
@@ -26,15 +27,28 @@ export function getRelatedFaqs(slug: string, count = 4): FaqItem[] {
 	return related;
 }
 
-/** English FAQ answer routes for sitemap-en.xml. */
+export function getFaqCrawlImage(item: FaqItem) {
+	return crawlPhotoMeta(item.slug, item.question, item.seoDescription);
+}
+
+/** English FAQ answer routes for sitemap-en.xml — every URL includes a crawl photo. */
 export function getFaqSitemapEntries() {
 	const lastmod = '2026-08-11';
 
-	return seoFaqs.map((item) => ({
-		path: getFaqPath(item.slug),
-		lastmod,
-		priority: 0.72,
-		changefreq: 'monthly' as const,
-		images: [] as { url: string; title: string; caption: string }[],
-	}));
+	return seoFaqs.map((item) => {
+		const photo = getFaqCrawlImage(item);
+		return {
+			path: getFaqPath(item.slug),
+			lastmod,
+			priority: 0.72,
+			changefreq: 'monthly' as const,
+			images: [
+				{
+					url: photo.url,
+					title: photo.title,
+					caption: photo.caption,
+				},
+			],
+		};
+	});
 }

@@ -1,3 +1,7 @@
+/**
+ * Responsive image helpers — prefer compressed WebP for LCP and below-fold media.
+ */
+
 export interface ResponsiveWidth {
 	src: string;
 	width: number;
@@ -19,7 +23,8 @@ export function contentSrcSet(baseSrc: string): string | undefined {
 		name.endsWith('-960w') ||
 		name.endsWith('-1400w') ||
 		name.endsWith('-1024w') ||
-		name.endsWith('-1536w')
+		name.endsWith('-1536w') ||
+		name.endsWith('-480w')
 	) {
 		return undefined;
 	}
@@ -33,22 +38,24 @@ export function contentSrcSet(baseSrc: string): string | undefined {
 }
 
 /**
- * Homepage hero — native 1024×409 (~2.5:1).
- * Prefer the PNG master (no lossy compression). WebP is lossless fallback only.
+ * Homepage / banner hero — compressed WebP ladder (not the 375KB+ PNG master).
+ * Native art ~1024×409 (~2.5:1).
  */
 export const heroResponsive: ResponsiveWidth[] = [
-	{ src: '/images/tarkov-cheats-hero-full.png', width: 1024 },
+	{ src: '/images/tarkov-cheats-hero-640w.webp', width: 640 },
+	{ src: '/images/tarkov-cheats-hero-1024w.webp', width: 1024 },
 ];
 
 export const heroDesktopResponsive: ResponsiveWidth[] = heroResponsive;
 
-/** Uncompressed PNG master — do not point this at a lossy webp. */
-export const heroSrc = '/images/tarkov-cheats-hero-full.png';
-export const heroSrcSet = `${heroSrc} 1024w`;
+/** Default LCP src — mid ladder WebP (~56KB). */
+export const heroSrc = '/images/tarkov-cheats-hero-1024w.webp';
+export const heroSrcSet = buildSrcSet(heroResponsive);
 export const heroSizes = '100vw';
 
-/** LCP preload — PNG master. */
+/** LCP preload — same compressed WebP. */
 export const heroPreloadSrc = heroSrc;
+export const heroMimeType = 'image/webp';
 
 /** Exact native dimensions (no zoom crop). */
 export const heroWidth = 1024;

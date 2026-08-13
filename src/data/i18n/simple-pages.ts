@@ -49,22 +49,34 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		sections: [
 			{
 				h2: 'ESP & wallhack',
-				paragraphs: ['See players, loot, and vehicles through walls.'],
-				list: ['Player boxes & distance', 'Loot and extract markers', 'Team colours on / off'],
+				paragraphs: [
+					'See PMCs, Scavs, bosses, and loot through walls with distance readouts.',
+					'Use filters so the overlay stays clear in dorms, Factory, and scav-run chaos.',
+				],
+				list: ['Player boxes & distance', 'Loot and extract markers', 'Boss and Scav filters'],
 			},
 			{
 				h2: 'Aimbot & soft aim',
-				paragraphs: ['Aim help you can tune to feel natural.'],
+				paragraphs: [
+					'Aim help you can tune to feel natural.',
+					'Set FOV, smoothness, and bone priority per weapon before you raid.',
+				],
 				list: ['Smooth aim strength', 'FOV and bone priority', 'Hotkeys mid-match'],
 			},
 			{
 				h2: 'Radar',
-				paragraphs: ['A simple 2D radar for threats outside your view.'],
+				paragraphs: [
+					'A simple 2D radar for threats outside your view.',
+					'Spot flanks near extracts without filling the whole screen.',
+				],
 				list: ['Nearby enemy cues', 'Adjustable range', 'Works in PMC & Scav'],
 			},
 			{
 				h2: 'Updates & support',
-				paragraphs: ['We rebuild after big {game} or {antiCheat} patches.'],
+				paragraphs: [
+					'We rebuild after big {game} or {antiCheat} patches.',
+					'Check Status before you play after a patch day.',
+				],
 				list: ['Status on the Status page', 'Setup guide included', 'Email support with your order ID'],
 			},
 		],
@@ -81,8 +93,19 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		sections: [
 			{
 				h2: 'What you get',
-				paragraphs: ['Full package access for Windows 10 / 11.'],
+				paragraphs: [
+					'Full package access for Windows 10 / 11.',
+					'Same ESP, soft aim, and radar on monthly and lifetime plans.',
+				],
 				list: ['ESP, aimbot, and radar', 'Patch rebuilds while active', 'Digital delivery after checkout'],
+			},
+			{
+				h2: 'Plans',
+				paragraphs: [
+					'Pick monthly to try first, or lifetime for one payment.',
+					'Both plans unlock the same features after checkout.',
+				],
+				list: ['Monthly — 30 days', 'Lifetime — one-time', 'Instant license by email'],
 			},
 			{
 				h2: 'Before you buy',
@@ -107,12 +130,21 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		sections: [
 			{
 				h2: 'Current status',
-				paragraphs: ['We post a note when a new build is live after a game or anti-cheat update.'],
-				list: ['Check this page before queueing', 'Monthly and lifetime get rebuilds while active'],
+				paragraphs: [
+					'As of 11 Aug 2026 the package is online for Escape from Tarkov on Windows PC. We post a new note here when a game or BattlEye patch needs a rebuild.',
+					'If Status is green, you can raid. If we are rebuilding, wait for the next note.',
+				],
+				list: [
+					'Check this page before every raid after a patch',
+					'Monthly and lifetime licenses get rebuilds while active',
+					'No cheat stays undetected forever — status first, then play',
+				],
 			},
 			{
 				h2: 'After a patch',
-				paragraphs: ['Wait for our rebuild note, then launch. Do not play on an old build after a big update.'],
+				paragraphs: [
+					'Wait for our rebuild note, then launch. Do not play on an old build after a big update.',
+				],
 				list: ['Read the latest status note', 'Follow setup if something fails', 'Email support with your order ID'],
 			},
 			{
@@ -125,21 +157,40 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 	hacks: page({
 		title: brandSeo.previewTitle,
 		description: brandSeo.previewDescription,
-		h1: 'Preview',
+		h1: 'Tarkov Cheats',
 		intro: brandCopy.previewIntro,
 		ctaPrimary: brandCopy.ctaBuy,
 		ctaSecondary: 'View features',
 		ctaSecondaryHref: '/features/',
-		galleryTitle: 'In-game look',
+		galleryTitle: 'In-raid look',
 		sections: [
 			{
-				h2: 'What it is',
-				paragraphs: ['One package for {game} on Windows PC.'],
-				list: ['ESP / wallhack', 'Soft aim & aimbot', '2D radar', 'Patch updates'],
+				h2: 'What you get',
+				paragraphs: [
+					'One undetected package for Escape from Tarkov on Windows PC — built for PMC raids and Scav runs.',
+				],
+				list: [
+					'ESP / wallhack with distance',
+					'Soft aim & aimbot profiles',
+					'2D radar for flanks',
+					'BattlEye rebuilds after patches',
+				],
+			},
+			{
+				h2: 'Built for Tarkov raids',
+				paragraphs: [
+					'Read PMCs and Scavs before you push, mark loot worth the risk, and stay aware near extracts. Tune soft aim per weapon class for dorms, Factory, and long-range maps.',
+				],
+				list: [
+					'<a href="/tarkov-esp/">ESP guide</a>',
+					'<a href="/tarkov-aimbot/">Aimbot controls</a>',
+					'<a href="/tarkov-radar-hack/">Radar overlay</a>',
+					'<a href="/undetected-tarkov-cheats/">Undetected status</a>',
+				],
 			},
 			{
 				h2: 'How to start',
-				paragraphs: ['Buy a plan, get your license by email, then follow setup.'],
+				paragraphs: ['Buy a plan, get your license by email, then follow setup. Check Status after every major patch.'],
 				list: [
 					'<a href="/pricing/">Open store</a>',
 					'<a href="/setup/">Setup guide</a>',
