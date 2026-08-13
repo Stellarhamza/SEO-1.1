@@ -89,7 +89,11 @@ const extraGraph: Record<string, unknown>[] = [
 	description={description}
 	canonicalPath={canonicalPath}
 	ogImage={siteConfig.defaultOgImage}
-	ogImageAlt={home.imageAlt}
+	ogImageAlt={
+		home.imageAlt?.trim() && home.imageAlt.trim().length > 12
+			? home.imageAlt
+			: `${siteConfig.name} — Escape from Tarkov ESP and aimbot`
+	}
 	locale={locale}
 	pageId="home"
 	breadcrumbs={[{ label: ui.nav.home }]}

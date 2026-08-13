@@ -28,7 +28,7 @@
     "seeFeatures": "Ver funciones",
     "title": "Trucos Tarkov indetectables",
     "priceFrom": "desde",
-    "imageAlt": "{{brand}} — ESP y aimbot para Escape from Tarkov",
+    "imageAlt": "{{brand}} — Escape from Tarkov ESP and aimbot overlay",
     "chipEsp": "ESP / wallhack",
     "chipAim": "Soft aim",
     "chipRadar": "Radar 2D",
@@ -188,16 +188,16 @@
     "blog": "Blog"
   },
   "images": {
-    "hero": "tarkov cheats",
-    "espWallhack": "tarkov cheats wallhack",
-    "aimbotCombat": "tarkov cheats aimbot",
-    "squadFight": "tarkov cheats",
-    "playerEsp": "tarkov cheats esp",
-    "headerArt": "tarkov cheats aimbot",
-    "cheatsPackage": "tarkov cheats radar",
-    "rebootFight": "tarkov cheats aimbot",
-    "battleRoyale": "tarkov cheats",
-    "battleRoyaleIsland": "tarkov cheats esp"
+    "hero": "Tarkov Cheats hero — ESP and aimbot overlay in Escape from Tarkov",
+    "espWallhack": "Wallhack outlines showing PMCs and Scavs through walls",
+    "aimbotCombat": "Soft aim assist overlay during an Escape from Tarkov raid",
+    "squadFight": "Tarkov Cheats combat overlay during a squad fight",
+    "playerEsp": "Player ESP boxes and distance readouts in a Tarkov raid",
+    "headerArt": "Aimbot view and bone priority controls for Tarkov",
+    "cheatsPackage": "2D radar threat overlay for Escape from Tarkov",
+    "rebootFight": "Aimbot assist during a Tarkov firefight",
+    "battleRoyale": "Tarkov Cheats in-raid overview for Windows PC",
+    "battleRoyaleIsland": "ESP markers for loot and extracts in Tarkov"
   },
   "blog": {
     "blogTitle": "Blog Tarkov Cheats 2026 | Guías en 22 idiomas",

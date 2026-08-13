@@ -61,7 +61,10 @@ const {
 } = Astro.props;
 
 const t = getT(locale);
-const resolvedHeroAlt = heroAlt ?? t('images.hero');
+const resolvedHeroAlt =
+	(heroAlt && heroAlt.trim()) ||
+	t('images.hero') ||
+	`${siteConfig.name} — Escape from Tarkov ESP and aimbot`;
 const resolvedGalleryTitle = galleryTitle ?? t('common.inGameLook');
 
 function resolvePageId(path: string): PageId | undefined {
@@ -75,7 +78,10 @@ const resolvedEyebrow = eyebrow ?? ui.product.title;
 
 const normalizedGallery = gallery
 	.map((item) => {
-		if (typeof item !== 'string') return { src: item.src, alt: item.alt };
+		if (typeof item !== 'string') {
+			const alt = item.alt?.trim() || resolvedHeroAlt;
+			return { src: item.src, alt };
+		}
 		return { src: item, alt: resolvedHeroAlt };
 	})
 	.filter((item) => Boolean(item.src));

@@ -1,5 +1,6 @@
 import { HERO_IMAGES, clampTitle, clampDesc, section, stripZadeyoFromMeta } from './constants.mjs';
 import { phrases } from './phrases.mjs';
+import { PAGE_IMAGE_ALTS } from './image-alts.mjs';
 
 /** Page-specific translated meta for home across locales. */
 const PAGE_META_HOME = {
@@ -227,7 +228,7 @@ function productPage(locale, pageKey, topicName, cta2href) {
 		),
 		h1: topicName,
 		intro: p.s1(`${topicName}.`),
-		imageAlt: topicName,
+		imageAlt: PAGE_IMAGE_ALTS[pageKey] || `${topicName} — Tarkov Cheats screenshot`,
 		galleryTitle: topicName,
 		heroImage: HERO_IMAGES[pageKey],
 		ctaPrimary: p.buy,

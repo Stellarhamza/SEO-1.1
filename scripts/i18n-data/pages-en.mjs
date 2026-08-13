@@ -9,7 +9,7 @@ export const enPages = {
 		h1: 'Tarkov Cheats — Undetected ESP, Wallhack & Aimbot',
 		intro:
 			'Tarkov Cheats is the undetected tarkov cheats package for Windows PC — built for Escape from Tarkov on Windows PC. Tarkov esp wallhack, 2D radar, and tarkov aimbot with BattlEye maintenance after every major patch.',
-		imageAlt: 'tarkov cheats esp',
+		imageAlt: "Tarkov Cheats homepage hero — ESP and aimbot for Escape from Tarkov",
 		galleryTitle: 'Tarkov Cheats gallery — ESP, Aimbot and wallhack visuals',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'See all features',
@@ -38,7 +38,7 @@ export const enPages = {
 		h1: 'Tarkov ESP — Player Boxes & Wallhack',
 		intro:
 			'Tarkov esp visibility tools for raid and scav-run. Read enemy squads, PMCs, Scavs, loot, and distance before you commit — toggleable tarkov esp wallhack overlays bundled in our tarkov cheats package.',
-		imageAlt: 'tarkov cheats radar',
+		imageAlt: "Tarkov ESP player boxes and distance readouts in a raid",
 		galleryTitle: 'Tarkov ESP overlay visuals',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'Tarkov wallhack guide',
@@ -83,7 +83,7 @@ export const enPages = {
 		h1: 'Tarkov Aimbot — Soft Aim for Windows PC',
 		intro:
 			'Configurable Aimbot tools for Tarkov firefights. Smoothness, FOV, bone priority, and per-weapon profiles — bundled with ESP wallhack and radar in one undetected license.',
-		imageAlt: 'tarkov cheats aimbot',
+		imageAlt: "Tarkov aimbot and soft aim controls on Windows PC",
 		galleryTitle: 'Tarkov Aimbot combat previews',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'See ESP wallhack',
@@ -128,7 +128,7 @@ export const enPages = {
 		h1: 'Tarkov Cheats Features — Full Control List',
 		intro:
 			'Every ESP wallhack, radar hack, and Aimbot control included in the Tarkov Cheats package for Tarkov on Windows PC — with BattlEye maintenance after major patches.',
-		imageAlt: 'tarkov cheats aimbot',
+		imageAlt: "Tarkov Cheats features — ESP, soft aim, and radar screenshots",
 		galleryTitle: 'Tarkov Cheats feature gallery',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'View pricing',
@@ -161,7 +161,7 @@ export const enPages = {
 		h1: 'Tarkov Cheats Pricing — Monthly & Lifetime',
 		intro:
 			'Choose monthly or lifetime access to undetected Tarkov Cheats — ESP wallhack, radar hack, and Aimbot for Tarkov on Windows PC. Instant digital delivery after payment.',
-		imageAlt: 'tarkov cheats',
+		imageAlt: "Tarkov Cheats store plans for monthly and lifetime licenses",
 		galleryTitle: 'Tarkov Cheats package visuals',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'Read setup guide',
@@ -194,7 +194,7 @@ export const enPages = {
 		h1: 'Tarkov Cheats Setup — Windows PC Guide',
 		intro:
 			'Install and configure Tarkov Cheats for Tarkov on Windows 10 or 11. Activate your license, load ESP wallhack and Aimbot profiles, and verify BattlEye maintenance status before queueing.',
-		imageAlt: 'tarkov cheats',
+		imageAlt: "Tarkov Cheats setup guide screenshot for Windows PC",
 		galleryTitle: 'Tarkov Cheats setup visuals',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'Contact support',
@@ -227,7 +227,7 @@ export const enPages = {
 		h1: 'Tarkov Cheats Updates — Maintenance Log',
 		intro:
 			'Track BattlEye maintenance and Tarkov patch rebuilds for the undetected ESP wallhack, radar hack, and Aimbot package. Check here before queueing after major updates.',
-		imageAlt: 'tarkov cheats',
+		imageAlt: "Tarkov Cheats live status after BattlEye and game patches",
 		galleryTitle: 'Tarkov patch and maintenance visuals',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'Undetected status guide',
@@ -260,7 +260,7 @@ export const enPages = {
 		h1: 'Tarkov Cheats FAQ — Common Questions',
 		intro:
 			'Answers about undetected Tarkov Cheats — ESP wallhack, radar hack, Aimbot, BattlEye maintenance, checkout, and Tarkov compatibility on Windows PC.',
-		imageAlt: 'tarkov cheats',
+		imageAlt: "Tarkov Cheats FAQ — delivery, setup, and update answers",
 		galleryTitle: 'Tarkov Cheats FAQ visuals',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'Contact support',
@@ -293,7 +293,7 @@ export const enPages = {
 		h1: 'Tarkov Cheats Support — Contact Us',
 		intro:
 			'Get help with Tarkov Cheats licenses, checkout, ESP wallhack setup, Aimbot profiles, and BattlEye maintenance for Tarkov on Windows PC.',
-		imageAlt: 'tarkov cheats',
+		imageAlt: "Tarkov Cheats support page for license and setup help",
 		galleryTitle: 'Tarkov Cheats support resources',
 		ctaPrimary: 'Email support',
 		ctaSecondary: 'Read setup guide',
@@ -326,7 +326,7 @@ export const enPages = {
 		h1: 'Undetected Tarkov Cheats — BattlEye Maintenance',
 		intro:
 			'How Tarkov Cheats stays maintained for Tarkov after BattlEye anti-cheat patches — ESP wallhack, radar hack, and Aimbot rebuilds for Windows PC.',
-		imageAlt: 'undetected tarkov cheats',
+		imageAlt: "Tarkov Cheats undetected status overview for Windows PC",
 		galleryTitle: 'Undetected Tarkov Cheats visuals',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'BattlEye bypass guide',
@@ -359,7 +359,7 @@ export const enPages = {
 		h1: 'Tarkov Wallhack — ESP Boxes & Visibility',
 		intro:
 			'Tarkov wallhack ESP for Tarkov — see players, loot, bosses, and containers through toggleable wallhack overlays built for PMC raids and scav-runs.',
-		imageAlt: 'tarkov cheats wallhack',
+		imageAlt: "Tarkov wallhack visibility through walls in a raid",
 		galleryTitle: 'Tarkov wallhack ESP gallery',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'Tarkov ESP page',
@@ -392,7 +392,7 @@ export const enPages = {
 		h1: 'Tarkov Radar Hack — 2D Threat Awareness',
 		intro:
 			'2D radar-style overlay for Tarkov — directional threat cues for nearby players outside your line of sight, bundled with ESP wallhack and Aimbot.',
-		imageAlt: 'tarkov cheats radar',
+		imageAlt: "Tarkov 2D radar overlay showing nearby threats",
 		galleryTitle: 'Tarkov radar hack visuals',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'See ESP wallhack',
@@ -425,7 +425,7 @@ export const enPages = {
 		h1: 'BattlEye Bypass — Tarkov Cheats Maintenance',
 		intro:
 			'Understand BattlEye anti-cheat maintenance for Tarkov Cheats — how ESP wallhack, radar hack, and Aimbot rebuild after Tarkov security updates.',
-		imageAlt: 'tarkov cheats battleye',
+		imageAlt: "Tarkov Cheats maintenance after a BattlEye patch",
 		galleryTitle: 'BattlEye maintenance visuals',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'Check updates',
@@ -458,7 +458,7 @@ export const enPages = {
 		h1: 'Tarkov Cheats 2026 — ESP, Soft Aim & Radar',
 		intro:
 			'The 2026 Tarkov Cheats package for Tarkov — undetected ESP wallhack, radar hack, and Aimbot with BattlEye maintenance, instant delivery, and Windows PC support.',
-		imageAlt: 'tarkov cheats',
+		imageAlt: "Tarkov Cheats product overview for Escape from Tarkov",
 		galleryTitle: 'Tarkov Cheats 2026 gallery',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'Compare features',
@@ -491,7 +491,7 @@ export const enPages = {
 		h1: 'Tarkov Cheats — Undetected ESP, Aimbot & Wallhack',
 		intro:
 			'Tarkov cheats for raid and scav-run combine ESP wallhack visibility, 2D radar-style threat cues, and Aimbot controls in one undetected Windows PC license — maintained after BattlEye anti-cheat patches. This is the pillar guide for tarkov cheats in 2026.',
-		imageAlt: 'tarkov cheats',
+		imageAlt: "Tarkov Cheats product page — ESP, aimbot, and radar",
 		galleryTitle: 'Tarkov cheats gallery — ESP, Aimbot, wallhack',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'See undetected guide',
@@ -530,7 +530,7 @@ export const enPages = {
 		h1: 'Tarkov Hack Download — Instant License Delivery',
 		intro:
 			'How Tarkov cheat download works for Tarkov — digital license delivery after payment confirmation, with ESP wallhack, radar hack, and Aimbot access on Windows PC.',
-		imageAlt: 'tarkov cheats download',
+		imageAlt: "Tarkov Cheats download and install delivery flow",
 		galleryTitle: 'Tarkov cheat download visuals',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'Setup guide',
@@ -563,7 +563,7 @@ export const enPages = {
 		h1: 'Tarkov Mod Menu — In-Client Control Panel',
 		intro:
 			'Tarkov mod menu controls for Tarkov — toggle ESP wallhack categories, radar range, and Aimbot profiles mid-match without leaving your Tarkov session on Windows PC.',
-		imageAlt: 'tarkov cheats mod menu',
+		imageAlt: "Tarkov Cheats in-game menu controls",
 		galleryTitle: 'Tarkov mod menu gallery',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'Full feature list',
@@ -596,7 +596,7 @@ export const enPages = {
 		h1: 'Tarkov Soft Aim — Smooth Aimbot Controls',
 		intro:
 			'Tarkov soft aim settings for Tarkov — configurable Aimbot smoothness, FOV, bone priority, and hotkey toggles bundled with ESP wallhack and radar in one undetected license.',
-		imageAlt: 'tarkov cheats soft aim',
+		imageAlt: "Tarkov soft aim FOV and smoothness settings",
 		galleryTitle: 'Tarkov soft aim gallery',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'Aimbot controls',
@@ -629,7 +629,7 @@ export const enPages = {
 		h1: 'Best Tarkov Cheats — 2026 Buyer Guide',
 		intro:
 			'Compare the Tarkov cheats for Tarkov in 2026 — undetected ESP wallhack, radar hack, and Aimbot in one maintained package with BattlEye anti-cheat rebuilds and instant delivery.',
-		imageAlt: 'best tarkov cheats',
+		imageAlt: "Tarkov Cheats overview for Escape from Tarkov on PC",
 		galleryTitle: 'Best Tarkov cheats gallery',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'Compare pricing',
@@ -662,7 +662,7 @@ export const enPages = {
 		h1: 'Tarkov Aimbot Hack — Soft Aim Assist',
 		intro:
 			'Tarkov aimbot hack tools for Tarkov — smoothness, FOV, bone priority, per-weapon profiles, and hotkey toggles bundled with ESP wallhack and radar in one undetected license.',
-		imageAlt: 'tarkov cheats aimbot',
+		imageAlt: "Tarkov aimbot hack controls and bone priority",
 		galleryTitle: 'Tarkov aimbot hack gallery',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'Aimbot settings',
@@ -695,7 +695,7 @@ export const enPages = {
 		h1: 'Tarkov ESP Hack — Player Boxes Guide',
 		intro:
 			'Tarkov ESP hack overlays for Tarkov — player outlines, boss threat cues, loot and container markers with distance readouts across raid and scav-run.',
-		imageAlt: 'tarkov cheats esp',
+		imageAlt: "Tarkov ESP hack boxes and loot markers",
 		galleryTitle: 'Tarkov ESP hack gallery',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'ESP controls',
@@ -728,7 +728,7 @@ export const enPages = {
 		h1: 'Tarkov Unlock All — What Players Search For',
 		intro:
 			'Tarkov unlock all is a common search term for Tarkov — this page clarifies what unlock-all tools claim versus the ESP wallhack, radar hack, and Aimbot tools Tarkov Cheats actually provides on Windows PC.',
-		imageAlt: 'tarkov cheats',
+		imageAlt: "Tarkov Cheats license features overview",
 		galleryTitle: 'Tarkov unlock all guide visuals',
 		ctaPrimary: 'Buy Tarkov Cheats',
 		ctaSecondary: 'See features',
@@ -760,7 +760,7 @@ export const enPages = {
 			'Privacy policy for Tarkov Cheats. How we handle support emails, order data, and checkout for tarkov cheats licenses on tarkovcheats.org.',
 		h1: 'Privacy Policy',
 		intro: 'How Tarkov Cheats handles information when you browse tarkovcheats.org or contact support about a Tarkov license.',
-		imageAlt: 'tarkov cheats',
+		imageAlt: "Tarkov Cheats privacy policy page",
 		galleryTitle: 'Tarkov Cheats legal resources',
 		ctaPrimary: 'Email support',
 		ctaSecondary: 'Read terms of use',
@@ -791,7 +791,7 @@ export const enPages = {
 		h1: 'Refund Policy',
 		intro:
 			'Refund terms for Tarkov Cheats licenses — ESP wallhack, radar hack, and Aimbot packages purchased through checkout for Tarkov.',
-		imageAlt: 'tarkov cheats',
+		imageAlt: "Tarkov Cheats refund policy page",
 		galleryTitle: 'Tarkov Cheats billing resources',
 		ctaPrimary: 'Contact support',
 		ctaSecondary: 'Read privacy policy',
@@ -820,7 +820,7 @@ export const enPages = {
 			'Terms of use for tarkovcheats.org and Tarkov Cheats licenses. Usage rules, anti-cheat risk, and liability for Windows PC cheats.',
 		h1: 'Terms of Use',
 		intro: 'Terms governing use of tarkovcheats.org and Tarkov Cheats licenses for Tarkov on Windows PC.',
-		imageAlt: 'tarkov cheats',
+		imageAlt: "Tarkov Cheats terms of use page",
 		galleryTitle: 'Tarkov Cheats legal pages',
 		ctaPrimary: 'Email support',
 		ctaSecondary: 'Read privacy policy',
