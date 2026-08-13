@@ -4,7 +4,7 @@ import { getLocalizedPath, hreflangLinksXml, pageIds, type PageId } from './i18n
 import { defaultLocale, localeCodes, type LocaleCode } from './i18n/locales';
 import { siteConfig } from './site';
 import { pageSitemapMeta } from './sitemap-meta';
-import { escapeXml } from './sitemap-xml';
+import { escapeXml, assertCrawlableAssetUrl } from './sitemap-xml';
 import { sitemapLastmod } from './brand-sitemap';
 import { getPageCrawlImage } from './page-images';
 import { sitemapExcludedPageIds } from './seo-canonical';
@@ -35,6 +35,12 @@ export function buildLocaleSitemapEntries(locale: LocaleCode): LocaleSitemapEntr
 		const meta = pageSitemapMeta[pageId];
 		const page = pageId === 'home' ? null : getPageContent(locale, pageId);
 		const crawl = getPageCrawlImage(pageId);
+		const imageSrc =
+			pageId === 'home'
+				? crawl.src
+				: page?.heroImage && !page.heroImage.includes('undefined')
+					? page.heroImage
+					: crawl.src;
 
 		return {
 			path: getLocalizedPath(pageId, locale),
@@ -43,9 +49,9 @@ export function buildLocaleSitemapEntries(locale: LocaleCode): LocaleSitemapEntr
 			priority: meta.i18nPriority,
 			changefreq: meta.changefreq,
 			image: {
-				url: pageId === 'home' ? crawl.url : new URL(page!.heroImage, siteConfig.url).href,
-				title: pageId === 'home' ? crawl.title : page!.title,
-				caption: pageId === 'home' ? crawl.caption : page!.imageAlt,
+				url: new URL(imageSrc, siteConfig.url).href,
+				title: pageId === 'home' ? crawl.title : page?.title ?? crawl.title,
+				caption: pageId === 'home' ? crawl.caption : page?.imageAlt ?? crawl.caption,
 			},
 		};
 	});
@@ -75,13 +81,15 @@ export function localeSitemapUrl(locale: LocaleCode): string {
 export function renderLocaleSitemapUrlBlock(entry: LocaleSitemapEntry): string {
 	const loc = new URL(entry.path, siteConfig.url).href;
 	const hreflangBlock = entry.pageId ? `\n${hreflangLinksXml(entry.pageId, escapeXml)}` : '';
-	const imageBlock = entry.image
-		? `\n    <image:image>
-      <image:loc>${escapeXml(entry.image.url)}</image:loc>
+	if (!entry.image) {
+		throw new Error(`[sitemap] Missing image for locale URL ${entry.path}`);
+	}
+	const imageUrl = assertCrawlableAssetUrl(entry.image.url, entry.path);
+	const imageBlock = `\n    <image:image>
+      <image:loc>${escapeXml(imageUrl)}</image:loc>
       <image:title>${escapeXml(entry.image.title)}</image:title>
       <image:caption>${escapeXml(entry.image.caption)}</image:caption>
-    </image:image>`
-		: '';
+    </image:image>`;
 
 	return `  <url>
     <loc>${escapeXml(loc)}</loc>

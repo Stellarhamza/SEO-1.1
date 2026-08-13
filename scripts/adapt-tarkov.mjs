@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * One-time migration: Warzone Hacks → Tarkov Cheats (Escape from Tarkov).
- * Domain: besttarkovcheats.com
+ * Domain: tarkovcheats.org
  * Run from project root: node scripts/adapt-tarkov.mjs
  */
 import { readFile, writeFile, readdir, rename } from 'node:fs/promises';
@@ -30,15 +30,15 @@ const RENAME_PAGE_DIRS = [
 
 /** Ordered replacements — specific patterns first. */
 const REPLACEMENTS = [
-	['https://warzonehacks.net', 'https://besttarkovcheats.com'],
-	['https://www.warzonehacks.net', 'https://www.besttarkovcheats.com'],
-	['www.warzonehacks.net', 'www.besttarkovcheats.com'],
-	['warzonehacks.net', 'besttarkovcheats.com'],
-	['support@warzonehacks.net', 'support@besttarkovcheats.com'],
-	['support@warzonescheats.net', 'support@besttarkovcheats.com'],
-	['warzonescheats.net', 'besttarkovcheats.com'],
-	['warzonescheats.com', 'besttarkovcheats.com'],
-	['warzonescheats.xyz', 'besttarkovcheats.com'],
+	['https://warzonehacks.net', 'https://tarkovcheats.org'],
+	['https://www.warzonehacks.net', 'https://www.tarkovcheats.org'],
+	['www.warzonehacks.net', 'www.tarkovcheats.org'],
+	['warzonehacks.net', 'tarkovcheats.org'],
+	['support@warzonehacks.net', 'support@tarkovcheats.org'],
+	['support@warzonescheats.net', 'support@tarkovcheats.org'],
+	['warzonescheats.net', 'tarkovcheats.org'],
+	['warzonescheats.com', 'tarkovcheats.org'],
+	['warzonescheats.xyz', 'tarkovcheats.org'],
 	['/products/warzone', '/products/tarkov'],
 	['project-name=warzonehacks', 'project-name=besttarkovcheats'],
 	['project-name=warzonescheats', 'project-name=besttarkovcheats'],
@@ -312,7 +312,7 @@ async function renameImages() {
 }
 
 async function main() {
-	console.log('Adapting Warzone Hacks → Tarkov Cheats (besttarkovcheats.com)...\n');
+	console.log('Adapting Warzone Hacks → Tarkov Cheats (tarkovcheats.org)...\n');
 	await renamePageDirs();
 	await renameWarzoneTs();
 	await renameScripts();

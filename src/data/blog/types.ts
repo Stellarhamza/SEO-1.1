@@ -4,6 +4,7 @@ export type BlogImageKey =
 	| 'hero'
 	| 'espWallhack'
 	| 'aimbotCombat'
+	| 'aimbotSkeleton'
 	| 'squadFight'
 	| 'headerArt'
 	| 'cheatsPackage'

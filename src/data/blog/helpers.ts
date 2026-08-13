@@ -15,6 +15,7 @@ const imageMap: Record<BlogImageKey, string> = {
 	hero: tarkovImages.espWallhack,
 	espWallhack: tarkovImages.espWallhack,
 	aimbotCombat: tarkovImages.aimbotCombat,
+	aimbotSkeleton: tarkovImages.aimbotSkeleton,
 	squadFight: tarkovImages.aimbotCombat,
 	headerArt: tarkovImages.playerEsp,
 	cheatsPackage: tarkovImages.espWallhack,
@@ -23,6 +24,8 @@ const imageMap: Record<BlogImageKey, string> = {
 	battleRoyaleCombat: tarkovImages.cheatsCombat,
 	battleRoyaleIslandMap: tarkovImages.espWallhack,
 };
+
+const FALLBACK_BLOG_IMAGE = tarkovImages.espWallhack;
 
 function expandTranslations(
 	translations: Partial<Record<LocaleCode, BlogTranslation>> & { en: BlogTranslation },
@@ -41,7 +44,11 @@ export const blogPosts: BlogPostDefinition[] = rawBlogPosts.map((post) => ({
 }));
 
 export function getBlogImageSrc(key: BlogImageKey): string {
-	return imageMap[key];
+	const src = imageMap[key] ?? FALLBACK_BLOG_IMAGE;
+	if (!src || src.includes('undefined')) {
+		throw new Error(`[blog] Invalid image path for key "${key}"`);
+	}
+	return src;
 }
 
 export function getBlogBasePath(locale: LocaleCode): string {

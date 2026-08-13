@@ -9,10 +9,10 @@ export const brand = {
 	/** Short product label if needed */
 	shortName: 'Tarkov',
 	/** Canonical origin — no trailing slash */
-	url: 'https://besttarkovcheats.com',
+	url: 'https://tarkovcheats.org',
 	locale: 'en',
 	market: 'Worldwide',
-	supportEmail: 'support@besttarkovcheats.com',
+	supportEmail: 'support@tarkovcheats.org',
 	checkoutUrl: 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Fescape-from-tarkov',
 
 	/** Game this template instance targets */
@@ -71,30 +71,37 @@ export const brand = {
 	 * Aim ~50–60 chars titles, ~140–160 chars descriptions.
 	 */
 	seo: {
-		homeTitle: 'Tarkov Cheats | Undetected EFT ESP & Aimbot',
+		/** Titles ≤60 chars; descriptions ~140–160 (Google SERP display). */
+		homeTitle: 'Tarkov Cheats | Undetected ESP & Aimbot',
 		homeDescription:
-			'Buy undetected Escape from Tarkov cheats for Windows PC. ESP, soft aim, radar, and BattlEye updates in one license.',
+			'Buy undetected Escape from Tarkov cheats for Windows PC. ESP, soft aim, radar, and BattlEye patch updates in one license with instant delivery.',
 		featuresTitle: '{game} Features | {brand}',
 		featuresDescription:
-			'Everything in one {game} license for Windows PC — ESP, aimbot, radar, and patch updates.',
+			'Everything in one {game} license for Windows PC — ESP, soft aim, radar, loot tools, and patch updates after {antiCheat}. See what is included.',
 		storeTitle: '{game} Store | {brand}',
-		storeDescription: 'Monthly and lifetime {game} plans. Same features. Instant delivery after payment.',
+		storeDescription:
+			'Monthly and lifetime {game} plans for Windows PC. Same ESP, aimbot, and radar features on both. Instant delivery after payment checkout.',
 		statusTitle: '{game} Status | {brand}',
-		statusDescription: 'Live status for {brand} after {game} or {antiCheat} patches. Check before you raid.',
+		statusDescription:
+			'Live undetected status for {brand} after {game} or {antiCheat} patches. Check here before you queue a raid on Windows PC today.',
 		previewTitle: 'Tarkov Cheats | ESP, Aimbot & Radar Guide',
 		previewDescription:
-			'Undetected tarkov cheats for Escape from Tarkov — ESP, soft aim, radar, and BattlEye updates on Windows PC.',
+			'Preview undetected tarkov cheats for Escape from Tarkov — ESP, soft aim, radar, and BattlEye updates on Windows PC. See what the license includes.',
 		setupTitle: '{game} Setup | {brand}',
-		setupDescription: 'Install and launch {brand} on Windows PC. Short setup steps after you buy.',
+		setupDescription:
+			'Install and launch {brand} on Windows PC after checkout. Short setup steps so you can raid faster. Follow each step in order before your first match.',
 		supportTitle: '{game} Support | {brand}',
-		supportDescription: 'Get help with {brand}. Email {email} with your order ID.',
+		supportDescription:
+			'Get help with {brand} on Windows PC. Email {email} with your order ID for setup, delivery, or billing help after you buy.',
 		faqTitle: '{game} FAQ | {brand}',
-		faqDescription: 'Short answers about {brand} — delivery, setup, updates, and refunds.',
+		faqDescription:
+			'Short answers about {brand} for Escape from Tarkov — delivery, setup, {antiCheat} updates, refunds, and Windows PC system notes before you buy.',
 		reviewsTitle: '{brand} Reviews | Buyer Feedback',
 		reviewsDescription:
-			'Buyer reviews for {brand} — ESP, soft aim, radar, and patch updates on Windows PC.',
+			'Buyer reviews for {brand} — ESP, soft aim, radar, and patch updates for Escape from Tarkov on Windows PC. Real feedback from license holders.',
 		blogTitle: '{game} Intel | {brand}',
-		blogDescription: 'Guides and notes for {game} — raid tips, ESP, aimbot, and {antiCheat} updates.',
+		blogDescription:
+			'Guides and notes for {game} — raid tips, ESP, aimbot, loot routes, and {antiCheat} update coverage for Windows PC players who raid.',
 	},
 
 	/** On-page marketing copy (tokens allowed) */

@@ -21,7 +21,7 @@ const REPLACEMENTS = [
 	['tarkov-radar-hack', 'tarkov-radar-hack'],
 	['tarkov-cheats-2026', 'tarkov-cheats-2026'],
 	['battleye-bypass', 'battleye-bypass'],
-	['besttarkovcheats.com', 'besttarkovcheats.com'],
+	['tarkovcheats.org', 'tarkovcheats.org'],
 	['trucos-tarkov', 'trucos-tarkov'],
 	['triche-tarkov', 'triche-tarkov'],
 	['tarkov-cheats', 'escape-from-tarkov-cheats'],

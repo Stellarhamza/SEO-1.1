@@ -1,11 +1,11 @@
-# Deploy besttarkovcheats.com
+# Deploy tarkovcheats.org
 
-Step-by-step guide to deploy the Tarkov Cheats static site to **besttarkovcheats.com** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
+Step-by-step guide to deploy the Tarkov Cheats static site to **tarkovcheats.org** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
 
 ## Prerequisites
 
 - Node.js **≥ 22.12.0**
-- Cloudflare account with access to **besttarkovcheats.com** DNS
+- Cloudflare account with access to **tarkovcheats.org** DNS
 - Wrangler CLI (included as dev dependency): `npx wrangler login`
 
 ## 1. Build and validate locally
@@ -48,9 +48,9 @@ This runs `wrangler pages deploy dist --project-name=besttarkovcheats` (see `wra
 
 ## 3. Custom domain and DNS
 
-Add **besttarkovcheats.com** as the primary custom domain on the Pages project.
+Add **tarkovcheats.org** as the primary custom domain on the Pages project.
 
-### Apex (besttarkovcheats.com)
+### Apex (tarkovcheats.org)
 
 In **Cloudflare DNS** for the zone:
 
@@ -64,11 +64,11 @@ Cloudflare CNAME flattening handles apex records automatically.
 
 1. Add a DNS record for `www` pointing to the same Pages project (proxied CNAME or A record).
 2. In **Rules** → **Redirect Rules** (or Bulk Redirects), create:
-   - **Source:** `www.besttarkovcheats.com/*`
-   - **Target:** `https://besttarkovcheats.com/${1}`
+   - **Source:** `www.tarkovcheats.org/*`
+   - **Target:** `https://tarkovcheats.org/${1}`
    - **Status:** 301
 
-The deployed `functions/_middleware.js` also enforces apex canonical host, legacy domain redirects (`besttarkovcheats.com`, `.net`, `.com`), and legacy path redirects.
+The deployed `functions/_middleware.js` also enforces apex canonical host, legacy domain redirects (`tarkovcheats.org`, `.net`, `.com`), and legacy path redirects.
 
 ### SSL / HTTPS
 
@@ -80,31 +80,31 @@ The deployed `functions/_middleware.js` also enforces apex canonical host, legac
 
 Verify these URLs return **200** with correct content:
 
-- `https://besttarkovcheats.com/`
-- `https://besttarkovcheats.com/es/`
-- `https://besttarkovcheats.com/tarkov-cheats/`
-- `https://besttarkovcheats.com/tarkov-aimbot/`
-- `https://besttarkovcheats.com/sitemap.xml`
-- `https://besttarkovcheats.com/robots.txt`
+- `https://tarkovcheats.org/`
+- `https://tarkovcheats.org/es/`
+- `https://tarkovcheats.org/tarkov-cheats/`
+- `https://tarkovcheats.org/tarkov-aimbot/`
+- `https://tarkovcheats.org/sitemap.xml`
+- `https://tarkovcheats.org/robots.txt`
 
 Verify redirects:
 
-- `http://besttarkovcheats.com` → `https://besttarkovcheats.com` (301)
-- `https://www.besttarkovcheats.com` → `https://besttarkovcheats.com` (301)
-- Legacy domains (e.g. `besttarkovcheats.com`) → `https://besttarkovcheats.com` (301)
+- `http://tarkovcheats.org` → `https://tarkovcheats.org` (301)
+- `https://www.tarkovcheats.org` → `https://tarkovcheats.org` (301)
+- Legacy domains (e.g. `tarkovcheats.org`) → `https://tarkovcheats.org` (301)
 - `/sitemap-index.xml` → `/sitemap.xml` (301)
 - Legacy paths (e.g. `/fortnite-hacks/`) → Tarkov equivalents (301)
 
 ## 5. Google Search Console
 
 1. Go to [Google Search Console](https://search.google.com/search-console).
-2. **Add property** → choose **Domain** → enter `besttarkovcheats.com`.
+2. **Add property** → choose **Domain** → enter `tarkovcheats.org`.
 3. Verify ownership via the **DNS TXT record** Cloudflare provides (add in Cloudflare DNS, wait for propagation, then confirm in GSC).
 4. After verification, open **Sitemaps** and submit:
    ```
-   https://besttarkovcheats.com/sitemap.xml
+   https://tarkovcheats.org/sitemap.xml
    ```
-   Remove any legacy submissions (`sitemap-index.xml`, old `besttarkovcheats.com` URLs).
+   Remove any legacy submissions (`sitemap-index.xml`, old `tarkovcheats.org` URLs).
 5. Use **URL Inspection** to request indexing for:
    - Homepage (`/`)
    - Pillar page (`/tarkov-cheats/`)
@@ -126,11 +126,11 @@ Verify redirects:
 
 - [ ] `npm run build:validate` passes locally
 - [ ] Cloudflare Pages project attached to this repo
-- [ ] Custom domain `besttarkovcheats.com` attached and active
+- [ ] Custom domain `tarkovcheats.org` attached and active
 - [ ] `www` redirects to apex
-- [ ] Legacy domains 301 to `besttarkovcheats.com`
+- [ ] Legacy domains 301 to `tarkovcheats.org`
 - [ ] Always Use HTTPS enabled
-- [ ] `robots.txt` and sitemaps serve from `https://besttarkovcheats.com`
+- [ ] `robots.txt` and sitemaps serve from `https://tarkovcheats.org`
 - [ ] Google Search Console domain verified
 - [ ] `sitemap.xml` submitted in GSC
 - [ ] Homepage and `/tarkov-cheats/` requested for indexing

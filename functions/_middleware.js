@@ -1,11 +1,13 @@
 import CANNIBAL_REDIRECTS from './cannibal-redirects.json';
 
-const CANONICAL_ORIGIN = 'https://besttarkovcheats.com';
-const APEX_HOST = 'besttarkovcheats.com';
-const WWW_HOST = 'www.besttarkovcheats.com';
+const CANONICAL_ORIGIN = 'https://tarkovcheats.org';
+const APEX_HOST = 'tarkovcheats.org';
+const WWW_HOST = 'www.tarkovcheats.org';
 
 /** Legacy domains → canonical apex (301). */
 const LEGACY_HOSTS = new Set([
+	'besttarkovcheats.com',
+	'www.besttarkovcheats.com',
 	'fortnitehack.net',
 	'www.fortnitehack.net',
 	'fortnitecheats.xyz',

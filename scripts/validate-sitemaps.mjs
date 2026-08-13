@@ -306,6 +306,11 @@ async function main() {
 	}
 	if (errors === 0) ok(`All ${ENGLISH_PAGES} English canonical paths present in sitemap-en.xml`);
 
+	if (sitemapEn.includes('/undefined') || sitemapEn.includes('undefined</image:loc>')) {
+		fail('sitemap-en.xml contains broken image:loc ending in /undefined');
+		bump();
+	} else ok('sitemap-en.xml has no undefined image URLs');
+
 	// Every page URL must include Google image sitemap annotations (SERP / Images crawl)
 	function countUrlsMissingImages(xml) {
 		const blocks = xml.split(/<url>/i).slice(1);

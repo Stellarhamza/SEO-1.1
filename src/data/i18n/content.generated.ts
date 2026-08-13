@@ -270,7 +270,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Licensing, delivery, and BattlEye maintenance",
 							paragraphs: [
 								"Monthly ($35) and lifetime ($150) licenses with instant digital delivery. BattlEye maintenance rebuilds publish on the <a href=\"/updates/\">Updates page</a> after anti-cheat or game patches.",
-								"Monitor <a href=\"https://www.escapefromtarkov.com/support\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov Support</a> on patch days, then confirm rebuild notes before you queue. Setup and billing help lives on <a href=\"/support/\">Support</a> and support@besttarkovcheats.com.",
+								"Monitor <a href=\"https://www.escapefromtarkov.com/support\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov Support</a> on patch days, then confirm rebuild notes before you queue. Setup and billing help lives on <a href=\"/support/\">Support</a> and support@tarkovcheats.org.",
 								"Next step: compare plans on <a href=\"/pricing/\">Pricing</a> or read <a href=\"/undetected-tarkov-cheats/\">how undetected maintenance works</a>.",
 							],
 						},
@@ -422,7 +422,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Delivery, pricing, and support",
 							paragraphs: [
 								"Licenses deliver digitally after payment confirmation. Monthly is $35; lifetime is $150 USD — see <a href=\"/pricing/\">Pricing</a>.",
-								"Contact support@besttarkovcheats.com or the <a href=\"/support/\">Support page</a> with order details for setup or billing help. First launch steps are on <a href=\"/setup/\">Setup</a>.",
+								"Contact support@tarkovcheats.org or the <a href=\"/support/\">Support page</a> with order details for setup or billing help. First launch steps are on <a href=\"/setup/\">Setup</a>.",
 								"Refund eligibility is covered in the <a href=\"/refund-policy/\">Refund Policy</a>.",
 							],
 						},
@@ -460,7 +460,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Self-service resources",
 							paragraphs: [
 								"Setup guide, Features list, Updates log, Refund Policy, and Terms of Use are linked from the footer. BattlEye bypass notes live on the dedicated <a href=\"/battleye-bypass/\">BattlEye anti-cheat page</a>.",
-								"Email: support@besttarkovcheats.com",
+								"Email: support@tarkovcheats.org",
 								"Ready to purchase or renew? Open <a href=\"/pricing/\">Pricing</a>. Need feature detail first? See <a href=\"/features/\">Features</a>.",
 							],
 						},
@@ -651,7 +651,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Read the <a href=\"/tarkov-cheats/\">Tarkov cheats</a> pillar, Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.",
 								"Also compare the <a href=\"/tarkov-cheats/\">Tarkov cheats</a> checklist, <a href=\"/blog/tarkov-cheats-2026-whats-new/\">2026 blog guide</a>, and <a href=\"/faq/\">FAQ</a>.",
-								"Support is available at support@besttarkovcheats.com via the <a href=\"/support/\">Support page</a>.",
+								"Support is available at support@tarkovcheats.org via the <a href=\"/support/\">Support page</a>.",
 							],
 						},
 					],
@@ -953,7 +953,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Visibility tools vs unlock-all claims",
 							paragraphs: [
-								"ESP wallhack helps you spot enemy squads, vehicles, and high-value loot during live matches. Radar hack adds flank awareness; Aimbot covers combat assist with smoothness and hotkey controls.",
+								"ESP wallhack helps you spot enemy squads, bosses, and high-value loot during live matches. Radar hack adds flank awareness; Aimbot covers combat assist with smoothness and hotkey controls.",
 								"For loadout planning during a match, loot and container markers speed map rotations — see the <a href=\"/tarkov-esp/\">ESP</a> and <a href=\"/features/\">Features</a> pages for the full tool list.",
 								"Related: <a href=\"/tarkov-cheats/\">Tarkov cheats</a> and <a href=\"/tarkov-cheats/\">Tarkov cheats</a>.",
 							],
@@ -971,9 +971,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				privacy: {
 					title: "Privacy Policy | Tarkov Cheats",
-					description: "Privacy policy for Tarkov Cheats. How we handle support emails, order data, and checkout for tarkov cheats licenses on besttarkovcheats.com.",
+					description: "Privacy policy for Tarkov Cheats. How we handle support emails, order data, and checkout for tarkov cheats licenses on tarkovcheats.org.",
 					h1: "Privacy Policy",
-					intro: "How Tarkov Cheats handles information when you browse besttarkovcheats.com or contact support about a Tarkov license.",
+					intro: "How Tarkov Cheats handles information when you browse tarkovcheats.org or contact support about a Tarkov license.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "Tarkov Cheats legal resources",
 					ctaPrimary: "Email support",
@@ -1002,8 +1002,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your choices and contact",
 							paragraphs: [
-								"You may request correction or deletion of support email data by contacting support@besttarkovcheats.com with your request details.",
-								"Policy updates publish on this page. Continued use of besttarkovcheats.com after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">Refund Policy</a>.",
+								"You may request correction or deletion of support email data by contacting support@tarkovcheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of tarkovcheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">Refund Policy</a>.",
 							],
 						},
 					],
@@ -1037,7 +1037,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request a refund",
 							paragraphs: [
-								"Email support@besttarkovcheats.com with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Support page</a>.",
+								"Email support@tarkovcheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Support page</a>.",
 								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">Pricing</a>.",
 							],
 						},
@@ -1046,9 +1046,9 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				terms: {
 					title: "Terms of Use 2026 | Tarkov Cheats Rules",
-					description: "Terms of use for besttarkovcheats.com and Tarkov Cheats licenses. Usage rules, anti-cheat risk, and liability for Windows PC cheats.",
+					description: "Terms of use for tarkovcheats.org and Tarkov Cheats licenses. Usage rules, anti-cheat risk, and liability for Windows PC cheats.",
 					h1: "Terms of Use",
-					intro: "Terms governing use of besttarkovcheats.com and Tarkov Cheats licenses for Tarkov on Windows PC.",
+					intro: "Terms governing use of tarkovcheats.org and Tarkov Cheats licenses for Tarkov on Windows PC.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "Tarkov Cheats legal pages",
 					ctaPrimary: "Email support",
@@ -1073,7 +1073,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Changes and governing law",
 							paragraphs: [
 								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
-								"Contact support@besttarkovcheats.com for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">Refunds</a>.",
+								"Contact support@tarkovcheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">Refunds</a>.",
 							],
 						},
 					],
@@ -1921,7 +1921,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Política de privacidad | Tarkov Cheats",
 					description: "Política de privacidad for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Política de privacidad",
-					intro: "Tarkov Cheats ofrece ESP wallhack, radar hack y tarkov aimbot indetectables para Tarkov en Windows PC. Política de privacidad for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats ofrece ESP wallhack, radar hack y tarkov aimbot indetectables para Tarkov en Windows PC. Política de privacidad for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -1933,7 +1933,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Información que recopilamos",
 							paragraphs: [
 								"Tarkov Cheats ofrece ESP wallhack, radar hack y tarkov aimbot indetectables para Tarkov en Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -1946,8 +1946,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Tus derechos",
 							paragraphs: [
-								"Contacta support@besttarkovcheats.com para solicitudes legales o de soporte.",
-								"Email: support@besttarkovcheats.com",
+								"Contacta support@tarkovcheats.org para solicitudes legales o de soporte.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -1956,7 +1956,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Política de reembolso | Tarkov Cheats",
 					description: "Política de reembolso for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Política de reembolso",
-					intro: "Tarkov Cheats ofrece ESP wallhack, radar hack y tarkov aimbot indetectables para Tarkov en Windows PC. Política de reembolso for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats ofrece ESP wallhack, radar hack y tarkov aimbot indetectables para Tarkov en Windows PC. Política de reembolso for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -1981,8 +1981,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cómo solicitar",
 							paragraphs: [
-								"Contacta support@besttarkovcheats.com para solicitudes legales o de soporte.",
-								"Email: support@besttarkovcheats.com",
+								"Contacta support@tarkovcheats.org para solicitudes legales o de soporte.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -1991,7 +1991,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Términos de uso | Tarkov Cheats",
 					description: "Términos de uso for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Términos de uso",
-					intro: "Tarkov Cheats ofrece ESP wallhack, radar hack y tarkov aimbot indetectables para Tarkov en Windows PC. Términos de uso for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats ofrece ESP wallhack, radar hack y tarkov aimbot indetectables para Tarkov en Windows PC. Términos de uso for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -2016,8 +2016,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Cambios",
 							paragraphs: [
-								"Contacta support@besttarkovcheats.com para solicitudes legales o de soporte.",
-								"Email: support@besttarkovcheats.com",
+								"Contacta support@tarkovcheats.org para solicitudes legales o de soporte.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -2864,7 +2864,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Politique de confidentialité | Tarkov Cheats",
 					description: "Politique de confidentialité for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Politique de confidentialité",
-					intro: "Tarkov Cheats combine ESP wallhack, radar hack et tarkov aimbot indétectables pour Tarkov sur PC Windows. Politique de confidentialité for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats combine ESP wallhack, radar hack et tarkov aimbot indétectables pour Tarkov sur PC Windows. Politique de confidentialité for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -2876,7 +2876,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Informations collectées",
 							paragraphs: [
 								"Tarkov Cheats combine ESP wallhack, radar hack et tarkov aimbot indétectables pour Tarkov sur PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -2889,8 +2889,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Vos droits",
 							paragraphs: [
-								"Contactez support@besttarkovcheats.com pour le support ou les demandes légales.",
-								"Email: support@besttarkovcheats.com",
+								"Contactez support@tarkovcheats.org pour le support ou les demandes légales.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -2899,7 +2899,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Politique de remboursement | Tarkov Cheats",
 					description: "Politique de remboursement for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Politique de remboursement",
-					intro: "Tarkov Cheats combine ESP wallhack, radar hack et tarkov aimbot indétectables pour Tarkov sur PC Windows. Politique de remboursement for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats combine ESP wallhack, radar hack et tarkov aimbot indétectables pour Tarkov sur PC Windows. Politique de remboursement for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -2924,8 +2924,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Comment demander",
 							paragraphs: [
-								"Contactez support@besttarkovcheats.com pour le support ou les demandes légales.",
-								"Email: support@besttarkovcheats.com",
+								"Contactez support@tarkovcheats.org pour le support ou les demandes légales.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -2934,7 +2934,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Conditions d'utilisation | Tarkov Cheats",
 					description: "Conditions d'utilisation for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Conditions d'utilisation",
-					intro: "Tarkov Cheats combine ESP wallhack, radar hack et tarkov aimbot indétectables pour Tarkov sur PC Windows. Conditions d'utilisation for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats combine ESP wallhack, radar hack et tarkov aimbot indétectables pour Tarkov sur PC Windows. Conditions d'utilisation for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -2959,8 +2959,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Modifications",
 							paragraphs: [
-								"Contactez support@besttarkovcheats.com pour le support ou les demandes légales.",
-								"Email: support@besttarkovcheats.com",
+								"Contactez support@tarkovcheats.org pour le support ou les demandes légales.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -3807,7 +3807,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Datenschutz | Tarkov Cheats",
 					description: "Datenschutz for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Datenschutz",
-					intro: "Tarkov Cheats bündelt ESP wallhack, radar hack und tarkov aimbot als undetected Paket für Tarkov auf Windows PC. Datenschutz for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats bündelt ESP wallhack, radar hack und tarkov aimbot als undetected Paket für Tarkov auf Windows PC. Datenschutz for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -3819,7 +3819,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Erhobene Daten",
 							paragraphs: [
 								"Tarkov Cheats bündelt ESP wallhack, radar hack und tarkov aimbot als undetected Paket für Tarkov auf Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -3832,8 +3832,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Ihre Rechte",
 							paragraphs: [
-								"support@besttarkovcheats.com für Support und rechtliche Anfragen.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org für Support und rechtliche Anfragen.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -3842,7 +3842,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Rückerstattung | Tarkov Cheats",
 					description: "Rückerstattung for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Rückerstattung",
-					intro: "Tarkov Cheats bündelt ESP wallhack, radar hack und tarkov aimbot als undetected Paket für Tarkov auf Windows PC. Rückerstattung for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats bündelt ESP wallhack, radar hack und tarkov aimbot als undetected Paket für Tarkov auf Windows PC. Rückerstattung for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -3867,8 +3867,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Anfrage stellen",
 							paragraphs: [
-								"support@besttarkovcheats.com für Support und rechtliche Anfragen.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org für Support und rechtliche Anfragen.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -3877,7 +3877,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Nutzungsbedingungen | Tarkov Cheats",
 					description: "Nutzungsbedingungen for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Nutzungsbedingungen",
-					intro: "Tarkov Cheats bündelt ESP wallhack, radar hack und tarkov aimbot als undetected Paket für Tarkov auf Windows PC. Nutzungsbedingungen for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats bündelt ESP wallhack, radar hack und tarkov aimbot als undetected Paket für Tarkov auf Windows PC. Nutzungsbedingungen for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -3902,8 +3902,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Änderungen",
 							paragraphs: [
-								"support@besttarkovcheats.com für Support und rechtliche Anfragen.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org für Support und rechtliche Anfragen.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -4750,7 +4750,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Política de privacidade | Tarkov Cheats",
 					description: "Política de privacidade for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Política de privacidade",
-					intro: "Tarkov Cheats reúne ESP wallhack, radar hack e tarkov aimbot indetectáveis para Tarkov no PC Windows. Política de privacidade for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats reúne ESP wallhack, radar hack e tarkov aimbot indetectáveis para Tarkov no PC Windows. Política de privacidade for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -4762,7 +4762,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Tarkov Cheats reúne ESP wallhack, radar hack e tarkov aimbot indetectáveis para Tarkov no PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -4775,8 +4775,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"Contacte support@besttarkovcheats.com para suporte ou questões legais.",
-								"Email: support@besttarkovcheats.com",
+								"Contacte support@tarkovcheats.org para suporte ou questões legais.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -4785,7 +4785,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Política de reembolso | Tarkov Cheats",
 					description: "Política de reembolso for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Política de reembolso",
-					intro: "Tarkov Cheats reúne ESP wallhack, radar hack e tarkov aimbot indetectáveis para Tarkov no PC Windows. Política de reembolso for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats reúne ESP wallhack, radar hack e tarkov aimbot indetectáveis para Tarkov no PC Windows. Política de reembolso for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -4810,8 +4810,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"Contacte support@besttarkovcheats.com para suporte ou questões legais.",
-								"Email: support@besttarkovcheats.com",
+								"Contacte support@tarkovcheats.org para suporte ou questões legais.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -4820,7 +4820,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Termos de uso | Tarkov Cheats",
 					description: "Termos de uso for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Termos de uso",
-					intro: "Tarkov Cheats reúne ESP wallhack, radar hack e tarkov aimbot indetectáveis para Tarkov no PC Windows. Termos de uso for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats reúne ESP wallhack, radar hack e tarkov aimbot indetectáveis para Tarkov no PC Windows. Termos de uso for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -4845,8 +4845,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"Contacte support@besttarkovcheats.com para suporte ou questões legais.",
-								"Email: support@besttarkovcheats.com",
+								"Contacte support@tarkovcheats.org para suporte ou questões legais.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -5693,7 +5693,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Informativa privacy | Tarkov Cheats",
 					description: "Informativa privacy for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Informativa privacy",
-					intro: "Tarkov Cheats unisce ESP wallhack, radar hack e tarkov aimbot indetectable per Tarkov su PC Windows. Informativa privacy for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats unisce ESP wallhack, radar hack e tarkov aimbot indetectable per Tarkov su PC Windows. Informativa privacy for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -5705,7 +5705,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Tarkov Cheats unisce ESP wallhack, radar hack e tarkov aimbot indetectable per Tarkov su PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -5718,8 +5718,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"Contatta support@besttarkovcheats.com per supporto o richieste legali.",
-								"Email: support@besttarkovcheats.com",
+								"Contatta support@tarkovcheats.org per supporto o richieste legali.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -5728,7 +5728,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Politica di rimborso | Tarkov Cheats",
 					description: "Politica di rimborso for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Politica di rimborso",
-					intro: "Tarkov Cheats unisce ESP wallhack, radar hack e tarkov aimbot indetectable per Tarkov su PC Windows. Politica di rimborso for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats unisce ESP wallhack, radar hack e tarkov aimbot indetectable per Tarkov su PC Windows. Politica di rimborso for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -5753,8 +5753,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"Contatta support@besttarkovcheats.com per supporto o richieste legali.",
-								"Email: support@besttarkovcheats.com",
+								"Contatta support@tarkovcheats.org per supporto o richieste legali.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -5763,7 +5763,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Termini di utilizzo | Tarkov Cheats",
 					description: "Termini di utilizzo for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Termini di utilizzo",
-					intro: "Tarkov Cheats unisce ESP wallhack, radar hack e tarkov aimbot indetectable per Tarkov su PC Windows. Termini di utilizzo for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats unisce ESP wallhack, radar hack e tarkov aimbot indetectable per Tarkov su PC Windows. Termini di utilizzo for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -5788,8 +5788,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"Contatta support@besttarkovcheats.com per supporto o richieste legali.",
-								"Email: support@besttarkovcheats.com",
+								"Contatta support@tarkovcheats.org per supporto o richieste legali.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -6636,7 +6636,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Privacybeleid | Tarkov Cheats",
 					description: "Privacybeleid for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Privacybeleid",
-					intro: "Tarkov Cheats bundelt ESP wallhack, radar hack en tarkov aimbot als undetected pakket voor Tarkov op Windows PC. Privacybeleid for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats bundelt ESP wallhack, radar hack en tarkov aimbot als undetected pakket voor Tarkov op Windows PC. Privacybeleid for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -6648,7 +6648,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Tarkov Cheats bundelt ESP wallhack, radar hack en tarkov aimbot als undetected pakket voor Tarkov op Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -6661,8 +6661,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@besttarkovcheats.com voor support en juridische vragen.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org voor support en juridische vragen.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -6671,7 +6671,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Restitutiebeleid | Tarkov Cheats",
 					description: "Restitutiebeleid for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Restitutiebeleid",
-					intro: "Tarkov Cheats bundelt ESP wallhack, radar hack en tarkov aimbot als undetected pakket voor Tarkov op Windows PC. Restitutiebeleid for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats bundelt ESP wallhack, radar hack en tarkov aimbot als undetected pakket voor Tarkov op Windows PC. Restitutiebeleid for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -6696,8 +6696,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@besttarkovcheats.com voor support en juridische vragen.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org voor support en juridische vragen.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -6706,7 +6706,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Gebruiksvoorwaarden | Tarkov Cheats",
 					description: "Gebruiksvoorwaarden for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Gebruiksvoorwaarden",
-					intro: "Tarkov Cheats bundelt ESP wallhack, radar hack en tarkov aimbot als undetected pakket voor Tarkov op Windows PC. Gebruiksvoorwaarden for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats bundelt ESP wallhack, radar hack en tarkov aimbot als undetected pakket voor Tarkov op Windows PC. Gebruiksvoorwaarden for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -6731,8 +6731,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@besttarkovcheats.com voor support en juridische vragen.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org voor support en juridische vragen.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -7579,7 +7579,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Polityka prywatności | Tarkov Cheats",
 					description: "Polityka prywatności for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Polityka prywatności",
-					intro: "Tarkov Cheats łączy ESP wallhack, radar hack i tarkov aimbot jako pakiet undetected dla Tarkov na PC Windows. Polityka prywatności for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats łączy ESP wallhack, radar hack i tarkov aimbot jako pakiet undetected dla Tarkov na PC Windows. Polityka prywatności for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -7591,7 +7591,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Tarkov Cheats łączy ESP wallhack, radar hack i tarkov aimbot jako pakiet undetected dla Tarkov na PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -7604,8 +7604,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@besttarkovcheats.com w sprawach wsparcia i prawnych.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org w sprawach wsparcia i prawnych.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -7614,7 +7614,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Polityka zwrotów | Tarkov Cheats",
 					description: "Polityka zwrotów for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Polityka zwrotów",
-					intro: "Tarkov Cheats łączy ESP wallhack, radar hack i tarkov aimbot jako pakiet undetected dla Tarkov na PC Windows. Polityka zwrotów for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats łączy ESP wallhack, radar hack i tarkov aimbot jako pakiet undetected dla Tarkov na PC Windows. Polityka zwrotów for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -7639,8 +7639,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@besttarkovcheats.com w sprawach wsparcia i prawnych.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org w sprawach wsparcia i prawnych.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -7649,7 +7649,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Warunki użytkowania | Tarkov Cheats",
 					description: "Warunki użytkowania for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Warunki użytkowania",
-					intro: "Tarkov Cheats łączy ESP wallhack, radar hack i tarkov aimbot jako pakiet undetected dla Tarkov na PC Windows. Warunki użytkowania for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats łączy ESP wallhack, radar hack i tarkov aimbot jako pakiet undetected dla Tarkov na PC Windows. Warunki użytkowania for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -7674,8 +7674,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@besttarkovcheats.com w sprawach wsparcia i prawnych.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org w sprawach wsparcia i prawnych.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -8522,7 +8522,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Политика конфиденциальности | Tarkov Cheats",
 					description: "Политика конфиденциальности for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Политика конфиденциальности",
-					intro: "Tarkov Cheats объединяет ESP wallhack, radar hack и tarkov aimbot в undetected пакете для Tarkov на Windows PC. Политика конфиденциальности for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats объединяет ESP wallhack, radar hack и tarkov aimbot в undetected пакете для Tarkov на Windows PC. Политика конфиденциальности for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -8534,7 +8534,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Tarkov Cheats объединяет ESP wallhack, radar hack и tarkov aimbot в undetected пакете для Tarkov на Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -8547,8 +8547,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@besttarkovcheats.com для поддержки и юридических вопросов.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org для поддержки и юридических вопросов.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -8557,7 +8557,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Политика возврата | Tarkov Cheats",
 					description: "Политика возврата for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Политика возврата",
-					intro: "Tarkov Cheats объединяет ESP wallhack, radar hack и tarkov aimbot в undetected пакете для Tarkov на Windows PC. Политика возврата for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats объединяет ESP wallhack, radar hack и tarkov aimbot в undetected пакете для Tarkov на Windows PC. Политика возврата for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -8582,8 +8582,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@besttarkovcheats.com для поддержки и юридических вопросов.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org для поддержки и юридических вопросов.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -8592,7 +8592,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Условия использования | Tarkov Cheats",
 					description: "Условия использования for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Условия использования",
-					intro: "Tarkov Cheats объединяет ESP wallhack, radar hack и tarkov aimbot в undetected пакете для Tarkov на Windows PC. Условия использования for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats объединяет ESP wallhack, radar hack и tarkov aimbot в undetected пакете для Tarkov на Windows PC. Условия использования for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -8617,8 +8617,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@besttarkovcheats.com для поддержки и юридических вопросов.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org для поддержки и юридических вопросов.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -9465,7 +9465,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Gizlilik politikası | Tarkov Cheats",
 					description: "Gizlilik politikası for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Gizlilik politikası",
-					intro: "Tarkov Cheats, Tarkov için Windows PC üzerinde ESP wallhack, radar hack ve tarkov aimbot undetected paket sunar. Gizlilik politikası for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats, Tarkov için Windows PC üzerinde ESP wallhack, radar hack ve tarkov aimbot undetected paket sunar. Gizlilik politikası for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -9477,7 +9477,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Tarkov Cheats, Tarkov için Windows PC üzerinde ESP wallhack, radar hack ve tarkov aimbot undetected paket sunar. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -9490,8 +9490,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"Destek ve yasal sorular için support@besttarkovcheats.com.",
-								"Email: support@besttarkovcheats.com",
+								"Destek ve yasal sorular için support@tarkovcheats.org.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -9500,7 +9500,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "İade politikası | Tarkov Cheats",
 					description: "İade politikası for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "İade politikası",
-					intro: "Tarkov Cheats, Tarkov için Windows PC üzerinde ESP wallhack, radar hack ve tarkov aimbot undetected paket sunar. İade politikası for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats, Tarkov için Windows PC üzerinde ESP wallhack, radar hack ve tarkov aimbot undetected paket sunar. İade politikası for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -9525,8 +9525,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"Destek ve yasal sorular için support@besttarkovcheats.com.",
-								"Email: support@besttarkovcheats.com",
+								"Destek ve yasal sorular için support@tarkovcheats.org.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -9535,7 +9535,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Kullanım şartları | Tarkov Cheats",
 					description: "Kullanım şartları for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Kullanım şartları",
-					intro: "Tarkov Cheats, Tarkov için Windows PC üzerinde ESP wallhack, radar hack ve tarkov aimbot undetected paket sunar. Kullanım şartları for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats, Tarkov için Windows PC üzerinde ESP wallhack, radar hack ve tarkov aimbot undetected paket sunar. Kullanım şartları for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -9560,8 +9560,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"Destek ve yasal sorular için support@besttarkovcheats.com.",
-								"Email: support@besttarkovcheats.com",
+								"Destek ve yasal sorular için support@tarkovcheats.org.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -10408,7 +10408,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "سياسة الخصوصية | Tarkov Cheats",
 					description: "سياسة الخصوصية for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "سياسة الخصوصية",
-					intro: "Tarkov Cheats يجمع ESP wallhack وradar hack وtarkov aimbot غير مكتشف لـ Tarkov على Windows PC. سياسة الخصوصية for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats يجمع ESP wallhack وradar hack وtarkov aimbot غير مكتشف لـ Tarkov على Windows PC. سياسة الخصوصية for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -10420,7 +10420,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "المعلومات التي نجمعها",
 							paragraphs: [
 								"Tarkov Cheats يجمع ESP wallhack وradar hack وtarkov aimbot غير مكتشف لـ Tarkov على Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -10433,8 +10433,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "حقوقك",
 							paragraphs: [
-								"support@besttarkovcheats.com للدعم والطلبات القانونية.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org للدعم والطلبات القانونية.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -10443,7 +10443,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "سياسة الاسترداد | Tarkov Cheats",
 					description: "سياسة الاسترداد for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "سياسة الاسترداد",
-					intro: "Tarkov Cheats يجمع ESP wallhack وradar hack وtarkov aimbot غير مكتشف لـ Tarkov على Windows PC. سياسة الاسترداد for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats يجمع ESP wallhack وradar hack وtarkov aimbot غير مكتشف لـ Tarkov على Windows PC. سياسة الاسترداد for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -10468,8 +10468,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "كيفية الطلب",
 							paragraphs: [
-								"support@besttarkovcheats.com للدعم والطلبات القانونية.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org للدعم والطلبات القانونية.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -10478,7 +10478,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "شروط الاستخدام | Tarkov Cheats",
 					description: "شروط الاستخدام for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "شروط الاستخدام",
-					intro: "Tarkov Cheats يجمع ESP wallhack وradar hack وtarkov aimbot غير مكتشف لـ Tarkov على Windows PC. شروط الاستخدام for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats يجمع ESP wallhack وradar hack وtarkov aimbot غير مكتشف لـ Tarkov على Windows PC. شروط الاستخدام for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -10503,8 +10503,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "التغييرات",
 							paragraphs: [
-								"support@besttarkovcheats.com للدعم والطلبات القانونية.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org للدعم والطلبات القانونية.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -11351,7 +11351,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "プライバシーポリシー | Tarkov Cheats",
 					description: "プライバシーポリシー for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "プライバシーポリシー",
-					intro: "Tarkov CheatsはTarkov向けWindows PC用ESP wallhack、radar hack、tarkov aimbotのundetectedパッケージです。プライバシーポリシー for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov CheatsはTarkov向けWindows PC用ESP wallhack、radar hack、tarkov aimbotのundetectedパッケージです。プライバシーポリシー for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -11363,7 +11363,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "収集する情報",
 							paragraphs: [
 								"Tarkov CheatsはTarkov向けWindows PC用ESP wallhack、radar hack、tarkov aimbotのundetectedパッケージです。Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -11376,8 +11376,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "あなたの権利",
 							paragraphs: [
-								"サポート・法務: support@besttarkovcheats.com",
-								"Email: support@besttarkovcheats.com",
+								"サポート・法務: support@tarkovcheats.org",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -11386,7 +11386,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "返金ポリシー | Tarkov Cheats",
 					description: "返金ポリシー for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "返金ポリシー",
-					intro: "Tarkov CheatsはTarkov向けWindows PC用ESP wallhack、radar hack、tarkov aimbotのundetectedパッケージです。返金ポリシー for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov CheatsはTarkov向けWindows PC用ESP wallhack、radar hack、tarkov aimbotのundetectedパッケージです。返金ポリシー for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -11411,8 +11411,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "申請方法",
 							paragraphs: [
-								"サポート・法務: support@besttarkovcheats.com",
-								"Email: support@besttarkovcheats.com",
+								"サポート・法務: support@tarkovcheats.org",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -11421,7 +11421,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "利用規約 | Tarkov Cheats",
 					description: "利用規約 for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "利用規約",
-					intro: "Tarkov CheatsはTarkov向けWindows PC用ESP wallhack、radar hack、tarkov aimbotのundetectedパッケージです。利用規約 for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov CheatsはTarkov向けWindows PC用ESP wallhack、radar hack、tarkov aimbotのundetectedパッケージです。利用規約 for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -11446,8 +11446,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "変更",
 							paragraphs: [
-								"サポート・法務: support@besttarkovcheats.com",
-								"Email: support@besttarkovcheats.com",
+								"サポート・法務: support@tarkovcheats.org",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -12294,7 +12294,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "개인정보 처리방침 | Tarkov Cheats",
 					description: "개인정보 처리방침 for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "개인정보 처리방침",
-					intro: "Tarkov Cheats는 Tarkov Windows PC용 ESP wallhack, radar hack, tarkov aimbot undetected 패키지입니다. 개인정보 처리방침 for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats는 Tarkov Windows PC용 ESP wallhack, radar hack, tarkov aimbot undetected 패키지입니다. 개인정보 처리방침 for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -12306,7 +12306,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Tarkov Cheats는 Tarkov Windows PC용 ESP wallhack, radar hack, tarkov aimbot undetected 패키지입니다. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -12319,8 +12319,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"지원 및 법무: support@besttarkovcheats.com",
-								"Email: support@besttarkovcheats.com",
+								"지원 및 법무: support@tarkovcheats.org",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -12329,7 +12329,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "환불 정책 | Tarkov Cheats",
 					description: "환불 정책 for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "환불 정책",
-					intro: "Tarkov Cheats는 Tarkov Windows PC용 ESP wallhack, radar hack, tarkov aimbot undetected 패키지입니다. 환불 정책 for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats는 Tarkov Windows PC용 ESP wallhack, radar hack, tarkov aimbot undetected 패키지입니다. 환불 정책 for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -12354,8 +12354,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"지원 및 법무: support@besttarkovcheats.com",
-								"Email: support@besttarkovcheats.com",
+								"지원 및 법무: support@tarkovcheats.org",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -12364,7 +12364,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "이용 약관 | Tarkov Cheats",
 					description: "이용 약관 for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "이용 약관",
-					intro: "Tarkov Cheats는 Tarkov Windows PC용 ESP wallhack, radar hack, tarkov aimbot undetected 패키지입니다. 이용 약관 for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats는 Tarkov Windows PC용 ESP wallhack, radar hack, tarkov aimbot undetected 패키지입니다. 이용 약관 for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -12389,8 +12389,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"지원 및 법무: support@besttarkovcheats.com",
-								"Email: support@besttarkovcheats.com",
+								"지원 및 법무: support@tarkovcheats.org",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -13237,7 +13237,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "隐私政策 | Tarkov Cheats",
 					description: "隐私政策 for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "隐私政策",
-					intro: "Tarkov Cheats为TarkovWindows PC提供ESP wallhack、radar hack和tarkov aimbotundetected套餐。隐私政策 for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats为TarkovWindows PC提供ESP wallhack、radar hack和tarkov aimbotundetected套餐。隐私政策 for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -13249,7 +13249,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Tarkov Cheats为TarkovWindows PC提供ESP wallhack、radar hack和tarkov aimbotundetected套餐。Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -13262,8 +13262,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"支持与法务：support@besttarkovcheats.com",
-								"Email: support@besttarkovcheats.com",
+								"支持与法务：support@tarkovcheats.org",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -13272,7 +13272,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "退款政策 | Tarkov Cheats",
 					description: "退款政策 for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "退款政策",
-					intro: "Tarkov Cheats为TarkovWindows PC提供ESP wallhack、radar hack和tarkov aimbotundetected套餐。退款政策 for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats为TarkovWindows PC提供ESP wallhack、radar hack和tarkov aimbotundetected套餐。退款政策 for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -13297,8 +13297,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"支持与法务：support@besttarkovcheats.com",
-								"Email: support@besttarkovcheats.com",
+								"支持与法务：support@tarkovcheats.org",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -13307,7 +13307,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "使用条款 | Tarkov Cheats",
 					description: "使用条款 for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "使用条款",
-					intro: "Tarkov Cheats为TarkovWindows PC提供ESP wallhack、radar hack和tarkov aimbotundetected套餐。使用条款 for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats为TarkovWindows PC提供ESP wallhack、radar hack和tarkov aimbotundetected套餐。使用条款 for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -13332,8 +13332,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"支持与法务：support@besttarkovcheats.com",
-								"Email: support@besttarkovcheats.com",
+								"支持与法务：support@tarkovcheats.org",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -14180,7 +14180,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "गोपनीयता नीति | Tarkov Cheats",
 					description: "गोपनीयता नीति for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "गोपनीयता नीति",
-					intro: "Tarkov Cheats Tarkov के लिए Windows PC पर ESP wallhack, radar hack और tarkov aimbot undetected पैकेज देता है। गोपनीयता नीति for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats Tarkov के लिए Windows PC पर ESP wallhack, radar hack और tarkov aimbot undetected पैकेज देता है। गोपनीयता नीति for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -14192,7 +14192,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Tarkov Cheats Tarkov के लिए Windows PC पर ESP wallhack, radar hack और tarkov aimbot undetected पैकेज देता है। Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -14205,8 +14205,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"सहायता: support@besttarkovcheats.com",
-								"Email: support@besttarkovcheats.com",
+								"सहायता: support@tarkovcheats.org",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -14215,7 +14215,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "रिफंड नीति | Tarkov Cheats",
 					description: "रिफंड नीति for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "रिफंड नीति",
-					intro: "Tarkov Cheats Tarkov के लिए Windows PC पर ESP wallhack, radar hack और tarkov aimbot undetected पैकेज देता है। रिफंड नीति for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats Tarkov के लिए Windows PC पर ESP wallhack, radar hack और tarkov aimbot undetected पैकेज देता है। रिफंड नीति for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -14240,8 +14240,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"सहायता: support@besttarkovcheats.com",
-								"Email: support@besttarkovcheats.com",
+								"सहायता: support@tarkovcheats.org",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -14250,7 +14250,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "उपयोग की शर्तें | Tarkov Cheats",
 					description: "उपयोग की शर्तें for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "उपयोग की शर्तें",
-					intro: "Tarkov Cheats Tarkov के लिए Windows PC पर ESP wallhack, radar hack और tarkov aimbot undetected पैकेज देता है। उपयोग की शर्तें for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats Tarkov के लिए Windows PC पर ESP wallhack, radar hack और tarkov aimbot undetected पैकेज देता है। उपयोग की शर्तें for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -14275,8 +14275,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"सहायता: support@besttarkovcheats.com",
-								"Email: support@besttarkovcheats.com",
+								"सहायता: support@tarkovcheats.org",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -15123,7 +15123,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Kebijakan privasi | Tarkov Cheats",
 					description: "Kebijakan privasi for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Kebijakan privasi",
-					intro: "Tarkov Cheats menyediakan ESP wallhack, radar hack, dan tarkov aimbot undetected untuk Tarkov di PC Windows. Kebijakan privasi for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats menyediakan ESP wallhack, radar hack, dan tarkov aimbot undetected untuk Tarkov di PC Windows. Kebijakan privasi for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -15135,7 +15135,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Tarkov Cheats menyediakan ESP wallhack, radar hack, dan tarkov aimbot undetected untuk Tarkov di PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -15148,8 +15148,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@besttarkovcheats.com untuk dukungan dan legal.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org untuk dukungan dan legal.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -15158,7 +15158,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Kebijakan refund | Tarkov Cheats",
 					description: "Kebijakan refund for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Kebijakan refund",
-					intro: "Tarkov Cheats menyediakan ESP wallhack, radar hack, dan tarkov aimbot undetected untuk Tarkov di PC Windows. Kebijakan refund for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats menyediakan ESP wallhack, radar hack, dan tarkov aimbot undetected untuk Tarkov di PC Windows. Kebijakan refund for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -15183,8 +15183,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@besttarkovcheats.com untuk dukungan dan legal.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org untuk dukungan dan legal.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -15193,7 +15193,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Syarat penggunaan | Tarkov Cheats",
 					description: "Syarat penggunaan for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Syarat penggunaan",
-					intro: "Tarkov Cheats menyediakan ESP wallhack, radar hack, dan tarkov aimbot undetected untuk Tarkov di PC Windows. Syarat penggunaan for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats menyediakan ESP wallhack, radar hack, dan tarkov aimbot undetected untuk Tarkov di PC Windows. Syarat penggunaan for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -15218,8 +15218,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@besttarkovcheats.com untuk dukungan dan legal.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org untuk dukungan dan legal.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -16066,7 +16066,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "นโยบายความเป็นส่วนตัว | Tarkov Cheats",
 					description: "นโยบายความเป็นส่วนตัว for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "นโยบายความเป็นส่วนตัว",
-					intro: "Tarkov Cheats รวม ESP wallhack, radar hack และ tarkov aimbot แบบ undetected สำหรับ Tarkov บน Windows PC นโยบายความเป็นส่วนตัว for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats รวม ESP wallhack, radar hack และ tarkov aimbot แบบ undetected สำหรับ Tarkov บน Windows PC นโยบายความเป็นส่วนตัว for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -16078,7 +16078,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Tarkov Cheats รวม ESP wallhack, radar hack และ tarkov aimbot แบบ undetected สำหรับ Tarkov บน Windows PC Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -16091,8 +16091,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@besttarkovcheats.com สำหรับการสนับสนุน",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org สำหรับการสนับสนุน",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -16101,7 +16101,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "นโยบายการคืนเงิน | Tarkov Cheats",
 					description: "นโยบายการคืนเงิน for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "นโยบายการคืนเงิน",
-					intro: "Tarkov Cheats รวม ESP wallhack, radar hack และ tarkov aimbot แบบ undetected สำหรับ Tarkov บน Windows PC นโยบายการคืนเงิน for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats รวม ESP wallhack, radar hack และ tarkov aimbot แบบ undetected สำหรับ Tarkov บน Windows PC นโยบายการคืนเงิน for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -16126,8 +16126,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@besttarkovcheats.com สำหรับการสนับสนุน",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org สำหรับการสนับสนุน",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -16136,7 +16136,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "ข้อกำหนดการใช้งาน | Tarkov Cheats",
 					description: "ข้อกำหนดการใช้งาน for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "ข้อกำหนดการใช้งาน",
-					intro: "Tarkov Cheats รวม ESP wallhack, radar hack และ tarkov aimbot แบบ undetected สำหรับ Tarkov บน Windows PC ข้อกำหนดการใช้งาน for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats รวม ESP wallhack, radar hack และ tarkov aimbot แบบ undetected สำหรับ Tarkov บน Windows PC ข้อกำหนดการใช้งาน for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -16161,8 +16161,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@besttarkovcheats.com สำหรับการสนับสนุน",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org สำหรับการสนับสนุน",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -17009,7 +17009,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Chính sách bảo mật | Tarkov Cheats",
 					description: "Chính sách bảo mật for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Chính sách bảo mật",
-					intro: "Tarkov Cheats cung cấp ESP wallhack, radar hack và tarkov aimbot undetected cho Tarkov trên PC Windows. Chính sách bảo mật for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats cung cấp ESP wallhack, radar hack và tarkov aimbot undetected cho Tarkov trên PC Windows. Chính sách bảo mật for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -17021,7 +17021,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Tarkov Cheats cung cấp ESP wallhack, radar hack và tarkov aimbot undetected cho Tarkov trên PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -17034,8 +17034,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@besttarkovcheats.com cho hỗ trợ và pháp lý.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org cho hỗ trợ và pháp lý.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -17044,7 +17044,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Chính sách hoàn tiền | Tarkov Cheats",
 					description: "Chính sách hoàn tiền for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Chính sách hoàn tiền",
-					intro: "Tarkov Cheats cung cấp ESP wallhack, radar hack và tarkov aimbot undetected cho Tarkov trên PC Windows. Chính sách hoàn tiền for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats cung cấp ESP wallhack, radar hack và tarkov aimbot undetected cho Tarkov trên PC Windows. Chính sách hoàn tiền for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -17069,8 +17069,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@besttarkovcheats.com cho hỗ trợ và pháp lý.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org cho hỗ trợ và pháp lý.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -17079,7 +17079,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Điều khoản sử dụng | Tarkov Cheats",
 					description: "Điều khoản sử dụng for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Điều khoản sử dụng",
-					intro: "Tarkov Cheats cung cấp ESP wallhack, radar hack và tarkov aimbot undetected cho Tarkov trên PC Windows. Điều khoản sử dụng for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats cung cấp ESP wallhack, radar hack và tarkov aimbot undetected cho Tarkov trên PC Windows. Điều khoản sử dụng for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -17104,8 +17104,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@besttarkovcheats.com cho hỗ trợ và pháp lý.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org cho hỗ trợ và pháp lý.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -17952,7 +17952,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Політика конфіденційності | Tarkov Cheats",
 					description: "Політика конфіденційності for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Політика конфіденційності",
-					intro: "Tarkov Cheats об'єднує ESP wallhack, radar hack і tarkov aimbot у undetected пакеті для Tarkov на Windows PC. Політика конфіденційності for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats об'єднує ESP wallhack, radar hack і tarkov aimbot у undetected пакеті для Tarkov на Windows PC. Політика конфіденційності for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -17964,7 +17964,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Tarkov Cheats об'єднує ESP wallhack, radar hack і tarkov aimbot у undetected пакеті для Tarkov на Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -17977,8 +17977,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@besttarkovcheats.com для підтримки та правових питань.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org для підтримки та правових питань.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -17987,7 +17987,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Політика повернення | Tarkov Cheats",
 					description: "Політика повернення for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Політика повернення",
-					intro: "Tarkov Cheats об'єднує ESP wallhack, radar hack і tarkov aimbot у undetected пакеті для Tarkov на Windows PC. Політика повернення for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats об'єднує ESP wallhack, radar hack і tarkov aimbot у undetected пакеті для Tarkov на Windows PC. Політика повернення for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -18012,8 +18012,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@besttarkovcheats.com для підтримки та правових питань.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org для підтримки та правових питань.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -18022,7 +18022,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Умови використання | Tarkov Cheats",
 					description: "Умови використання for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Умови використання",
-					intro: "Tarkov Cheats об'єднує ESP wallhack, radar hack і tarkov aimbot у undetected пакеті для Tarkov на Windows PC. Умови використання for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats об'єднує ESP wallhack, radar hack і tarkov aimbot у undetected пакеті для Tarkov на Windows PC. Умови використання for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -18047,8 +18047,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@besttarkovcheats.com для підтримки та правових питань.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org для підтримки та правових питань.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -18895,7 +18895,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Zásady ochrany soukromí | Tarkov Cheats",
 					description: "Zásady ochrany soukromí for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Zásady ochrany soukromí",
-					intro: "Tarkov Cheats spojuje ESP wallhack, radar hack a tarkov aimbot jako undetected balíček pro Tarkov na Windows PC. Zásady ochrany soukromí for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats spojuje ESP wallhack, radar hack a tarkov aimbot jako undetected balíček pro Tarkov na Windows PC. Zásady ochrany soukromí for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -18907,7 +18907,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Tarkov Cheats spojuje ESP wallhack, radar hack a tarkov aimbot jako undetected balíček pro Tarkov na Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -18920,8 +18920,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@besttarkovcheats.com pro podporu a právní dotazy.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org pro podporu a právní dotazy.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -18930,7 +18930,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Zásady vrácení peněz | Tarkov Cheats",
 					description: "Zásady vrácení peněz for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Zásady vrácení peněz",
-					intro: "Tarkov Cheats spojuje ESP wallhack, radar hack a tarkov aimbot jako undetected balíček pro Tarkov na Windows PC. Zásady vrácení peněz for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats spojuje ESP wallhack, radar hack a tarkov aimbot jako undetected balíček pro Tarkov na Windows PC. Zásady vrácení peněz for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -18955,8 +18955,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@besttarkovcheats.com pro podporu a právní dotazy.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org pro podporu a právní dotazy.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -18965,7 +18965,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Podmínky použití | Tarkov Cheats",
 					description: "Podmínky použití for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Podmínky použití",
-					intro: "Tarkov Cheats spojuje ESP wallhack, radar hack a tarkov aimbot jako undetected balíček pro Tarkov na Windows PC. Podmínky použití for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats spojuje ESP wallhack, radar hack a tarkov aimbot jako undetected balíček pro Tarkov na Windows PC. Podmínky použití for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -18990,8 +18990,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@besttarkovcheats.com pro podporu a právní dotazy.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org pro podporu a právní dotazy.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -19838,7 +19838,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Politica de confidențialitate | Tarkov Cheats",
 					description: "Politica de confidențialitate for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Politica de confidențialitate",
-					intro: "Tarkov Cheats combină ESP wallhack, radar hack și tarkov aimbot undetected pentru Tarkov pe PC Windows. Politica de confidențialitate for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats combină ESP wallhack, radar hack și tarkov aimbot undetected pentru Tarkov pe PC Windows. Politica de confidențialitate for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -19850,7 +19850,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Tarkov Cheats combină ESP wallhack, radar hack și tarkov aimbot undetected pentru Tarkov pe PC Windows. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -19863,8 +19863,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@besttarkovcheats.com pentru suport și legal.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org pentru suport și legal.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -19873,7 +19873,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Politica de rambursare | Tarkov Cheats",
 					description: "Politica de rambursare for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Politica de rambursare",
-					intro: "Tarkov Cheats combină ESP wallhack, radar hack și tarkov aimbot undetected pentru Tarkov pe PC Windows. Politica de rambursare for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats combină ESP wallhack, radar hack și tarkov aimbot undetected pentru Tarkov pe PC Windows. Politica de rambursare for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -19898,8 +19898,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@besttarkovcheats.com pentru suport și legal.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org pentru suport și legal.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -19908,7 +19908,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Termeni de utilizare | Tarkov Cheats",
 					description: "Termeni de utilizare for Tarkov Cheats — ESP wallhack, Aimbot, PC Windows.",
 					h1: "Termeni de utilizare",
-					intro: "Tarkov Cheats combină ESP wallhack, radar hack și tarkov aimbot undetected pentru Tarkov pe PC Windows. Termeni de utilizare for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats combină ESP wallhack, radar hack și tarkov aimbot undetected pentru Tarkov pe PC Windows. Termeni de utilizare for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -19933,8 +19933,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@besttarkovcheats.com pentru suport și legal.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org pentru suport și legal.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -20781,7 +20781,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Integritetspolicy | Tarkov Cheats",
 					description: "Integritetspolicy for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Integritetspolicy",
-					intro: "Tarkov Cheats kombinerar ESP wallhack, radar hack och tarkov aimbot som undetected paket för Tarkov på Windows PC. Integritetspolicy for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats kombinerar ESP wallhack, radar hack och tarkov aimbot som undetected paket för Tarkov på Windows PC. Integritetspolicy for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot.webp",
@@ -20793,7 +20793,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							h2: "Information we collect",
 							paragraphs: [
 								"Tarkov Cheats kombinerar ESP wallhack, radar hack och tarkov aimbot som undetected paket för Tarkov på Windows PC. Contact email, Zadeyo order references, and basic site security data.",
-								"Payment details are processed by Zadeyo checkout — not stored on besttarkovcheats.com.",
+								"Payment details are processed by Zadeyo checkout — not stored on tarkovcheats.org.",
 							],
 						},
 						{
@@ -20806,8 +20806,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Your rights",
 							paragraphs: [
-								"support@besttarkovcheats.com för support och juridik.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org för support och juridik.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -20816,7 +20816,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Återbetalningspolicy | Tarkov Cheats",
 					description: "Återbetalningspolicy for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Återbetalningspolicy",
-					intro: "Tarkov Cheats kombinerar ESP wallhack, radar hack och tarkov aimbot som undetected paket för Tarkov på Windows PC. Återbetalningspolicy for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats kombinerar ESP wallhack, radar hack och tarkov aimbot som undetected paket för Tarkov på Windows PC. Återbetalningspolicy for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-raid.webp",
@@ -20841,8 +20841,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "How to request",
 							paragraphs: [
-								"support@besttarkovcheats.com för support och juridik.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org för support och juridik.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],
@@ -20851,7 +20851,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Användarvillkor | Tarkov Cheats",
 					description: "Användarvillkor for Tarkov Cheats — ESP wallhack, Aimbot, Windows PC.",
 					h1: "Användarvillkor",
-					intro: "Tarkov Cheats kombinerar ESP wallhack, radar hack och tarkov aimbot som undetected paket för Tarkov på Windows PC. Användarvillkor for besttarkovcheats.com and Escape from Tarkov licenses.",
+					intro: "Tarkov Cheats kombinerar ESP wallhack, radar hack och tarkov aimbot som undetected paket för Tarkov på Windows PC. Användarvillkor for tarkovcheats.org and Escape from Tarkov licenses.",
 					imageAlt: "tarkov cheats",
 					galleryTitle: "tarkov cheats",
 					heroImage: "/images/tarkov-cheats-aimbot-view.webp",
@@ -20876,8 +20876,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Policy changes",
 							paragraphs: [
-								"support@besttarkovcheats.com för support och juridik.",
-								"Email: support@besttarkovcheats.com",
+								"support@tarkovcheats.org för support och juridik.",
+								"Email: support@tarkovcheats.org",
 							],
 						},
 					],

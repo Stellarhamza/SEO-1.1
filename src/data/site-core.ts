@@ -6,7 +6,8 @@ import { brand, fillBrandTokens, seoDescription, seoTitle } from './brand';
  */
 export function seoPageTitle(template: string): string {
 	const text = fillBrandTokens(template).trim();
-	return text.length <= 70 ? text : `${text.slice(0, 67).trim()}…`;
+	/** Google SERP titles typically display ~50–60 chars; clamp at 60. */
+	return text.length <= 60 ? text : `${text.slice(0, 57).trim()}…`;
 }
 
 export { brand, fillBrandTokens, seoDescription, seoTitle };

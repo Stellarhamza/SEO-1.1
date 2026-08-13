@@ -52,7 +52,7 @@ const REPLACEMENTS = [
 	['BattlEye Bypass', 'BattlEye Bypass'],
 	['BattlEye', 'BattlEye anti-cheat'],
 	['battleye', 'battleye'],
-	['support@besttarkovcheats.com', 'support@besttarkovcheats.com'],
+	['support@tarkovcheats.org', 'support@tarkovcheats.org'],
 	['Customs, Woods, and Streets of Tarkov', 'Customs, Woods, and Streets of Tarkov'],
 	['Customs, Woods and Streets of Tarkov', 'Customs, Woods and Streets of Tarkov'],
 	['extract fights', 'extract fights'],

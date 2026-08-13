@@ -8,6 +8,17 @@ export function escapeXml(value: string): string {
 		.replaceAll("'", '&apos;');
 }
 
+/** Guardrail — never emit broken image locs into crawlable sitemaps. */
+export function assertCrawlableAssetUrl(url: string, context: string): string {
+	if (!url || url.includes('undefined') || url.includes('null')) {
+		throw new Error(`[sitemap] Invalid asset URL for ${context}: ${url}`);
+	}
+	if (!/^https:\/\/[^/]+\//.test(url)) {
+		throw new Error(`[sitemap] Asset URL must be absolute https for ${context}: ${url}`);
+	}
+	return url;
+}
+
 export function renderUrlsetXml(urlBlocks: string[]): string {
 	const urls = urlBlocks.join('\n');
 	return `<?xml version="1.0" encoding="UTF-8"?>
@@ -39,4 +50,21 @@ export function renderSitemapIndexXml(subSitemaps: { loc: string; lastmod: strin
 ${entries}
 </sitemapindex>
 `;
+}
+
+/** Render one image extension block; throws if URL is uncrawlable. */
+export function renderImageExtension(
+	image: {
+		url: string;
+		title: string;
+		caption: string;
+	},
+	context: string,
+): string {
+	const url = assertCrawlableAssetUrl(image.url, context);
+	return `    <image:image>
+      <image:loc>${escapeXml(url)}</image:loc>
+      <image:title>${escapeXml(image.title)}</image:title>
+      <image:caption>${escapeXml(image.caption)}</image:caption>
+    </image:image>`;
 }

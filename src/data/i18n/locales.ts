@@ -95,7 +95,7 @@ export const blogUi: Record<
 	en: {
 		blogTitle: 'Tarkov Cheats Blog | ESP, Cheats & Meta Tips',
 		blogDescription:
-			'Tarkov cheats and tarkov cheats guides — ESP, aimbot, ranked meta, loot routes, and BattlEye updates. Global English blog at besttarkovcheats.com/blog/.',
+			'Tarkov cheats and tarkov cheats guides — ESP, aimbot, ranked meta, loot routes, and BattlEye updates. Global English blog at tarkovcheats.org/blog/.',
 		blogH1: 'Tarkov Cheats Intel',
 		blogIntro:
 			'Actionable Escape from Tarkov guides for raid and scav-run — meta breakdowns, loot routes, weapon tiers, and pro warmup routines. Pair these tips with our tarkov cheats pages for ESP boxes, soft aim, and cloud DMA when you need in-match tools.',

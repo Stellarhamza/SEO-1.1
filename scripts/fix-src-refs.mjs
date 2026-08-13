@@ -28,7 +28,7 @@ const REPLACEMENTS = [
 	['Escape from Tarkov', 'Escape from Tarkov'],
 	['BattlEye', 'BattlEye anti-cheat'],
 	['battleye', 'battleye'],
-	['besttarkovcheats.com', 'besttarkovcheats.com'],
+	['tarkovcheats.org', 'tarkovcheats.org'],
 	['operatorEsp', 'playerEsp'],
 	['extractFight', 'rebootFight'],
 	['alMazrah', 'battleRoyaleIsland'],

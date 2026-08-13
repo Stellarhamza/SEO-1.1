@@ -1,15 +1,7 @@
 import type { APIRoute } from 'astro';
 import { absolutePageUrl, imageSitemapEntries, pageSitemapEntries } from '../data/page-sitemap';
 import { englishPaths } from '../data/i18n/routing';
-
-function escapeXml(value: string): string {
-	return value
-		.replaceAll('&', '&amp;')
-		.replaceAll('<', '&lt;')
-		.replaceAll('>', '&gt;')
-		.replaceAll('"', '&quot;')
-		.replaceAll("'", '&apos;');
-}
+import { assertCrawlableAssetUrl, escapeXml, sitemapResponseHeaders } from '../data/sitemap-xml';
 
 export const prerender = true;
 
@@ -37,6 +29,7 @@ export const GET: APIRoute = () => {
 	const firstHostByImage = new Map<string, string>();
 	for (const page of pageSitemapEntries) {
 		for (const image of page.images) {
+			assertCrawlableAssetUrl(image.url, page.path);
 			if (!firstHostByImage.has(image.url)) {
 				firstHostByImage.set(image.url, absolutePageUrl(page.path));
 			}
@@ -46,6 +39,7 @@ export const GET: APIRoute = () => {
 	const usedHosts = new Set<string>();
 	const uniqueImages = new Map<string, (typeof imageSitemapEntries)[number]>();
 	for (const image of imageSitemapEntries) {
+		assertCrawlableAssetUrl(image.url, 'sitemap-images');
 		if (!uniqueImages.has(image.url)) uniqueImages.set(image.url, image);
 	}
 
@@ -90,10 +84,5 @@ ${urls}
 </urlset>
 `;
 
-	return new Response(xml, {
-		headers: {
-			'Content-Type': 'application/xml; charset=utf-8',
-			'Cache-Control': 'public, max-age=3600',
-		},
-	});
+	return new Response(xml, { headers: sitemapResponseHeaders });
 };

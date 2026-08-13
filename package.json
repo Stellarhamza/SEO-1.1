@@ -11,7 +11,7 @@
 		"prebuild": "node scripts/sync-brand.mjs && node scripts/sync-cannibal-redirects.mjs",
 		"build": "astro build",
 		"postbuild": "node scripts/strip-brand-studio.mjs",
-		"build:validate": "npm run sync:brand && astro build && node scripts/strip-brand-studio.mjs && node scripts/validate-sitemaps.mjs",
+		"build:validate": "npm run sync:brand && astro build && node scripts/strip-brand-studio.mjs && npm run validate:sitemaps",
 		"dev:stop": "astro dev stop",
 		"dev:status": "astro dev status",
 		"dev:logs": "astro dev logs",
@@ -19,10 +19,10 @@
 		"fetch:images": "node scripts/fetch-tarkov-images.mjs",
 		"generate:brand": "node scripts/generate-brand-assets.mjs",
 		"preview": "astro preview",
-		"validate:sitemaps": "node scripts/validate-sitemaps.mjs",
+		"validate:sitemaps": "node scripts/validate-sitemaps.mjs && node scripts/audit-sitemap-deep.mjs",
 		"generate:i18n": "node scripts/generate-i18n-content.mjs",
 		"deploy": "npm run build && wrangler deploy",
-		"pages:deploy": "wrangler pages deploy dist --project-name=besttarkovcheats",
+		"pages:deploy": "wrangler pages deploy dist --project-name=tarkovcheats",
 		"astro": "astro"
 	},
 	"dependencies": {

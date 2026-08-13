@@ -4,7 +4,7 @@ import { getBlogSitemapEntries } from '../data/blog/helpers';
 import { getReviewSitemapEntries } from '../data/reviews';
 import { getFaqSitemapEntries } from '../data/faq';
 import { hreflangLinksXml, resolvePageIdFromPath } from '../data/i18n/routing';
-import { escapeXml, renderUrlsetXml, sitemapResponseHeaders } from '../data/sitemap-xml';
+import { escapeXml, renderImageExtension, renderUrlsetXml, sitemapResponseHeaders } from '../data/sitemap-xml';
 
 export const prerender = true;
 
@@ -25,13 +25,7 @@ export const GET: APIRoute = () => {
 
 	const urls = [...pageSitemapEntries, ...blogEntries, ...reviewEntries, ...faqEntries].map((entry) => {
 		const images = entry.images
-			.map(
-				(image) => `    <image:image>
-      <image:loc>${escapeXml(image.url)}</image:loc>
-      <image:title>${escapeXml(image.title)}</image:title>
-      <image:caption>${escapeXml(image.caption)}</image:caption>
-    </image:image>`,
-			)
+			.map((image) => renderImageExtension(image, entry.path))
 			.join('\n');
 
 		const imageBlock = images ? `\n${images}` : '';

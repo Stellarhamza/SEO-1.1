@@ -1,6 +1,6 @@
 # Tarkov Cheats — Marketing Site
 
-Static Astro 7 site for [besttarkovcheats.com](https://besttarkovcheats.com). Primary SEO keyword: **tarkov cheats** (secondary: escape from tarkov cheats, aimbot, ESP).
+Static Astro 7 site for [tarkovcheats.org](https://tarkovcheats.org). Primary SEO keyword: **tarkov cheats** (secondary: escape from tarkov cheats, aimbot, ESP).
 
 ## Stack
 
@@ -29,7 +29,7 @@ npm run build:validate
 2. Connect this repo or upload `dist/` after `npm run build`
 3. Build command: `npm run build`
 4. Output directory: `dist`
-5. Add custom domain **besttarkovcheats.com** (apex) and redirect **www** → apex
+5. Add custom domain **tarkovcheats.org** (apex) and redirect **www** → apex
 6. Enable SSL **Always Use HTTPS**
 
 CLI deploy:
@@ -45,4 +45,4 @@ npm run pages:deploy
 
 ## License
 
-Private — for besttarkovcheats.com deployment only.
+Private — for tarkovcheats.org deployment only.

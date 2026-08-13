@@ -32,7 +32,7 @@ const UI_REPLACEMENTS = [
 	['Verdansk', 'Verdansk'],
 	['scav-run', 'scav-run'],
 	['extract', 'extract'],
-	['besttarkovcheats.com', 'besttarkovcheats.com'],
+	['tarkovcheats.org', 'tarkovcheats.org'],
 	['Trucos Tarkov', 'Trucos Escape from Tarkov'],
 	['Triches Tarkov', 'Triches Escape from Tarkov'],
 	['Cheats Tarkov', 'Cheats Escape from Tarkov'],
